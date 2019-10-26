@@ -195,7 +195,7 @@ static const struct ListMenuTemplate sItemListMenu =
     .cursor_X = 0,
     .upText_Y = 1,
     .cursorPal = 1,
-    .fillValue = 0,
+    .fillValue = 2,
     .cursorShadowPal = 3,
     .lettersSpacing = 0,
     .itemVerticalPadding = 0,
@@ -705,17 +705,11 @@ bool8 LoadBagMenu_Graphics(void)
             }
             break;
         case 2:
-            if (!IsWallysBag() && gSaveBlock2Ptr->playerGender != MALE)
-                LoadCompressedPalette(gBagScreenFemale_Pal, 0, 0x40);
-            else
-                LoadCompressedPalette(gBagScreenMale_Pal, 0, 0x40);
+            LoadCompressedPalette(gBagScreen_Pal, 0, 0x40);
             gBagMenu->unk834++;
             break;
         case 3:
-            if (IsWallysBag() == TRUE || gSaveBlock2Ptr->playerGender == MALE)
-                LoadCompressedSpriteSheet(&gBagMaleSpriteSheet);
-            else
-                LoadCompressedSpriteSheet(&gBagFemaleSpriteSheet);
+            LoadCompressedSpriteSheet(&gBagSpriteSheet);
             gBagMenu->unk834++;
             break;
         case 4:
@@ -1267,9 +1261,9 @@ void sub_81AC23C(u8 a)
 void BagMenu_DrawPocketIndicatorSquare(u8 x, u8 is_current_bag)
 {
     if (is_current_bag == 0)
-        FillBgTilemapBufferRect_Palette0(2, 0x1017, x + 5, 3, 1, 1);
+        FillBgTilemapBufferRect_Palette0(2, 0x17, x + 5, 3, 1, 1);
     else
-        FillBgTilemapBufferRect_Palette0(2, 0x102B, x + 5, 3, 1, 1);
+        FillBgTilemapBufferRect_Palette0(2, 0x2B, x + 5, 3, 1, 1);
     schedule_bg_copy_tilemap_to_vram(2);
 }
 

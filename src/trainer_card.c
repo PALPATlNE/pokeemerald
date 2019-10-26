@@ -408,12 +408,12 @@ static void sub_80C2760(u8 taskId)
             sub_80C438C(1);
             sData->var_529 = 0;
         }
-        if (gMain.newKeys & A_BUTTON)
-        {
-            sub_80C4918();
-            PlaySE(SE_RG_CARD1);
-            sData->var_0 = 12;
-        }
+        //if (gMain.newKeys & A_BUTTON) Flips the Trainer Card
+        //{
+            //sub_80C4918();
+            //PlaySE(SE_RG_CARD1);
+            //sData->var_0 = 12;
+        //}
         else if (gMain.newKeys & B_BUTTON)
         {
             if (gReceivedRemoteLinkPlayers && sData->isLink && InUnionRoom() == TRUE)
@@ -804,7 +804,7 @@ static void SetDataFromTrainerCard(void)
     if (sData->trainerCard.battleTowerWins || sData->trainerCard.battleTowerStraightWins)
         sData->hasBattleTowerWins++;
 
-    for (i = 0, badgeFlag = FLAG_BADGE01_GET; badgeFlag <= FLAG_BADGE08_GET; badgeFlag++, i++)
+    for (i = 0, badgeFlag = FLAG_BADGE01_GET; badgeFlag <= FLAG_BADGE10_GET; badgeFlag++, i++)
     {
         if (FlagGet(badgeFlag))
             sData->badgeCount[i]++;
@@ -997,7 +997,7 @@ static void PrintIdOnCard(void)
         top = 9;
     }
 
-    AddTextPrinterParameterized3(1, 1, xPos, top, gUnknown_0856FB0C, TEXT_SPEED_FF, buffer);
+    AddTextPrinterParameterized3(1, 1, xPos, 2, gUnknown_0856FB0C, TEXT_SPEED_FF, buffer);
 }
 
 static void PrintMoneyOnCard(void)
@@ -1467,8 +1467,8 @@ static void TrainerCard_PrintStarsAndBadgesOnCard(void)
     FillBgTilemapBufferRect(3, 143, 15, gUnknown_0856FB78[sData->isHoenn], sData->trainerCard.stars, 1, 4);
     if (!sData->isLink)
     {
-        x = 4;
-        for (i = 0; i < 8; i++, tileNum += 2, x += 3)
+        x = 1;
+        for (i = 0; i < 10; i++, tileNum += 2, x += 3)
         {
             if (sData->badgeCount[i])
             {

@@ -113,14 +113,9 @@ static const union AffineAnimCmd *const sBagAffineAnimCmds[] =
     sSpriteAffineAnim_BagShake
 };
 
-const struct CompressedSpriteSheet gBagMaleSpriteSheet =
+const struct CompressedSpriteSheet gBagSpriteSheet =
 {
     gBagMaleTiles, 0x3000, TAG_BAG_GFX
-};
-
-const struct CompressedSpriteSheet gBagFemaleSpriteSheet =
-{
-    gBagFemaleTiles, 0x3000, TAG_BAG_GFX
 };
 
 const struct CompressedSpritePalette gBagPaletteTable =

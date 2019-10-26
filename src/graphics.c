@@ -1152,6 +1152,24 @@ const u32 gStatusPal_Icons[] = INCBIN_U32("graphics/interface/status_icons.gbapa
 const u32 gMoveTypes_Gfx[] = INCBIN_U32("graphics/types/move_types.4bpp.lz");
 const u32 gMoveTypes_Pal[] = INCBIN_U32("graphics/types/move_types.gbapal.lz");
 
+const u32 gSummaryMonIconsInfo1_Gfx[] = INCBIN_U32("graphics/interface/summary_icons_info1.4bpp.lz");
+const u32 gSummaryMonIconsInfo2_Gfx[] = INCBIN_U32("graphics/interface/summary_icons_info2.4bpp.lz");
+const u32 gSummaryMonTrainerMemo_Gfx[] = INCBIN_U32("graphics/interface/summary_trainer_memo.4bpp.lz");
+const u32 gSummaryMonIconStats1_Gfx[] = INCBIN_U32("graphics/interface/summary_stats1.4bpp.lz");
+const u32 gSummaryMonIconStats2_Gfx[] = INCBIN_U32("graphics/interface/summary_stats2.4bpp.lz");
+const u32 gSummaryMonIconAbility_Gfx[] = INCBIN_U32("graphics/interface/summary_ability.4bpp.lz");
+const u32 gSummaryMonIconMoves_Gfx[] = INCBIN_U32("graphics/interface/move_details.4bpp.lz");
+const u32 gSummaryIcons_Pal[] = INCBIN_U32("graphics/interface/summary_icons.gbapal.lz");
+const u32 gLaserGrid1_Gfx[] = INCBIN_U32("graphics/interface/laser_grid1.4bpp.lz");
+const u32 gLaserGrid2_Gfx[] = INCBIN_U32("graphics/interface/laser_grid2.4bpp.lz");
+const u32 gLaserGrid3_Gfx[] = INCBIN_U32("graphics/interface/laser_grid3.4bpp.lz");
+const u32 gLaserGrid4_Gfx[] = INCBIN_U32("graphics/interface/laser_grid4.4bpp.lz");
+const u32 gLaserGrid5_Gfx[] = INCBIN_U32("graphics/interface/laser_grid5.4bpp.lz");
+const u32 gLaserGrid6_Gfx[] = INCBIN_U32("graphics/interface/laser_grid6.4bpp.lz");
+const u32 gLaserGrid7_Gfx[] = INCBIN_U32("graphics/interface/laser_grid7.4bpp.lz");
+const u32 gLaserGrid8_Gfx[] = INCBIN_U32("graphics/interface/laser_grid8.4bpp.lz");
+const u32 gLaserGrid_Pal[] = INCBIN_U32("graphics/interface/laser_grid.gbapal.lz");
+
 const u32 gMoveSelectorBitmap[] = INCBIN_U32("graphics/interface/summary_frames.4bpp.lz");
 const u32 gUnknown_08D97CF4[] = INCBIN_U32("graphics/interface/summary_frames.gbapal.lz");
 
@@ -1165,11 +1183,10 @@ const u32 gPageContestMovesTilemap[] = INCBIN_U32("graphics/interface/status_til
 const u32 gUnknown_08D98CC8[] = INCBIN_U32("graphics/interface/status_tilemap0.bin.lz");
 
 const u32 gBagMaleTiles[] = INCBIN_U32("graphics/misc/bag_male.4bpp.lz");
-const u32 gBagFemaleTiles[] = INCBIN_U32("graphics/misc/bag_female.4bpp.lz");
+
 const u32 gBagPalette[] = INCBIN_U32("graphics/misc/bag.gbapal.lz");
 
-const u32 gBagScreenMale_Pal[] = INCBIN_U32("graphics/interface/bag_screen_male.gbapal.lz");
-const u32 gBagScreenFemale_Pal[] = INCBIN_U32("graphics/interface/bag_screen_female.gbapal.lz");
+const u32 gBagScreen_Pal[] = INCBIN_U32("graphics/interface/bag_screen_male.gbapal.lz");
 
 const u32 gBagScreen_Gfx[] = INCBIN_U32("graphics/interface/bag_screen.4bpp.lz");
 const u32 gBagScreen_GfxTileMap[] = INCBIN_U32("graphics/interface/bag_screen_tilemap.bin.lz");
