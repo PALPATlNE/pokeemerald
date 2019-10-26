@@ -85,7 +85,7 @@ enum
     CANNOT_LEARN_MOVE_IS_EGG
 };
 
-struct Unk_Rodata1
+struct PartyMenuBoxInfoRects
 {
     void (*unk0)(u8, u8, u8, u8, u8, u8);
     u8 unk4[24];
@@ -117,7 +117,7 @@ struct Struct203CEC4
 
 struct Struct203CEDC
 {
-    const struct Unk_Rodata1 *unk0;
+    const struct PartyMenuBoxInfoRects *unk0;
     const u8 *unk4;
     u8 windowId;
     u8 monSpriteId;
@@ -428,23 +428,44 @@ static const struct BgTemplate gUnknown_086156B8[] =
     },
 };
 
-static const struct Unk_Rodata1 gUnknown_086156C4[] =
+static const struct PartyMenuBoxInfoRects sPartyBoxInfoRects[] =
 {
-    {BlitBitmapToPartyWindow_Default1, {0x18, 0xB, 0x28, 0xD, 0x20, 0x14, 0x20, 8, 0x40, 0x14, 8, 8, 0x26, 0x25, 0x18, 8, 0x35, 0x25, 0x18, 8, 0x18, 0x23, 0x30, 3}, 0xC, 0x22, 0x40, 0x10},
-    {BlitBitmapToPartyWindow_Default2, {0x16, 3, 0x28, 0xD, 0x1E, 0xC, 0x20, 8, 0x3E, 0xC, 8, 8, 0x66, 0xC, 0x18, 8, 0x75, 0xC, 0x18, 8, 0x58, 0xA, 0x30, 3}, 0x4D, 4, 0x40, 0x10},
+    {
+    BlitBitmapToPartyWindow_Default1, 
+        {
+            40, 3, 40, 13, //Nickname
+            4, 20, 32, 8, //Level
+            96, 4, 8, 8, //Gender
+            38, 20, 24, 8, //HP
+            54, 20, 24, 8, //Max HP
+            40, 18, 48, 3 //HP BAR
+        },
+        12, 34, 64, 16}, //Description, unused
+
+    {
+    BlitBitmapToPartyWindow_Default2, 
+        {
+            40, 3, 40, 13, //Nickname
+            4, 20, 32, 8, //Level
+            96, 4, 8, 8, //Gender
+            38, 20, 24, 8, //HP
+            54, 20, 24, 8, //Max HP
+            40, 18, 48, 3 //HP BAR
+        }, 
+        77, 4, 64, 16}, //Description, unused
 };
 
 static const u8 gUnknown_08615704[][6][8] =
 {
-	{
-		{16, 40, 20, 50, 50, 52, 16, 34},
-		{104, 18, 108, 28, 136, 27, 102, 25},
-		{104, 42, 108, 52, 136, 51, 102, 49},
-		{104, 66, 108, 76, 136, 75, 102, 73},
-		{104, 90, 108, 100, 136, 99, 102, 97},
-		{104, 114, 108, 124, 136, 123, 102, 121},
+	{//Party layout: Single
+		{24, 8, 32, 16, 12, 52, 24, 8},
+		{136, 16, 144, 24, 136, 27, 102, 25},
+		{24, 48, 32, 52, 136, 51, 102, 49},
+		{136, 56, 144, 64, 136, 75, 102, 73},
+		{24, 88, 32, 100, 136, 99, 102, 97},
+		{136, 96, 144, 104, 136, 123, 102, 121},
 	},
-	{
+	{//Party layout: Double
 		{16, 24, 20, 34, 50, 36, 16, 18},
 		{16, 80, 20, 90, 50, 92, 16, 74},
 		{104, 18, 108, 28, 136, 27, 102, 25},
@@ -452,7 +473,7 @@ static const u8 gUnknown_08615704[][6][8] =
 		{104, 82, 108, 92, 136, 91, 102, 89},
 		{104, 114, 108, 124, 136, 123, 102, 121},
 	},
-	{
+	{//Party layout: Multi
 		{16, 24, 20, 34, 50, 36, 16, 18},
 		{16, 80, 20, 90, 50, 92, 16, 74},
 		{104, 26, 106, 36, 136, 35, 102, 33},
@@ -460,7 +481,7 @@ static const u8 gUnknown_08615704[][6][8] =
 		{104, 82, 106, 92, 136, 91, 102, 89},
 		{104, 106, 106, 116, 136, 115, 102, 113},
 	},
-	{
+	{//Party layout: Multi Showcase
 		{16, 32, 20, 42, 50, 44, 16, 26},
 		{104, 34, 106, 44, 136, 43, 102, 41},
 		{104, 58, 106, 68, 136, 67, 102, 65},
@@ -483,61 +504,61 @@ static const u8 sFontColorTable[][3] =
 	{0, 1, 2},
 };
 
-static const struct WindowTemplate gUnknown_08615810[] =
+static const struct WindowTemplate sSinglePartyMenuWindowTemplate[] =
 {
 	{
 		.bg = 0,
 		.tilemapLeft = 1,
-		.tilemapTop = 3,
-		.width = 10,
-		.height = 7,
+		.tilemapTop = 0,
+		.width = 14,
+		.height = 5,
 		.paletteNum = 3,
 		.baseBlock = 0x63,
 	},
 	{
 		.bg = 0,
-		.tilemapLeft = 12,
+		.tilemapLeft = 15,
 		.tilemapTop = 1,
-		.width = 18,
-		.height = 3,
+		.width = 14,
+		.height = 5,
 		.paletteNum = 4,
 		.baseBlock = 0xA9,
 	},
 	{
 		.bg = 0,
-		.tilemapLeft = 12,
-		.tilemapTop = 4,
-		.width = 18,
-		.height = 3,
+		.tilemapLeft = 1,
+		.tilemapTop = 5,
+		.width = 14,
+		.height = 5,
 		.paletteNum = 5,
-		.baseBlock = 0xDF,
+		.baseBlock = 0xEF,
 	},
 	{
 		.bg = 0,
-		.tilemapLeft = 12,
-		.tilemapTop = 7,
-		.width = 18,
-		.height = 3,
+		.tilemapLeft = 15,
+		.tilemapTop = 6,
+		.width = 14,
+		.height = 5,
 		.paletteNum = 6,
-		.baseBlock = 0x115,
+		.baseBlock = 0x135,
 	},
 	{
 		.bg = 0,
-		.tilemapLeft = 12,
+		.tilemapLeft = 1,
 		.tilemapTop = 10,
-		.width = 18,
-		.height = 3,
+		.width = 14,
+		.height = 5,
 		.paletteNum = 7,
-		.baseBlock = 0x14B,
+		.baseBlock = 0x17B,
 	},
 	{
 		.bg = 0,
-		.tilemapLeft = 12,
-		.tilemapTop = 13,
-		.width = 18,
-		.height = 3,
+		.tilemapLeft = 15,
+		.tilemapTop = 11,
+		.width = 14,
+		.height = 5,
 		.paletteNum = 8,
-		.baseBlock = 0x181,
+		.baseBlock = 0x1C1,
 	},
 	{
 		.bg = 2,
@@ -714,7 +735,7 @@ static const struct WindowTemplate gUnknown_086158D0[] =
 		.width = 18,
 		.height = 3,
 		.paletteNum = 6,
-		.baseBlock = 0xDF,
+		.baseBlock = 0xEF,
 	},
 	{
 		.bg = 2,
@@ -723,7 +744,7 @@ static const struct WindowTemplate gUnknown_086158D0[] =
 		.width = 10,
 		.height = 7,
 		.paletteNum = 4,
-		.baseBlock = 0x115,
+		.baseBlock = 0x135,
 	},
 	{
 		.bg = 2,
@@ -732,16 +753,16 @@ static const struct WindowTemplate gUnknown_086158D0[] =
 		.width = 18,
 		.height = 3,
 		.paletteNum = 7,
-		.baseBlock = 0x16B,
+		.baseBlock = 0x17B,
 	},
 	{
 		.bg = 2,
 		.tilemapLeft = 12,
 		.tilemapTop = 15,
-		.width = 18,
+		.width = 1,
 		.height = 3,
 		.paletteNum = 8,
-		.baseBlock = 0x1A1,
+		.baseBlock = 0x1C1,
 	},
 	DUMMY_WIN_TEMPLATE
 };
@@ -754,7 +775,7 @@ static const struct WindowTemplate gUnknown_08615908 =
 	.width = 6,
 	.height = 2,
 	.paletteNum = 3,
-	.baseBlock = 0x1C7,
+	.baseBlock = 0x20D,
 };
 
 static const struct WindowTemplate gUnknown_08615910 =
@@ -765,7 +786,7 @@ static const struct WindowTemplate gUnknown_08615910 =
 	.width = 6,
 	.height = 2,
 	.paletteNum = 3,
-	.baseBlock = 0x1C7,
+	.baseBlock = 0x20D
 };
 
 static const struct WindowTemplate gUnknown_08615918 =
@@ -817,7 +838,7 @@ static const struct WindowTemplate gUnknown_08615938 =
 	.bg = 2,
 	.tilemapLeft = 1,
 	.tilemapTop = 17,
-	.width = 18,
+	.width = 14,
 	.height = 2,
 	.paletteNum = 15,
 	.baseBlock = 0x299,
@@ -918,39 +939,41 @@ static const struct WindowTemplate gUnknown_08615980 =
 	.bg = 2,
 	.tilemapLeft = 0,
 	.tilemapTop = 13,
-	.width = 18,
-	.height = 3,
+	.width = 14,
+	.height = 5,
 	.paletteNum = 12,
 	.baseBlock = 0x39D,
 };
 
-static const u8 sMainSlotTileNums[] = {24, 25, 25, 25, 25, 25, 25, 25, 25, 26,
-                                       32, 33, 33, 33, 33, 33, 33, 33, 33, 34,
-                                       32, 33, 33, 33, 33, 33, 33, 33, 33, 34,
-                                       32, 33, 33, 33, 33, 33, 33, 33, 33, 34,
-                                       40, 59, 60, 58, 58, 58, 58, 58, 58, 61,
-                                       15, 16, 16, 16, 16, 16, 16, 16, 16, 17,
-                                       46, 47, 47, 47, 47, 47, 47, 47, 47, 48};
+static const u8 sMainSlotTileNums[] = {24, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 26, 
+                                       32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 34,
+                                       32, 33, 33, 33, 52, 53, 53, 53, 53, 53, 53, 54, 33, 34,
+                                       32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 34,
+                                       46, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 48};
 
-static const u8 sMainSlotTileNums_Egg[] = {24, 25, 25, 25, 25, 25, 25, 25, 25, 26,
-                                           32, 33, 33, 33, 33, 33, 33, 33, 33, 34,
-                                           32, 33, 33, 33, 33, 33, 33, 33, 33, 34,
-                                           32, 33, 33, 33, 33, 33, 33, 33, 33, 34,
-                                           40, 41, 41, 41, 41, 41, 41, 41, 41, 42,
-                                           15, 16, 16, 16, 16, 16, 16, 16, 16, 17,
-                                           46, 47, 47, 47, 47, 47, 47, 47, 47, 48};
+static const u8 sMainSlotTileNums_Egg[] = {24, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 26,
+                                           32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 34,
+                                           32, 33, 33, 33, 52, 53, 53, 53, 53, 53, 53, 54, 33, 34,
+                                           32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 34,
+                                           46, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 48 };
 
-static const u8 sOtherSlotsTileNums[] = {43, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 45,
-                                         49, 33, 33, 33, 33, 33, 33, 33, 33, 52, 53, 51, 51, 51, 51, 51, 51, 54,
-                                         55, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 57};
+static const u8 sOtherSlotsTileNums[] = {24, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 26,
+                                         32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 34,
+                                         32, 33, 33, 33, 52, 53, 53, 53, 53, 53, 53, 54, 33, 34,
+                                         32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 34,
+                                         46, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 48 };
 
-static const u8 sOtherSlotsTileNums_Egg[] = {43, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 45,
-                                             49, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 50,
-                                             55, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 57};
+static const u8 sOtherSlotsTileNums_Egg[] = {24, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 26,
+                                             32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 34,
+                                             32, 33, 33, 33, 52, 53, 53, 53, 53, 53, 53, 54, 33, 34,
+                                             32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 34,
+                                             46, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 48 };
 
-static const u8 sEmptySlotTileNums[] = {21, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 23,
-                                        30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31,
-                                        37, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 39};
+static const u8 sEmptySlotTileNums[] = { 24, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 26,
+                                         32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 34,
+                                         32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 34,
+                                         32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 34,
+                                         46, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 48 };
 static const u8 gUnknown_08615AB6[] = {11, 12};
 static const u8 gUnknown_08615AB8[] = {9, 10};
 static const u8 gUnknown_08615ABA[] = {4, 5, 6};
@@ -1895,7 +1918,7 @@ static void PartyMenuInitHelperStructs(u8 a)
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        gUnknown_0203CEDC[i].unk0 = &gUnknown_086156C4[1];
+        gUnknown_0203CEDC[i].unk0 = &sPartyBoxInfoRects[1];
         gUnknown_0203CEDC[i].unk4 = gUnknown_08615704[a][i];
         gUnknown_0203CEDC[i].windowId = i;
         gUnknown_0203CEDC[i].monSpriteId = 0xFF;
@@ -1903,11 +1926,11 @@ static void PartyMenuInitHelperStructs(u8 a)
         gUnknown_0203CEDC[i].pokeballSpriteId = 0xFF;
         gUnknown_0203CEDC[i].statusSpriteId = 0xFF;
     }
-    gUnknown_0203CEDC[0].unk0 = &gUnknown_086156C4[0];
+    gUnknown_0203CEDC[0].unk0 = &sPartyBoxInfoRects[0];
     if (a == 3)
-        gUnknown_0203CEDC[3].unk0 = &gUnknown_086156C4[0];
+        gUnknown_0203CEDC[3].unk0 = &sPartyBoxInfoRects[0];
     else if (a != 0)
-        gUnknown_0203CEDC[1].unk0 = &gUnknown_086156C4[0];
+        gUnknown_0203CEDC[1].unk0 = &sPartyBoxInfoRects[0];
 }
 
 static void RenderPartyMenuBox(u8 slot)
@@ -3139,7 +3162,7 @@ static void sub_81B239C(u8 a)
     switch (a)
     {
     case 0:
-        InitWindows(gUnknown_08615810);
+        InitWindows(sSinglePartyMenuWindowTemplate);
         break;
     case 1:
         InitWindows(gUnknown_08615850);
@@ -3227,31 +3250,31 @@ static void BlitBitmapToPartyWindow_Default1(u8 windowId, u8 x, u8 y, u8 width, 
 {
     if (width == 0 && height == 0)
     {
-        width = 10;
-        height = 7;
+        width = 14;
+        height = 5;
     }
     if (isEgg == FALSE)
-        BlitBitmapToPartyWindow(windowId, sMainSlotTileNums, 10, x, y, width, height);
+        BlitBitmapToPartyWindow(windowId, sMainSlotTileNums, 14, x, y, width, height);
     else
-        BlitBitmapToPartyWindow(windowId, sMainSlotTileNums_Egg, 10, x, y, width, height);
+        BlitBitmapToPartyWindow(windowId, sMainSlotTileNums_Egg, 14, x, y, width, height);
 }
 
 static void BlitBitmapToPartyWindow_Default2(u8 windowId, u8 x, u8 y, u8 width, u8 height, u8 isEgg)
 {
     if (width == 0 && height == 0)
     {
-        width = 18;
-        height = 3;
+        width = 14;
+        height = 5;
     }
     if (isEgg == FALSE)
-        BlitBitmapToPartyWindow(windowId, sOtherSlotsTileNums, 18, x, y, width, height);
+        BlitBitmapToPartyWindow(windowId, sOtherSlotsTileNums, 14, x, y, width, height);
     else
-        BlitBitmapToPartyWindow(windowId, sOtherSlotsTileNums_Egg, 18, x, y, width, height);
+        BlitBitmapToPartyWindow(windowId, sOtherSlotsTileNums_Egg, 14, x, y, width, height);
 }
 
 static void DrawEmptySlot(u8 windowId)
 {
-    BlitBitmapToPartyWindow(windowId, sEmptySlotTileNums, 18, 0, 0, 18, 3);
+    BlitBitmapToPartyWindow(windowId, sEmptySlotTileNums, 14, 0, 0, 14, 5);
 }
 
 static void UpdateSelectedPartyBox(struct Struct203CEDC *ptr, u8 bitfield)
@@ -5014,11 +5037,11 @@ static void AnimateSelectedPartyIcon(u8 spriteId, u8 a)
         if (gSprites[spriteId].pos1.x == 16)
         {
             gSprites[spriteId].pos2.x = 0;
-            gSprites[spriteId].pos2.y = -4;
+            gSprites[spriteId].pos2.y = 0;
         }
         else
         {
-            gSprites[spriteId].pos2.x = -4;
+            gSprites[spriteId].pos2.x = 0;
             gSprites[spriteId].pos2.y = 0;
         }
         gSprites[spriteId].callback = UpdatePartyMonIconFrame;
@@ -5038,9 +5061,9 @@ static void UpdatePartyMonIconFrameAndBounce(struct Sprite *sprite)
     if (unk != 0)
     {
         if (unk & 1)
-            sprite->pos2.y = -3;
+            sprite->pos2.y = 0;
         else
-            sprite->pos2.y = 1;
+            sprite->pos2.y = 0;
     }
 }
 

@@ -3260,7 +3260,6 @@ static void CreatePageWindowTilemaps(u8 page)
         sMonSummaryScreen->summarySpriteIds[0] = CreateSprite(&sSpriteTemplate_SummaryIcons4, 24, 46, 0);
         sMonSummaryScreen->summarySpriteIds[1] = CreateSprite(&sSpriteTemplate_SummaryIcons5, 24, 91, 0);
         sMonSummaryScreen->summarySpriteIds[2] = CreateSprite(&sSpriteTemplate_SummaryIcons6, 31, 128, 0);
-        gSprites[sMonSummaryScreen->summarySpriteIds[2]].invisible = TRUE;
         gSprites[sMonSummaryScreen->summaryLaserSpriteIds[31]].invisible = FALSE;
         gSprites[sMonSummaryScreen->summaryLaserSpriteIds[32]].invisible = FALSE;
         gSprites[sMonSummaryScreen->summaryLaserSpriteIds[33]].invisible = FALSE;
