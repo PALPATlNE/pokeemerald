@@ -636,17 +636,6 @@ static const struct SpriteTemplate sInterfaceTextSpriteTemplate =
     .callback = sub_80BE758,
 };
 
-static const struct SpriteTemplate sRotatingPokeballSpriteTemplate =
-{
-    .tileTag = 4096,
-    .paletteTag = 4096,
-    .oam = &sOamData_855CFFC,
-    .anims = sSpriteAnimTable_855D11C,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = sub_80BE780,
-};
-
 static const struct SpriteTemplate sSeenOwnTextSpriteTemplate =
 {
     .tileTag = 4096,
@@ -904,6 +893,20 @@ static const struct WindowTemplate gUnknown_0856E670[] =
         .height = 2,
         .paletteNum = 15,
         .baseBlock = 0x0281,
+    },
+    DUMMY_WIN_TEMPLATE
+};
+
+static const struct WindowTemplate gPokedex_BaseStats[] =
+{
+    {
+        .bg = 0,
+        .tilemapLeft = 0,
+        .tilemapTop = 2,
+        .width = 5,
+        .height = 8,
+        .paletteNum = 0,
+        .baseBlock = 0x02BC,
     },
     DUMMY_WIN_TEMPLATE
 };
@@ -2188,7 +2191,7 @@ static void CreateInitialPokemonSprites(u16 selectedMon, u16 b)
     unk = GetPokemonSpriteToDisplay(selectedMon - 1);
     if (unk != 0xFFFF)
     {
-        spriteId = sub_80BDACC(unk, 0x60, 0x50);
+        spriteId = sub_80BDACC(unk, 80, 52);
         gSprites[spriteId].callback = sub_80BE4E0;
         gSprites[spriteId].data[5] = -32;
     }
@@ -2196,7 +2199,7 @@ static void CreateInitialPokemonSprites(u16 selectedMon, u16 b)
     unk = GetPokemonSpriteToDisplay(selectedMon);
     if (unk != 0xFFFF)
     {
-        spriteId = sub_80BDACC(unk, 0x60, 0x50);
+        spriteId = sub_80BDACC(unk, 80, 52);
         gSprites[spriteId].callback = sub_80BE4E0;
         gSprites[spriteId].data[5] = 0;
     }
@@ -2204,7 +2207,7 @@ static void CreateInitialPokemonSprites(u16 selectedMon, u16 b)
     unk = GetPokemonSpriteToDisplay(selectedMon + 1);
     if (unk != 0xFFFF)
     {
-        spriteId = sub_80BDACC(unk, 0x60, 0x50);
+        spriteId = sub_80BDACC(unk, 80, 52);
         gSprites[spriteId].callback = sub_80BE4E0;
         gSprites[spriteId].data[5] = 32;
     }
@@ -2270,7 +2273,7 @@ static void CreateNewPokemonSprite(u8 direction, u16 selectedMon)
             unk = GetPokemonSpriteToDisplay(selectedMon - 1);
             if (unk != 0xFFFF)
             {
-                spriteId = sub_80BDACC(unk, 0x60, 0x50);
+                spriteId = sub_80BDACC(unk, 80, 52);
                 gSprites[spriteId].callback = sub_80BE4E0;
                 gSprites[spriteId].data[5] = -64;
             }
@@ -2283,9 +2286,9 @@ static void CreateNewPokemonSprite(u8 direction, u16 selectedMon)
             unk = GetPokemonSpriteToDisplay(selectedMon + 1);
             if (unk != 0xFFFF)
             {
-                spriteId = sub_80BDACC(unk, 0x60, 0x50);
+                spriteId = sub_80BDACC(unk, 80, 52);
                 gSprites[spriteId].callback = sub_80BE4E0;
-                gSprites[spriteId].data[5] = 0x40;
+                gSprites[spriteId].data[5] = 64;
             }
             if (sPokedexView->unk630 <= 0xE)
                 sPokedexView->unk630++;
@@ -2478,54 +2481,22 @@ static void CreateInterfaceSprites(u8 a)
 {
     u8 spriteId;
     u16 r5;
-// Up arrow
-    spriteId = CreateSprite(&sArrowSpriteTemplate, 184, 4, 0);
-    gSprites[spriteId].data[1] = 0;
-// Down arrow
-    spriteId = CreateSprite(&sArrowSpriteTemplate, 184, 156, 0);
-    gSprites[spriteId].data[1] = 1;
-    gSprites[spriteId].vFlip = TRUE;
-
-    CreateSprite(&sScrollBarSpriteTemplate, 230, 20, 0);
-// Start button
-    CreateSprite(&sInterfaceTextSpriteTemplate, 16, 120, 0);
-// Menu text
-    spriteId = CreateSprite(&sInterfaceTextSpriteTemplate, 48, 120, 0);
-    StartSpriteAnim(&gSprites[spriteId], 3);
-// Select button
-    spriteId = CreateSprite(&sInterfaceTextSpriteTemplate, 16, 144, 0);
-    StartSpriteAnim(&gSprites[spriteId], 2);
-    gSprites[spriteId].data[2] = 0x80;
-// Search text
-    spriteId = CreateSprite(&sInterfaceTextSpriteTemplate, 48, 144, 0);
-    StartSpriteAnim(&gSprites[spriteId], 1);
-
-    spriteId = CreateSprite(&sRotatingPokeballSpriteTemplate, 0, 80, 2);
-    gSprites[spriteId].oam.affineMode = 1;
-    gSprites[spriteId].oam.matrixNum = 30;
-    gSprites[spriteId].data[0] = 0x1E;
-    gSprites[spriteId].data[1] = 0;
-
-    spriteId = CreateSprite(&sRotatingPokeballSpriteTemplate, 0, 80, 2);
-    gSprites[spriteId].oam.affineMode = 1;
-    gSprites[spriteId].oam.matrixNum = 31;
-    gSprites[spriteId].data[0] = 0x1F;
-    gSprites[spriteId].data[1] = 0x80;
 
     if (a == 0)
     {
         u32 _a;
+            //InitWindows(gPokedex_BaseStats);
+//BST Tags
+            AddTextPrinterParameterized4(9, 1, 0, 8, 0, 0, 0, -1, gText_DexHP);
 
-        if (!IsNationalPokedexEnabled())
-        {
 // Seen text
-            CreateSprite(&sSeenOwnTextSpriteTemplate, 32, 40, 1);
+            CreateSprite(&sSeenOwnTextSpriteTemplate, 16, 14, 1);
 // Own text
-            spriteId = CreateSprite(&sSeenOwnTextSpriteTemplate, 32, 72, 1);
+            spriteId = CreateSprite(&sSeenOwnTextSpriteTemplate, 64, 14, 1);
             StartSpriteAnim(&gSprites[spriteId], 1);
             _a = 0;
 // Seen value - 100s
-            spriteId = CreateSprite(&gUnknown_0855D224, 24, 48, 1);
+            spriteId = CreateSprite(&gUnknown_0855D224, 24, 8, 1);
             r5 = sPokedexView->seenCount / 100;
             StartSpriteAnim(&gSprites[spriteId], r5);
             if (r5 != 0)
@@ -2533,19 +2504,19 @@ static void CreateInterfaceSprites(u8 a)
             else
                 gSprites[spriteId].invisible = TRUE;
 // Seen value - 10s
-            spriteId = CreateSprite(&gUnknown_0855D224, 32, 48, 1);
+            spriteId = CreateSprite(&gUnknown_0855D224, 38, 7, 1);
             r5 = (sPokedexView->seenCount % 100) / 10;
             if (r5 != 0 || _a != 0)
                 StartSpriteAnim(&gSprites[spriteId], r5);
             else
                 gSprites[spriteId].invisible = TRUE;
 // Seen value - 1s
-            spriteId = CreateSprite(&gUnknown_0855D224, 40, 48, 1);
+            spriteId = CreateSprite(&gUnknown_0855D224, 45, 7, 1);
             r5 = (sPokedexView->seenCount % 100) % 10;
             StartSpriteAnim(&gSprites[spriteId], r5);
             _a = 0;
 // Owned value - 100s
-            spriteId = CreateSprite(&gUnknown_0855D224, 24, 80, 1);
+            spriteId = CreateSprite(&gUnknown_0855D224, 79, 7, 1);
             r5 = sPokedexView->ownCount / 100;
             StartSpriteAnim(&gSprites[spriteId], r5);
             if (r5 != 0)
@@ -2553,124 +2524,17 @@ static void CreateInterfaceSprites(u8 a)
             else
                 gSprites[spriteId].invisible = TRUE;
 // Owned value - 10s
-            spriteId = CreateSprite(&gUnknown_0855D224, 32, 80, 1);
+            spriteId = CreateSprite(&gUnknown_0855D224, 88, 7, 1);
             r5 = (sPokedexView->ownCount % 100) / 10;
             if (r5 != 0 || _a != 0)
                 StartSpriteAnim(&gSprites[spriteId], r5);
             else
                 gSprites[spriteId].invisible = TRUE;
 // Owned value -1s
-            spriteId = CreateSprite(&gUnknown_0855D224, 40, 80, 1);
+            spriteId = CreateSprite(&gUnknown_0855D224, 95, 7, 1);
             r5 = (sPokedexView->ownCount % 100) % 10;
             StartSpriteAnim(&gSprites[spriteId], r5);
-        }
-        else
-        {
-            u16 r6;
-
-            CreateSprite(&sSeenOwnTextSpriteTemplate, 32, 40, 1);
-
-            spriteId = CreateSprite(&sSeenOwnTextSpriteTemplate, 32, 76, 1);
-            StartSpriteAnim(&gSprites[spriteId], 1);
-
-            CreateSprite(&gUnknown_0855D20C, 17, 45, 1);
-
-            spriteId = CreateSprite(&gUnknown_0855D20C, 17, 55, 1);
-            StartSpriteAnim(&gSprites[spriteId], 1);
-
-            CreateSprite(&gUnknown_0855D20C, 17, 81, 1);
-
-            spriteId = CreateSprite(&gUnknown_0855D20C, 17, 91, 1);
-            StartSpriteAnim(&gSprites[spriteId], 1);
-
-            r6 = GetHoennPokedexCount(FLAG_GET_SEEN);
-            _a = 0;
-
-            spriteId = CreateSprite(&gUnknown_0855D23C, 40, 45, 1);
-            r5 = r6 / 100;
-            StartSpriteAnim(&gSprites[spriteId], r5);
-            if (r5 != 0)
-                _a = 1;
-            else
-                gSprites[spriteId].invisible = TRUE;
-
-            spriteId = CreateSprite(&gUnknown_0855D23C, 48, 45, 1);
-            r5 = (r6 % 100) / 10;
-            if (r5 != 0 || _a != 0)
-                StartSpriteAnim(&gSprites[spriteId], r5);
-            else
-                gSprites[spriteId].invisible = TRUE;
-
-            spriteId = CreateSprite(&gUnknown_0855D23C, 56, 45, 1);
-            r5 = (r6 % 100) % 10;
-            StartSpriteAnim(&gSprites[spriteId], r5);
-
-            _a = 0;
-
-            spriteId = CreateSprite(&gUnknown_0855D23C, 40, 55, 1);
-            r5 = sPokedexView->seenCount / 100;
-            StartSpriteAnim(&gSprites[spriteId], r5);
-            if (r5 != 0)
-                _a = 1;
-            else
-                gSprites[spriteId].invisible = TRUE;
-
-            spriteId = CreateSprite(&gUnknown_0855D23C, 48, 55, 1);
-            r5 = (sPokedexView->seenCount % 100) / 10;
-            if (r5 != 0 || _a != 0)
-                StartSpriteAnim(&gSprites[spriteId], r5);
-            else
-                gSprites[spriteId].invisible = TRUE;
-
-            spriteId = CreateSprite(&gUnknown_0855D23C, 56, 55, 1);
-            r5 = (sPokedexView->seenCount % 100) % 10;
-            StartSpriteAnim(&gSprites[spriteId], r5);
-
-            r6 = GetHoennPokedexCount(FLAG_GET_CAUGHT);
-            _a = 0;
-
-            spriteId = CreateSprite(&gUnknown_0855D23C, 40, 81, 1);
-            r5 = r6 / 100;
-            StartSpriteAnim(&gSprites[spriteId], r5);
-            if (r5 != 0)
-                _a = 1;
-            else
-                gSprites[spriteId].invisible = TRUE;
-
-            spriteId = CreateSprite(&gUnknown_0855D23C, 48, 81, 1);
-            r5 = (r6 % 100) / 10;
-            if (r5 != 0 || _a != 0)
-                StartSpriteAnim(&gSprites[spriteId], r5);
-            else
-                gSprites[spriteId].invisible = TRUE;
-
-            spriteId = CreateSprite(&gUnknown_0855D23C, 56, 81, 1);
-            r5 = (r6 % 100) % 10;
-            StartSpriteAnim(&gSprites[spriteId], r5);
-
-            _a = 0;
-
-            spriteId = CreateSprite(&gUnknown_0855D23C, 40, 91, 1);
-            r5 = sPokedexView->ownCount / 100;
-            StartSpriteAnim(&gSprites[spriteId], r5);
-            if (r5 != 0)
-                _a = 1;
-            else
-                gSprites[spriteId].invisible = TRUE;
-
-            spriteId = CreateSprite(&gUnknown_0855D23C, 48, 91, 1);
-            r5 = (sPokedexView->ownCount % 100) / 10;
-            if (r5 != 0 || _a != 0)
-                StartSpriteAnim(&gSprites[spriteId], r5);
-            else
-                gSprites[spriteId].invisible = TRUE;
-
-            spriteId = CreateSprite(&gUnknown_0855D23C, 56, 91, 1);
-            r5 = (sPokedexView->ownCount % 100) % 10;
-            StartSpriteAnim(&gSprites[spriteId], r5);
-        }
-        spriteId = CreateSprite(&gUnknown_0855D254, 136, 96, 1);
-        gSprites[spriteId].invisible = TRUE;
+  
     }
     else
     {
@@ -2815,12 +2679,12 @@ void sub_80BE780(struct Sprite *sprite)
 
         val = sPokedexView->unk62C + sprite->data[1];
         r3 = gSineTable[val];
-        r0 = gSineTable[val + 0x40];
+        r0 = gSineTable[val + 0];
         SetOamMatrix(sprite->data[0], r0, r3, -r3, r0);
 
         val = sPokedexView->unk62C + (sprite->data[1] + 0x40);
         r3 = gSineTable[val];
-        r0 = gSineTable[val + 0x40];
+        r0 = gSineTable[val + 0];
         sprite->pos2.x = r0 * 40 / 256;
         sprite->pos2.y = r3 * 40 / 256;
     }
@@ -5407,7 +5271,7 @@ void sub_80C20F8(u8 taskId)
 {
     u16 var;
 
-    sub_80C12B0(0x28, 0x10, 0x60, 0x50);
+    sub_80C12B0(0x28, 0x10, 80, 52);
 
     var = gTasks[taskId].data[6] + gTasks[taskId].data[7];
     sub_80C1270(gDexSearchAlphaOptions[var].title, 0x2D, 0x11);

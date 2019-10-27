@@ -106,6 +106,13 @@ extern const u8 gText_PokeBalls[];
 extern const u8 gText_Berries[];
 extern const u8 gText_Berry[];
 
+extern const u8 gText_DexHP[];
+extern const u8 gText_DexAtk[];
+extern const u8 gText_DexDef[];
+extern const u8 gText_DexSpe[];
+extern const u8 gText_DexSpA[];
+extern const u8 gText_DexSpD[];
+
 extern const u8 gText_Desk[];
 extern const u8 gText_Chair[];
 extern const u8 gText_Plant[];

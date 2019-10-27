@@ -458,12 +458,12 @@ static const struct PartyMenuBoxInfoRects sPartyBoxInfoRects[] =
 static const u8 gUnknown_08615704[][6][8] =
 {
 	{//Party layout: Single
-		{24, 8, 32, 16, 12, 52, 24, 8},
-		{136, 16, 144, 24, 136, 27, 102, 25},
-		{24, 48, 32, 52, 136, 51, 102, 49},
-		{136, 56, 144, 64, 136, 75, 102, 73},
-		{24, 88, 32, 100, 136, 99, 102, 97},
-		{136, 96, 144, 104, 136, 123, 102, 121},
+		{24, 8, 32, 16, 24, 28, 24, 8}, //2 first sets: icon position| Second set: Held Item icon| Third set: Status symbol
+		{136, 16, 144, 24, 136, 36, 102, 25},
+		{24, 48, 32, 52, 24, 68, 102, 49},
+		{136, 56, 144, 64, 136, 76, 102, 73},
+		{24, 88, 32, 100, 24, 108, 102, 97},
+		{136, 96, 144, 104, 136, 116, 102, 121},
 	},
 	{//Party layout: Double
 		{16, 24, 20, 34, 50, 36, 16, 18},
@@ -567,7 +567,7 @@ static const struct WindowTemplate sSinglePartyMenuWindowTemplate[] =
 		.width = 28,
 		.height = 4,
 		.paletteNum = 14,
-		.baseBlock = 0x1DF,
+		.baseBlock = 0x26D,
 	},
 	DUMMY_WIN_TEMPLATE
 };
@@ -635,7 +635,7 @@ static const struct WindowTemplate gUnknown_08615850[] =
 		.width = 28,
 		.height = 4,
 		.paletteNum = 14,
-		.baseBlock = 0x1DF,
+		.baseBlock = 0x26D,
 	},
 	DUMMY_WIN_TEMPLATE
 };
@@ -703,7 +703,7 @@ static const struct WindowTemplate gUnknown_08615890[] =
 		.width = 28,
 		.height = 4,
 		.paletteNum = 14,
-		.baseBlock = 0x1DF,
+		.baseBlock = 0x26D,
 	},
 	DUMMY_WIN_TEMPLATE
 };
@@ -808,7 +808,7 @@ static const struct WindowTemplate gUnknown_08615920 =
 	.width = 21,
 	.height = 2,
 	.paletteNum = 15,
-	.baseBlock = 0x24F,
+	.baseBlock = 0x26D,
 };
 
 static const struct WindowTemplate gUnknown_08615928 =
@@ -930,7 +930,7 @@ static const struct WindowTemplate gUnknown_08615978 =
 	.width = 27,
 	.height = 4,
 	.paletteNum = 14,
-	.baseBlock = 0x1DF,
+	.baseBlock = 0x26D,
 };
 
 // Unused.
