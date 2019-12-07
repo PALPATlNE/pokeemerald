@@ -1093,7 +1093,7 @@ const struct ContestPokemon gContestOpponents[] =
         {
             MOVE_TEETER_DANCE,
             MOVE_PSYCH_UP,
-            MOVE_HYPNOSIS,
+            MOVE_BRAVIARYSIS,
             MOVE_UPROAR
         },
         .cool = 25,
@@ -1369,7 +1369,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_JADA] = {
         .species = SPECIES_HERDIER,
-        .nickname = _("SEELEY"),
+        .nickname = _("HERDIEREY"),
         .trainerName = _("JADA"),
         .trainerGfxId = EVENT_OBJ_GFX_WOMAN_2,
         .aiChecks = 0x21000FFF,
@@ -2020,7 +2020,7 @@ const struct ContestPokemon gContestOpponents[] =
         .moves =
         {
             MOVE_STOMP,
-            MOVE_HYPNOSIS,
+            MOVE_BRAVIARYSIS,
             MOVE_EGG_BOMB,
             MOVE_SKILL_SWAP
         },
@@ -2180,7 +2180,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = 0xFFFF
     },
     [CONTEST_OPPONENT_JAMIE] = {
-        .species = SPECIES_DEERLING,
+        .species = SPECIES_AUDINO,
         .nickname = _("DILTOT"),
         .trainerName = _("JAMIE"),
         .trainerGfxId = EVENT_OBJ_GFX_WOMAN_5,

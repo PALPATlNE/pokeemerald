@@ -1235,7 +1235,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
     },
 
-    [MOVE_HYPNOSIS] =
+    [MOVE_BRAVIARYSIS] =
     {
         .effect = EFFECT_SLEEP,
         .power = 0,

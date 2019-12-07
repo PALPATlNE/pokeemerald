@@ -45,7 +45,7 @@
 
 extern u8 BerryTree_EventScript_ItemUsePlantBerry[];
 extern u8 BerryTree_EventScript_ItemUseWailmerPail[];
-extern u8 BattleFrontier_OutsideEast_EventScript_WaterSudowoodo[];
+extern u8 BattleFrontier_OutsideEast_EventScript_WaterGible[];
 
 void SetUpItemUseCallback(u8 taskId);
 void MapPostLoadHook_UseItem(void);
@@ -63,7 +63,7 @@ void sub_80FD7C8(u8 taskId);
 void sub_80FDC00(u8 taskId);
 void ItemUseOnFieldCB_Berry(u8 taskId);
 void ItemUseOnFieldCB_WailmerPailBerry(u8 taskId);
-void ItemUseOnFieldCB_WailmerPailSudowoodo(u8 taskId);
+void ItemUseOnFieldCB_WailmerPailGible(u8 taskId);
 void sub_80FDF90(u8 taskId);
 void task08_0809AD8C(u8 taskId);
 void sub_80FE024(u8 taskId);
@@ -81,7 +81,7 @@ u8 sub_80FD9B0(s16 a, s16 b);
 void sub_80FDA24(u8 a);
 void sub_80FD8E0(u8 taskId, s16 x, s16 y);
 void sub_80FDBEC(void);
-bool8 TryToWaterSudowoodo(void);
+bool8 TryToWaterGible(void);
 void ItemUseOutOfBattle_CannotUse(u8 taskId);
 
 // EWRAM variables
@@ -676,9 +676,9 @@ void ItemUseOnFieldCB_Berry(u8 taskId)
 
 void ItemUseOutOfBattle_WailmerPail(u8 taskId)
 {
-    if (TryToWaterSudowoodo() == TRUE)
+    if (TryToWaterGible() == TRUE)
     {
-        gUnknown_0203A0F4 = ItemUseOnFieldCB_WailmerPailSudowoodo;
+        gUnknown_0203A0F4 = ItemUseOnFieldCB_WailmerPailGible;
         SetUpItemUseOnFieldCallback(taskId);
     }
     else if (TryToWaterBerryTree() == TRUE)
@@ -699,7 +699,7 @@ void ItemUseOnFieldCB_WailmerPailBerry(u8 taskId)
     DestroyTask(taskId);
 }
 
-bool8 TryToWaterSudowoodo(void)
+bool8 TryToWaterGible(void)
 {
     u16 x, y;
     u8 z;
@@ -707,16 +707,16 @@ bool8 TryToWaterSudowoodo(void)
     GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
     z = PlayerGetZCoord();
     objId = GetEventObjectIdByXYZ(x, y, z);
-    if (objId == EVENT_OBJECTS_COUNT || gEventObjects[objId].graphicsId != EVENT_OBJ_GFX_SUDOWOODO)
+    if (objId == EVENT_OBJECTS_COUNT || gEventObjects[objId].graphicsId != EVENT_OBJ_GFX_GIBLE)
         return FALSE;
     else
         return TRUE;
 }
 
-void ItemUseOnFieldCB_WailmerPailSudowoodo(u8 taskId)
+void ItemUseOnFieldCB_WailmerPailGible(u8 taskId)
 {
     ScriptContext2_Enable();
-    ScriptContext1_SetupScript(BattleFrontier_OutsideEast_EventScript_WaterSudowoodo);
+    ScriptContext1_SetupScript(BattleFrontier_OutsideEast_EventScript_WaterGible);
     DestroyTask(taskId);
 }
 

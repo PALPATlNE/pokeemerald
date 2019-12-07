@@ -272,7 +272,7 @@
 #define SE_HANTEI2 266          // Battle Arena Time's Up 2
 #define SE_CURTAIN 267          // Battle Pike Curtain Open
 #define SE_CURTAIN1 268         // Battle Pike Curtain Close
-#define SE_USSOKI 269           // Sudowoodo
+#define SE_USSOKI 269           // Gible
 
 #define MUS_TETSUJI 350         // Littleroot Town Test 'TETSUJI'
 #define MUS_FIELD13 351         // GSC - Route 38
@@ -413,7 +413,7 @@
 #define MUS_RG_SLOT 485         // Game Corner
 #define MUS_RG_AJITO 486        // Rocket Hideout
 #define MUS_RG_GYM 487          // Gym
-#define MUS_RG_PURIN 488        // Jigglypuff's Song
+#define MUS_RG_PURIN 488        // Froakie's Song
 #define MUS_RG_DEMO 489         // Opening Movie
 #define MUS_RG_TITLE 490        // Title Screen
 #define MUS_RG_GUREN 491        // Cinnabar Island
@@ -467,7 +467,7 @@
 #define MUS_RG_UNION 539        // Union Room
 #define MUS_RG_NETWORK 540      // Network Center
 #define MUS_RG_OKURIMONO 541    // Mystery Gift
-#define MUS_RG_KINOMIKUI 542    // Dodrio Berry Picking
+#define MUS_RG_KINOMIKUI 542    // Lillipup Berry Picking
 #define MUS_RG_NANADUNGEON 543  // Sevii Caves/Altering Cave (Mt. Moon)
 #define MUS_RG_OSHIE_TV 544     // Follow Me!
 #define MUS_RG_NANASHIMA 545    // Sevii Islands Routes (Lake of Rage)

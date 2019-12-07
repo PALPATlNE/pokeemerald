@@ -65,11 +65,11 @@ FallarborTown_Text_1EB2DE: @ 81EB2DE
 
 FallarborTown_Text_1EB35F: @ 81EB35F
 	.string "See! Take a look!\n"
-	.string "This is my precious AZURILL!\p"
+	.string "This is my precious CARRACOSTA!\p"
 	.string "It's slick and smooth and plushy, too!$"
 
 FallarborTown_Text_1EB3B5: @ 81EB3B5
-	.string "AZURILL: Rooreelooo.$"
+	.string "CARRACOSTA: Rooreelooo.$"
 
 FallarborTown_Text_1EB3CA: @ 81EB3CA
 	.string "Have you already challenged FLANNERY,\n"

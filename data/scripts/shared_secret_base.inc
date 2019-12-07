@@ -189,7 +189,7 @@ SecretBase_EventScript_ShieldOrToyTV:: @ 823B68C
     compare VAR_RESULT, 1
     goto_if_eq SecretBase_EventScript_ToyTV
     compare VAR_RESULT, 2
-    goto_if_eq SecretBase_EventScript_SeedotTV
+    goto_if_eq SecretBase_EventScript_PanchamTV
     compare VAR_RESULT, 3
     goto_if_eq SecretBase_EventScript_SkittyTV
     end
@@ -202,8 +202,8 @@ SecretBase_EventScript_ToyTV:: @ 823B6C5
     msgbox SecretBase_Text_ToyTV, MSGBOX_SIGN
     end
 
-SecretBase_EventScript_SeedotTV:: @ 823B6CE
-    msgbox SecretBase_Text_SeedotTV, MSGBOX_SIGN
+SecretBase_EventScript_PanchamTV:: @ 823B6CE
+    msgbox SecretBase_Text_PanchamTV, MSGBOX_SIGN
     end
 
 SecretBase_EventScript_SkittyTV:: @ 823B6D7

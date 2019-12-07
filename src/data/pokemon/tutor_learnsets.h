@@ -1217,7 +1217,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SLEEP_TALK)
                                 | TUTOR(MOVE_SWIFT)),
 
-    [SPECIES_MAGNEZONE        = (TUTOR(MOVE_SWORDS_DANCE)
+    [SPECIES_MAGNEZONE]        = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
@@ -1704,7 +1704,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FIRE_PUNCH)
                                 | TUTOR(MOVE_FURY_CUTTER)),
 
-    [SPECIES_SCRAGGY]           = (TUTOR(MOVE_DOUBLE_EDGE)
+    [SPECIES_SPINARAK]           = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
@@ -1714,7 +1714,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SLEEP_TALK)
                                 | TUTOR(MOVE_SWIFT)),
 
-    [SPECIES_SCRAFTY]           = (TUTOR(MOVE_DOUBLE_EDGE)
+    [SPECIES_ARIADOS]           = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
@@ -2800,7 +2800,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_SLEEP_TALK)),
 
-    [SPECIES_YANMA]            = (TUTOR(MOVE_DOUBLE_EDGE)
+    [SPECIES_WEAVILE]            = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_DREAM_EATER)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -2963,7 +2963,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SLEEP_TALK)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
 
-    [SPECIES_DEERLING]        = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_AUDINO]        = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_COUNTER)
                                 | TUTOR(MOVE_MIMIC)
@@ -5283,7 +5283,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FIRE_PUNCH)
                                 | TUTOR(MOVE_FURY_CUTTER)),
 
-    [SPECIES_CELEBI]         = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_FILLER3]         = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_THUNDER_WAVE)

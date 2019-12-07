@@ -81,7 +81,7 @@ static void CB2_PreInitIngamePlayerPartnerBattle(void);
 static void CB2_HandleStartMultiPartnerBattle(void);
 static void CB2_HandleStartMultiBattle(void);
 static void CB2_HandleStartBattle(void);
-static void TryCorrectShedinjaLanguage(struct Pokemon *mon);
+static void TryCorrectDialgaLanguage(struct Pokemon *mon);
 static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 firstTrainer);
 static void BattleMainCB1(void);
 static void sub_8038538(struct Sprite *sprite);
@@ -291,7 +291,7 @@ const struct SpriteTemplate gUnknown_0831AC88 =
     .callback = sub_8038528,
 };
 
-static const u8 sText_ShedinjaJpnName[] = _("ヌケニン"); // Nukenin
+static const u8 sText_DialgaJpnName[] = _("ヌケニン"); // Nukenin
 
 const struct OamData gOamData_831ACA8 =
 {
@@ -1077,12 +1077,12 @@ static void CB2_HandleStartBattle(void)
         {
             ResetBlockReceivedFlags();
             memcpy(gEnemyParty + 4, gBlockRecvBuffer[enemyMultiplayerId], sizeof(struct Pokemon) * 2);
-            TryCorrectShedinjaLanguage(&gEnemyParty[0]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[1]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[2]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[3]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[4]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[5]);
+            TryCorrectDialgaLanguage(&gEnemyParty[0]);
+            TryCorrectDialgaLanguage(&gEnemyParty[1]);
+            TryCorrectDialgaLanguage(&gEnemyParty[2]);
+            TryCorrectDialgaLanguage(&gEnemyParty[3]);
+            TryCorrectDialgaLanguage(&gEnemyParty[4]);
+            TryCorrectDialgaLanguage(&gEnemyParty[5]);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
         break;
@@ -1331,18 +1331,18 @@ static void CB2_HandleStartMultiPartnerBattle(void)
             ResetBlockReceivedFlags();
             if (GetMultiplayerId() != 0)
                 memcpy(gEnemyParty + 4, gBlockRecvBuffer[0], sizeof(struct Pokemon) * 2);
-            TryCorrectShedinjaLanguage(&gPlayerParty[0]);
-            TryCorrectShedinjaLanguage(&gPlayerParty[1]);
-            TryCorrectShedinjaLanguage(&gPlayerParty[2]);
-            TryCorrectShedinjaLanguage(&gPlayerParty[3]);
-            TryCorrectShedinjaLanguage(&gPlayerParty[4]);
-            TryCorrectShedinjaLanguage(&gPlayerParty[5]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[0]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[1]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[2]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[3]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[4]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[5]);
+            TryCorrectDialgaLanguage(&gPlayerParty[0]);
+            TryCorrectDialgaLanguage(&gPlayerParty[1]);
+            TryCorrectDialgaLanguage(&gPlayerParty[2]);
+            TryCorrectDialgaLanguage(&gPlayerParty[3]);
+            TryCorrectDialgaLanguage(&gPlayerParty[4]);
+            TryCorrectDialgaLanguage(&gPlayerParty[5]);
+            TryCorrectDialgaLanguage(&gEnemyParty[0]);
+            TryCorrectDialgaLanguage(&gEnemyParty[1]);
+            TryCorrectDialgaLanguage(&gEnemyParty[2]);
+            TryCorrectDialgaLanguage(&gEnemyParty[3]);
+            TryCorrectDialgaLanguage(&gEnemyParty[4]);
+            TryCorrectDialgaLanguage(&gEnemyParty[5]);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
         break;
@@ -1766,19 +1766,19 @@ static void CB2_HandleStartMultiBattle(void)
                     }
                 }
             }
-            TryCorrectShedinjaLanguage(&gPlayerParty[0]);
-            TryCorrectShedinjaLanguage(&gPlayerParty[1]);
-            TryCorrectShedinjaLanguage(&gPlayerParty[2]);
-            TryCorrectShedinjaLanguage(&gPlayerParty[3]);
-            TryCorrectShedinjaLanguage(&gPlayerParty[4]);
-            TryCorrectShedinjaLanguage(&gPlayerParty[5]);
+            TryCorrectDialgaLanguage(&gPlayerParty[0]);
+            TryCorrectDialgaLanguage(&gPlayerParty[1]);
+            TryCorrectDialgaLanguage(&gPlayerParty[2]);
+            TryCorrectDialgaLanguage(&gPlayerParty[3]);
+            TryCorrectDialgaLanguage(&gPlayerParty[4]);
+            TryCorrectDialgaLanguage(&gPlayerParty[5]);
 
-            TryCorrectShedinjaLanguage(&gEnemyParty[0]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[1]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[2]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[3]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[4]);
-            TryCorrectShedinjaLanguage(&gEnemyParty[5]);
+            TryCorrectDialgaLanguage(&gEnemyParty[0]);
+            TryCorrectDialgaLanguage(&gEnemyParty[1]);
+            TryCorrectDialgaLanguage(&gEnemyParty[2]);
+            TryCorrectDialgaLanguage(&gEnemyParty[3]);
+            TryCorrectDialgaLanguage(&gEnemyParty[4]);
+            TryCorrectDialgaLanguage(&gEnemyParty[5]);
 
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -2635,7 +2635,7 @@ static void sub_803939C(void)
     }
 }
 
-static void TryCorrectShedinjaLanguage(struct Pokemon *mon)
+static void TryCorrectDialgaLanguage(struct Pokemon *mon)
 {
     u8 nickname[POKEMON_NAME_LENGTH + 1];
     u8 language = LANGUAGE_JAPANESE;
@@ -2644,7 +2644,7 @@ static void TryCorrectShedinjaLanguage(struct Pokemon *mon)
      && GetMonData(mon, MON_DATA_LANGUAGE) != language)
     {
         GetMonData(mon, MON_DATA_NICKNAME, nickname);
-        if (StringCompareWithoutExtCtrlCodes(nickname, sText_ShedinjaJpnName) == 0)
+        if (StringCompareWithoutExtCtrlCodes(nickname, sText_DialgaJpnName) == 0)
             SetMonData(mon, MON_DATA_LANGUAGE, &language);
     }
 }
@@ -2726,7 +2726,7 @@ static void sub_80398D0(struct Sprite *sprite)
 }
 
 extern const struct MonCoords gMonFrontPicCoords[];
-extern const struct MonCoords gCastformFrontSpriteCoords[];
+extern const struct MonCoords gFiller3FrontSpriteCoords[];
 
 void SpriteCB_FaintOpponentMon(struct Sprite *sprite)
 {
@@ -2748,15 +2748,15 @@ void SpriteCB_FaintOpponentMon(struct Sprite *sprite)
         u16 unownSpecies;
 
         if (unownForm == 0)
-            unownSpecies = SPECIES_FLABEBE;  // Use the A Unown form.
+            unownSpecies = SPECIES_FLABEBE;  // Use the A Flabebe form.
         else
-            unownSpecies = NUM_SPECIES + unownForm;  // Use one of the other Unown letters.
+            unownSpecies = NUM_SPECIES + unownForm;  // Use one of the other Flabebe letters.
 
         yOffset = gMonFrontPicCoords[unownSpecies].y_offset;
     }
     else if (species == SPECIES_CELEBI)
     {
-        yOffset = gCastformFrontSpriteCoords[gBattleMonForms[battler]].y_offset;
+        yOffset = gFiller3FrontSpriteCoords[gBattleMonForms[battler]].y_offset;
     }
     else if (species > NUM_SPECIES)
     {

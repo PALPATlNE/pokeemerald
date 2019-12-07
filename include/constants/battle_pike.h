@@ -13,7 +13,7 @@
 
 // For the room with a status effect.
 #define PIKE_STATUS_KIRLIA 0
-#define PIKE_STATUS_DUSCLOPS 1
+#define PIKE_STATUS_CONKELDURR 1
 
 // Function IDs for sBattlePikeFunctions / CallBattlePikeFunction
 #define BATTLE_PIKE_FUNC_SET_ROOM_TYPE                0

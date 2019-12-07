@@ -5,33 +5,33 @@ Route120_MapScripts:: @ 81F53EC
 	.byte 0
 
 Route120_OnResume: @ 81F53FC
-	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, Route120_EventScript_RemoveKecleonObject
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, Route120_EventScript_RemoveRoggenrolaObject
 	end
 
-Route120_EventScript_RemoveKecleonObject:: @ 81F5406
+Route120_EventScript_RemoveRoggenrolaObject:: @ 81F5406
 	compare VAR_0x8009, 0
-	call_if_eq Route120_EventScript_RemoveBridgeKecleon
+	call_if_eq Route120_EventScript_RemoveBridgeRoggenrola
 	compare VAR_0x8009, 1
-	call_if_eq Route120_EventScript_RemoveKecleon
+	call_if_eq Route120_EventScript_RemoveRoggenrola
 	compare VAR_0x8009, 2
-	call_if_eq Route120_EventScript_RemoveKecleon
+	call_if_eq Route120_EventScript_RemoveRoggenrola
 	compare VAR_0x8009, 3
-	call_if_eq Route120_EventScript_RemoveKecleon
+	call_if_eq Route120_EventScript_RemoveRoggenrola
 	compare VAR_0x8009, 4
-	call_if_eq Route120_EventScript_RemoveKecleon
+	call_if_eq Route120_EventScript_RemoveRoggenrola
 	compare VAR_0x8009, 5
-	call_if_eq Route120_EventScript_RemoveKecleon
+	call_if_eq Route120_EventScript_RemoveRoggenrola
 	return
 
-Route120_EventScript_RemoveBridgeKecleon:: @ 81F5449
+Route120_EventScript_RemoveBridgeRoggenrola:: @ 81F5449
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_ne Common_EventScript_NopReturn
-	removeobject 30 @ Invisible Bridge Kecleon
-	removeobject 36 @ Visible Bridge Kecleon
+	removeobject 30 @ Invisible Bridge Roggenrola
+	removeobject 36 @ Visible Bridge Roggenrola
 	return
 
-Route120_EventScript_RemoveKecleon:: @ 81F5460
+Route120_EventScript_RemoveRoggenrola:: @ 81F5460
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_ne Common_EventScript_NopReturn
@@ -50,8 +50,8 @@ Route120_EventScript_1F5490:: @ 81F5490
 	return
 
 Route120_EventScript_1F54A3:: @ 81F54A3
-	setmetatile 13, 15, METATILE_Fortree_WoodBridge_Kecleon0, 0
-	setmetatile 12, 16, METATILE_Fortree_WoodBridge_Kecleon1, 0
+	setmetatile 13, 15, METATILE_Fortree_WoodBridge_Roggenrola0, 0
+	setmetatile 12, 16, METATILE_Fortree_WoodBridge_Roggenrola1, 0
 	setmetatile 12, 17, METATILE_General_ReflectiveWater, 0
 	setmetatile 13, 17, METATILE_General_ReflectiveWater, 0
 	return
@@ -173,7 +173,7 @@ Route120_EventScript_Steven:: @ 81F5641
 	msgbox Route120_Text_StevenGreeting, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_eq Route120_EventScript_StevenNotReady
-	goto Route120_EventScript_StevenBattleKecleon
+	goto Route120_EventScript_StevenBattleRoggenrola
 	end
 
 Route120_EventScript_StevenNotReady:: @ 81F5665
@@ -186,16 +186,16 @@ Route120_EventScript_1F5672:: @ 81F5672
 	msgbox Route120_Text_StevenReadyForBattle, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_eq Route120_EventScript_StevenNotReady
-	goto Route120_EventScript_StevenBattleKecleon
+	goto Route120_EventScript_StevenBattleRoggenrola
 	end
 
-Route120_EventScript_StevenBattleKecleon:: @ 81F568B
+Route120_EventScript_StevenBattleRoggenrola:: @ 81F568B
 	msgbox Route120_Text_StevenShowMeYourPower, MSGBOX_DEFAULT
 	closemessage
 	compare VAR_FACING, DIR_NORTH
-	call_if_eq Route120_EventScript_PlayerApproachKecleonNorth
+	call_if_eq Route120_EventScript_PlayerApproachRoggenrolaNorth
 	compare VAR_FACING, DIR_WEST
-	call_if_eq Route120_EventScript_PlayerApproachKecleonWest
+	call_if_eq Route120_EventScript_PlayerApproachRoggenrolaWest
 	applymovement 31, Common_Movement_WalkInPlaceFastestLeft
 	waitmovement 0
 	delay 20
@@ -203,7 +203,7 @@ Route120_EventScript_StevenBattleKecleon:: @ 81F568B
 	closemessage
 	applymovement 30, Common_Movement_WalkInPlaceFastestRight
 	waitmovement 0
-	applymovement 30, Movement_KecleonAppears
+	applymovement 30, Movement_RoggenrolaAppears
 	waitmovement 0
 	waitse
 	playmoncry SPECIES_ROGGENROLA, 2
@@ -216,18 +216,18 @@ Route120_EventScript_StevenBattleKecleon:: @ 81F568B
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_WON
-	goto_if_eq Route120_EventScript_RemoveBridgeKecleonPostBattle
+	goto_if_eq Route120_EventScript_RemoveBridgeRoggenrolaPostBattle
 	compare VAR_RESULT, B_OUTCOME_RAN
-	goto_if_eq Route120_EventScript_RemoveBridgeKecleonPostBattle
+	goto_if_eq Route120_EventScript_RemoveBridgeRoggenrolaPostBattle
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
-	goto_if_eq Route120_EventScript_RemoveBridgeKecleonPostBattle
+	goto_if_eq Route120_EventScript_RemoveBridgeRoggenrolaPostBattle
 	goto Route120_EventScript_StevenGiveDeconScope
 	end
 
-Route120_EventScript_RemoveBridgeKecleonPostBattle:: @ 81F571C
+Route120_EventScript_RemoveBridgeRoggenrolaPostBattle:: @ 81F571C
 	fadescreenswapbuffers 1
-	removeobject 30 @ Invisible Bridge Kecleon
-	removeobject 36 @ Visible Bridge Kecleon
+	removeobject 30 @ Invisible Bridge Roggenrola
+	removeobject 36 @ Visible Bridge Roggenrola
 	fadescreenswapbuffers 0
 	goto Route120_EventScript_StevenGiveDeconScope
 	end
@@ -249,31 +249,31 @@ Route120_EventScript_StevenGiveDeconScope:: @ 81F572C
 	delay 15
 	removeobject 31
 	waitfieldeffect FLDEFF_NPCFLY_OUT
-	setmetatile 13, 15, METATILE_Fortree_WoodBridge_Kecleon0, 0
-	setmetatile 12, 16, METATILE_Fortree_WoodBridge_Kecleon1, 0
+	setmetatile 13, 15, METATILE_Fortree_WoodBridge_Roggenrola0, 0
+	setmetatile 12, 16, METATILE_Fortree_WoodBridge_Roggenrola1, 0
 	setmetatile 12, 17, METATILE_General_ReflectiveWater, 0
 	setmetatile 13, 17, METATILE_General_ReflectiveWater, 0
 	special DrawWholeMapView
 	release
 	end
 
-Route120_EventScript_PlayerApproachKecleonNorth:: @ 81F57A3
+Route120_EventScript_PlayerApproachRoggenrolaNorth:: @ 81F57A3
 	applymovement EVENT_OBJ_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
 	waitmovement 0
 	return
 
-Route120_EventScript_PlayerApproachKecleonWest:: @ 81F57AE
-	applymovement EVENT_OBJ_ID_PLAYER, Route120_Movement_ApproachKecleonWest
+Route120_EventScript_PlayerApproachRoggenrolaWest:: @ 81F57AE
+	applymovement EVENT_OBJ_ID_PLAYER, Route120_Movement_ApproachRoggenrolaWest
 	waitmovement 0
 	return
 
-Route120_Movement_ApproachKecleonWest: @ 81F57B9
+Route120_Movement_ApproachRoggenrolaWest: @ 81F57B9
 	walk_down
 	walk_left
 	step_end
 
-Route120_EventScript_InvisibleBridgeKecleon:: @ 81F57BC
-	msgbox Kecleon_Text_SomethingUnseeable, MSGBOX_NPC
+Route120_EventScript_InvisibleBridgeRoggenrola:: @ 81F57BC
+	msgbox Roggenrola_Text_SomethingUnseeable, MSGBOX_NPC
 	end
 
 Route120_EventScript_1F57C5:: @ 81F57C5
@@ -431,14 +431,14 @@ Route120_Text_StevenGoodbye: @ 81F5C7B
 	.string "I think you're doing great.\p"
 	.string "Well, let's meet again somewhere.$"
 
-Kecleon_Text_SomethingUnseeable: @ 81F5D00
+Roggenrola_Text_SomethingUnseeable: @ 81F5D00
 	.string "Something unseeable is in the way.$"
 
-Kecleon_Text_WantToUseDevonScope: @ 81F5D23
+Roggenrola_Text_WantToUseDevonScope: @ 81F5D23
 	.string "Something unseeable is in the way.\p"
 	.string "Want to use the DEVON SCOPE?$"
 
-Kecleon_Text_UseDevonScopeMonAttacked: @ 81F5D63
+Roggenrola_Text_UseDevonScopeMonAttacked: @ 81F5D63
 	.string "{PLAYER} used the DEVON SCOPE.\p"
 	.string "An invisible POKéMON became completely\n"
 	.string "visible!\p"

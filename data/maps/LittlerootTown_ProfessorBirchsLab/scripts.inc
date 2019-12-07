@@ -939,15 +939,15 @@ LittlerootTown_ProfessorBirchsLab_Text_1FB7F6: @ 81FB7F6
 
 LittlerootTown_ProfessorBirchsLab_Text_1FB869: @ 81FB869
 	.string "PROF. BIRCH: The WATER POKéMON\n"
-	.string "TOTODILE is your choice!\p"
+	.string "WIMPOD is your choice!\p"
 	.string "You know how to pick a good one.\p"
-	.string "So, you'll take the TOTODILE?$"
+	.string "So, you'll take the WIMPOD?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_1FB8E0: @ 81FB8E0
 	.string "PROF. BIRCH: The GRASS POKéMON\n"
-	.string "CHIKORITA is your choice!\p"
+	.string "SNOVER is your choice!\p"
 	.string "You sure know what you're doing.\p"
-	.string "So, you'll take the CHIKORITA?$"
+	.string "So, you'll take the SNOVER?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_1FB959: @ 81FB959
 	.string "PROF. BIRCH: Take your time before\n"

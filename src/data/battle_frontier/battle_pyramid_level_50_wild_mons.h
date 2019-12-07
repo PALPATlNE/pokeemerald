@@ -157,7 +157,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round3[] =
 static const struct PyramidWildMon sLevel50WildMons_Round4[] =
 {
     {
-        .species = SPECIES_DEERLING,
+        .species = SPECIES_AUDINO,
         .lvl = 42,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_SPITE, MOVE_TOXIC, MOVE_PROTECT, MOVE_NONE}
@@ -432,7 +432,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round9[] =
         .species = SPECIES_BEARTIC,
         .lvl = 42,
         .abilityNum = ABILITY_RANDOM,
-        .moves = {MOVE_EGG_BOMB, MOVE_PSYCHIC, MOVE_HYPNOSIS, MOVE_NONE}
+        .moves = {MOVE_EGG_BOMB, MOVE_PSYCHIC, MOVE_BRAVIARYSIS, MOVE_NONE}
     },
     {
         .species = SPECIES_GLACEON,
@@ -490,7 +490,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round10[] =
         .species = SPECIES_FROSLASS,
         .lvl = 42,
         .abilityNum = ABILITY_RANDOM,
-        .moves = {MOVE_HYPNOSIS, MOVE_PSYWAVE, MOVE_EXPLOSION, MOVE_NONE}
+        .moves = {MOVE_BRAVIARYSIS, MOVE_PSYWAVE, MOVE_EXPLOSION, MOVE_NONE}
     },
     {
         .species = SPECIES_MEDIREIGN,
@@ -790,7 +790,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round16[] =
         .species = SPECIES_HAUNTER,
         .lvl = 42,
         .abilityNum = ABILITY_RANDOM,
-        .moves = {MOVE_TOXIC, MOVE_SPITE, MOVE_HYPNOSIS, MOVE_SHADOW_BALL}
+        .moves = {MOVE_TOXIC, MOVE_SPITE, MOVE_BRAVIARYSIS, MOVE_SHADOW_BALL}
     },
     {
         .species = SPECIES_BANETTE,

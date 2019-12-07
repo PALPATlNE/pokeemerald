@@ -17,7 +17,7 @@
 #include "constants/battle_anim.h"
 #include "constants/species.h"
 
-#define GET_UNOWN_LETTER(personality) ((        \
+#define GET_FLABEBE_LETTER(personality) ((        \
       (((personality & 0x03000000) >> 24) << 6) \
     | (((personality & 0x00030000) >> 16) << 4) \
     | (((personality & 0x00000300) >> 8) << 2)  \
@@ -61,8 +61,8 @@ static const struct UCoords8 sBattlerCoords[][4] =
     },
 };
 
-// One entry for each of the four Castform forms.
-const struct MonCoords gCastformFrontSpriteCoords[] =
+// One entry for each of the four Filler3 forms.
+const struct MonCoords gFiller3FrontSpriteCoords[] =
 {
     { .size = 0x44, .y_offset = 17 }, // NORMAL
     { .size = 0x66, .y_offset =  9 }, // SUN
@@ -70,7 +70,7 @@ const struct MonCoords gCastformFrontSpriteCoords[] =
     { .size = 0x86, .y_offset =  8 }, // HAIL
 };
 
-static const u8 sCastformElevations[] =
+static const u8 sFiller3Elevations[] =
 {
     13, // NORMAL
     14, // SUN
@@ -78,8 +78,8 @@ static const u8 sCastformElevations[] =
     13, // HAIL
 };
 
-// Y position of the backsprite for each of the four Castform forms.
-static const u8 sCastformBackSpriteYCoords[] =
+// Y position of the backsprite for each of the four Filler3 forms.
+static const u8 sFiller3BackSpriteYCoords[] =
 {
     0, // NORMAL
     0, // SUN
@@ -202,7 +202,7 @@ u8 GetBattlerYDelta(u8 battlerId, u16 species)
                 else
                     personality = gTransformedPersonalities[battlerId];
             }
-            letter = GET_UNOWN_LETTER(personality);
+            letter = GET_FLABEBE_LETTER(personality);
             if (!letter)
                 coordSpecies = species;
             else
@@ -211,7 +211,7 @@ u8 GetBattlerYDelta(u8 battlerId, u16 species)
         }
         else if (species == SPECIES_CELEBI)
         {
-            ret = sCastformBackSpriteYCoords[gBattleMonForms[battlerId]];
+            ret = sFiller3BackSpriteYCoords[gBattleMonForms[battlerId]];
         }
         else if (species > NUM_SPECIES)
         {
@@ -231,7 +231,7 @@ u8 GetBattlerYDelta(u8 battlerId, u16 species)
                 personality = GetMonData(&gEnemyParty[gBattlerPartyIndexes[battlerId]], MON_DATA_PERSONALITY);
             else
                 personality = gTransformedPersonalities[battlerId];
-            letter = GET_UNOWN_LETTER(personality);
+            letter = GET_FLABEBE_LETTER(personality);
             if (!letter)
                 coordSpecies = species;
             else
@@ -240,7 +240,7 @@ u8 GetBattlerYDelta(u8 battlerId, u16 species)
         }
         else if (species == SPECIES_CELEBI)
         {
-            ret = gCastformFrontSpriteCoords[gBattleMonForms[battlerId]].y_offset;
+            ret = gFiller3FrontSpriteCoords[gBattleMonForms[battlerId]].y_offset;
         }
         else if (species > NUM_SPECIES)
         {
@@ -262,7 +262,7 @@ u8 GetBattlerElevation(u8 battlerId, u16 species)
         if (!IsContest())
         {
             if (species == SPECIES_CELEBI)
-                ret = sCastformElevations[gBattleMonForms[battlerId]];
+                ret = sFiller3Elevations[gBattleMonForms[battlerId]];
             else if (species > NUM_SPECIES)
                 ret = gEnemyMonElevation[0];
             else
@@ -1863,7 +1863,7 @@ static u16 GetBattlerYDeltaFromSpriteId(u8 spriteId)
                         species = spriteInfo[battlerId].transformSpecies;
 
                     if (species == SPECIES_CELEBI)
-                        return sCastformBackSpriteYCoords[gBattleMonForms[battlerId]];
+                        return sFiller3BackSpriteYCoords[gBattleMonForms[battlerId]];
                     else
                         return gMonBackPicCoords[species].y_offset;
                 }
@@ -1876,7 +1876,7 @@ static u16 GetBattlerYDeltaFromSpriteId(u8 spriteId)
                         species = spriteInfo[battlerId].transformSpecies;
 
                     if (species == SPECIES_CELEBI)
-                        return sCastformElevations[gBattleMonForms[battlerId]];
+                        return sFiller3Elevations[gBattleMonForms[battlerId]];
                     else
                         return gMonFrontPicCoords[species].y_offset;
                 }
@@ -2113,7 +2113,7 @@ s16 GetBattlerSpriteCoordAttr(u8 battlerId, u8 attr)
         }
         if (species == SPECIES_FLABEBE)
         {
-            letter = GET_UNOWN_LETTER(personality);
+            letter = GET_FLABEBE_LETTER(personality);
             if (!letter)
                 unownSpecies = SPECIES_FLABEBE;
             else
@@ -2122,7 +2122,7 @@ s16 GetBattlerSpriteCoordAttr(u8 battlerId, u8 attr)
         }
         else if (species == SPECIES_CELEBI)
         {
-            coords = &gCastformFrontSpriteCoords[gBattleMonForms[battlerId]];
+            coords = &gFiller3FrontSpriteCoords[gBattleMonForms[battlerId]];
         }
         else if (species <= SPECIES_EGG)
         {
@@ -2151,7 +2151,7 @@ s16 GetBattlerSpriteCoordAttr(u8 battlerId, u8 attr)
 
             if (species == SPECIES_FLABEBE)
             {
-                letter = GET_UNOWN_LETTER(personality);
+                letter = GET_FLABEBE_LETTER(personality);
                 if (!letter)
                     unownSpecies = SPECIES_FLABEBE;
                 else
@@ -2183,7 +2183,7 @@ s16 GetBattlerSpriteCoordAttr(u8 battlerId, u8 attr)
 
             if (species == SPECIES_FLABEBE)
             {
-                letter = GET_UNOWN_LETTER(personality);
+                letter = GET_FLABEBE_LETTER(personality);
                 if (!letter)
                     unownSpecies = SPECIES_FLABEBE;
                 else
@@ -2192,7 +2192,7 @@ s16 GetBattlerSpriteCoordAttr(u8 battlerId, u8 attr)
             }
             else if (species == SPECIES_CELEBI)
             {
-                coords = &gCastformFrontSpriteCoords[gBattleMonForms[battlerId]];
+                coords = &gFiller3FrontSpriteCoords[gBattleMonForms[battlerId]];
             }
             else if (species > NUM_SPECIES)
             {

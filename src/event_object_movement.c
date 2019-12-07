@@ -522,7 +522,7 @@ const u16 gTruckReflectionPaletteTags[] = {
     EVENT_OBJ_PAL_TAG_14,
 };
 
-const u16 gVigorothMoverReflectionPaletteTags[] = {
+const u16 gFletchindrMoverReflectionPaletteTags[] = {
     EVENT_OBJ_PAL_TAG_15,
     EVENT_OBJ_PAL_TAG_15,
     EVENT_OBJ_PAL_TAG_15,
@@ -590,7 +590,7 @@ const struct PairedPalettes gSpecialObjectReflectionPaletteSets[] = {
     {EVENT_OBJ_PAL_TAG_17, Unknown_0850BCF0},
     {EVENT_OBJ_PAL_TAG_12, gQuintyPlumpReflectionPaletteTags},
     {EVENT_OBJ_PAL_TAG_14, gTruckReflectionPaletteTags},
-    {EVENT_OBJ_PAL_TAG_15, gVigorothMoverReflectionPaletteTags},
+    {EVENT_OBJ_PAL_TAG_15, gFletchindrMoverReflectionPaletteTags},
     {EVENT_OBJ_PAL_TAG_19, gMovingBoxReflectionPaletteTags},
     {EVENT_OBJ_PAL_TAG_20, gCableCarReflectionPaletteTags},
     {EVENT_OBJ_PAL_TAG_21, gSSTidalReflectionPaletteTags},

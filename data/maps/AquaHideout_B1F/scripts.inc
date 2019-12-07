@@ -15,16 +15,16 @@ AquaHideout_B1F_EventScript_2339BC:: @ 82339BC
 	return
 
 AquaHideout_B1F_OnTransition: @ 82339D0
-	call_if_unset FLAG_DEFEATED_ELECTRODE_1_AQUA_HIDEOUT, AquaHideout_B1F_EventScript_2339E3
-	call_if_unset FLAG_DEFEATED_ELECTRODE_2_AQUA_HIDEOUT, AquaHideout_B1F_EventScript_2339E7
+	call_if_unset FLAG_DEFEATED_SCRAFTY_1_AQUA_HIDEOUT, AquaHideout_B1F_EventScript_2339E3
+	call_if_unset FLAG_DEFEATED_SCRAFTY_2_AQUA_HIDEOUT, AquaHideout_B1F_EventScript_2339E7
 	end
 
 AquaHideout_B1F_EventScript_2339E3:: @ 82339E3
-	clearflag FLAG_HIDE_AQUA_HIDEOUT_B1F_ELECTRODE_1
+	clearflag FLAG_HIDE_AQUA_HIDEOUT_B1F_SCRAFTY_1
 	return
 
 AquaHideout_B1F_EventScript_2339E7:: @ 82339E7
-	clearflag FLAG_HIDE_AQUA_HIDEOUT_B1F_ELECTRODE_2
+	clearflag FLAG_HIDE_AQUA_HIDEOUT_B1F_SCRAFTY_2
 	return
 
 AquaHideout_B1F_EventScript_2339EB:: @ 82339EB
@@ -45,12 +45,12 @@ AquaHideout_B1F_EventScript_2339EB:: @ 82339EB
 	goto_if_eq AquaHideout_B1F_EventScript_233A2F
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AquaHideout_B1F_EventScript_233A2F
-	setflag FLAG_DEFEATED_ELECTRODE_1_AQUA_HIDEOUT
+	setflag FLAG_DEFEATED_SCRAFTY_1_AQUA_HIDEOUT
 	release
 	end
 
 AquaHideout_B1F_EventScript_233A2F:: @ 8233A2F
-	setflag FLAG_DEFEATED_ELECTRODE_1_AQUA_HIDEOUT
+	setflag FLAG_DEFEATED_SCRAFTY_1_AQUA_HIDEOUT
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 
@@ -72,12 +72,12 @@ AquaHideout_B1F_EventScript_233A38:: @ 8233A38
 	goto_if_eq AquaHideout_B1F_EventScript_233A7C
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq AquaHideout_B1F_EventScript_233A7C
-	setflag FLAG_DEFEATED_ELECTRODE_2_AQUA_HIDEOUT
+	setflag FLAG_DEFEATED_SCRAFTY_2_AQUA_HIDEOUT
 	release
 	end
 
 AquaHideout_B1F_EventScript_233A7C:: @ 8233A7C
-	setflag FLAG_DEFEATED_ELECTRODE_2_AQUA_HIDEOUT
+	setflag FLAG_DEFEATED_SCRAFTY_2_AQUA_HIDEOUT
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 

@@ -2983,7 +2983,7 @@ static u8 sub_80DB174(u16 species, u32 otId, u32 personality, u32 index)
     gSprites[spriteId].callback = SpriteCallbackDummy;
     gSprites[spriteId].data[0] = gSprites[spriteId].oam.paletteNum;
     gSprites[spriteId].data[2] = species;
-    if (IsSpeciesNotUnown(species))
+    if (IsSpeciesNotFlabebe(species))
         gSprites[spriteId].affineAnims = gUnknown_082FF6C0;
     else
         gSprites[spriteId].affineAnims = gUnknown_082FF694;
@@ -2992,7 +2992,7 @@ static u8 sub_80DB174(u16 species, u32 otId, u32 personality, u32 index)
     return spriteId;
 }
 
-bool8 IsSpeciesNotUnown(u16 species)
+bool8 IsSpeciesNotFlabebe(u16 species)
 {
     if (species == SPECIES_FLABEBE)
         return FALSE;

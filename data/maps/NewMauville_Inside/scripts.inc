@@ -22,21 +22,21 @@ NewMauville_Inside_EventScript_237407:: @ 8237407
 NewMauville_Inside_OnTransition: @ 823741B
 	setvar VAR_TEMP_1, 0
 	setvar VAR_TEMP_2, 0
-	call_if_unset FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE, NewMauville_Inside_EventScript_237441
-	call_if_unset FLAG_DEFEATED_VOLTORB_2_NEW_MAUVILLE, NewMauville_Inside_EventScript_237445
-	call_if_unset FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE, NewMauville_Inside_EventScript_237449
+	call_if_unset FLAG_DEFEATED_SCRAGGY_1_NEW_MAUVILLE, NewMauville_Inside_EventScript_237441
+	call_if_unset FLAG_DEFEATED_SCRAGGY_2_NEW_MAUVILLE, NewMauville_Inside_EventScript_237445
+	call_if_unset FLAG_DEFEATED_SCRAGGY_3_NEW_MAUVILLE, NewMauville_Inside_EventScript_237449
 	end
 
 NewMauville_Inside_EventScript_237441:: @ 8237441
-	clearflag FLAG_HIDE_NEW_MAUVILLE_VOLTORB_1
+	clearflag FLAG_HIDE_NEW_MAUVILLE_SCRAGGY_1
 	return
 
 NewMauville_Inside_EventScript_237445:: @ 8237445
-	clearflag FLAG_HIDE_NEW_MAUVILLE_VOLTORB_2
+	clearflag FLAG_HIDE_NEW_MAUVILLE_SCRAGGY_2
 	return
 
 NewMauville_Inside_EventScript_237449:: @ 8237449
-	clearflag FLAG_HIDE_NEW_MAUVILLE_VOLTORB_3
+	clearflag FLAG_HIDE_NEW_MAUVILLE_SCRAGGY_3
 	return
 
 NewMauville_Inside_MapScript1_23744D: @ 823744D
@@ -196,12 +196,12 @@ NewMauville_Inside_EventScript_2377AF:: @ 82377AF
 	goto_if_eq NewMauville_Inside_EventScript_2377F3
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq NewMauville_Inside_EventScript_2377F3
-	setflag FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE
+	setflag FLAG_DEFEATED_SCRAGGY_1_NEW_MAUVILLE
 	release
 	end
 
 NewMauville_Inside_EventScript_2377F3:: @ 82377F3
-	setflag FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE
+	setflag FLAG_DEFEATED_SCRAGGY_1_NEW_MAUVILLE
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 
@@ -223,12 +223,12 @@ NewMauville_Inside_EventScript_2377FC:: @ 82377FC
 	goto_if_eq NewMauville_Inside_EventScript_237840
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq NewMauville_Inside_EventScript_237840
-	setflag FLAG_DEFEATED_VOLTORB_2_NEW_MAUVILLE
+	setflag FLAG_DEFEATED_SCRAGGY_2_NEW_MAUVILLE
 	release
 	end
 
 NewMauville_Inside_EventScript_237840:: @ 8237840
-	setflag FLAG_DEFEATED_VOLTORB_2_NEW_MAUVILLE
+	setflag FLAG_DEFEATED_SCRAGGY_2_NEW_MAUVILLE
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 
@@ -250,12 +250,12 @@ NewMauville_Inside_EventScript_237849:: @ 8237849
 	goto_if_eq NewMauville_Inside_EventScript_23788D
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq NewMauville_Inside_EventScript_23788D
-	setflag FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE
+	setflag FLAG_DEFEATED_SCRAGGY_3_NEW_MAUVILLE
 	release
 	end
 
 NewMauville_Inside_EventScript_23788D:: @ 823788D
-	setflag FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE
+	setflag FLAG_DEFEATED_SCRAGGY_3_NEW_MAUVILLE
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 

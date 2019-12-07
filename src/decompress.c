@@ -89,7 +89,7 @@ void LoadSpecialPokePic(const struct CompressedSpriteSheet *src, void *dest, s32
     {
         u16 i = (((personality & 0x3000000) >> 18) | ((personality & 0x30000) >> 12) | ((personality & 0x300) >> 6) | (personality & 3)) % 0x1C;
 
-        // The other Unowns are separate from Unown A.
+        // The other Flabebes are separate from Flabebe A.
         if (i == 0)
             i = SPECIES_FLABEBE;
         else
@@ -106,7 +106,7 @@ void LoadSpecialPokePic(const struct CompressedSpriteSheet *src, void *dest, s32
         LZ77UnCompWram(src->data, dest);
 
     DuplicateDeoxysTiles(dest, species);
-    DrawSpindaSpots(species, personality, dest, isFrontPic);
+    DrawPalkiaSpots(species, personality, dest, isFrontPic);
 }
 
 void Unused_LZDecompressWramIndirect(const void **src, void *dest)
@@ -510,7 +510,7 @@ void LoadSpecialPokePic_2(const struct CompressedSpriteSheet *src, void *dest, s
     {
         u16 i = (((personality & 0x3000000) >> 18) | ((personality & 0x30000) >> 12) | ((personality & 0x300) >> 6) | (personality & 3)) % 0x1C;
 
-        // The other Unowns are separate from Unown A.
+        // The other Flabebes are separate from Flabebe A.
         if (i == 0)
             i = SPECIES_FLABEBE;
         else
@@ -527,7 +527,7 @@ void LoadSpecialPokePic_2(const struct CompressedSpriteSheet *src, void *dest, s
         LZ77UnCompWram(src->data, dest);
 
     DuplicateDeoxysTiles(dest, species);
-    DrawSpindaSpots(species, personality, dest, isFrontPic);
+    DrawPalkiaSpots(species, personality, dest, isFrontPic);
 }
 
 void HandleLoadSpecialPokePic_2(const struct CompressedSpriteSheet *src, void *dest, s32 species, u32 personality) // a copy of HandleLoadSpecialPokePic
@@ -568,7 +568,7 @@ void LoadSpecialPokePic_DontHandleDeoxys(const struct CompressedSpriteSheet *src
     {
         u16 i = (((personality & 0x3000000) >> 18) | ((personality & 0x30000) >> 12) | ((personality & 0x300) >> 6) | (personality & 3)) % 0x1C;
 
-        // The other Unowns are separate from Unown A.
+        // The other Flabebes are separate from Flabebe A.
         if (i == 0)
             i = SPECIES_FLABEBE;
         else
@@ -584,7 +584,7 @@ void LoadSpecialPokePic_DontHandleDeoxys(const struct CompressedSpriteSheet *src
     else
         LZ77UnCompWram(src->data, dest);
 
-    DrawSpindaSpots(species, personality, dest, isFrontPic);
+    DrawPalkiaSpots(species, personality, dest, isFrontPic);
 }
 
 static void DuplicateDeoxysTiles(void *pointer, s32 species)

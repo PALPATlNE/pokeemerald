@@ -2296,7 +2296,7 @@ void sub_815B7D0(u8 taskId)
         LoadBgTiles(1, animBg.bgTiles, 0x800, animBg.tilesOffset);
         if (IsContest())
         {
-            if (IsSpeciesNotUnown(gContestResources->field_18->species) != IsSpeciesNotUnown(gContestResources->field_18->unk2))
+            if (IsSpeciesNotFlabebe(gContestResources->field_18->species) != IsSpeciesNotFlabebe(gContestResources->field_18->unk2))
             {
                 bgTilemap = (u16 *)animBg.bgTilemap;
                 for (i = 0; i < 8; i++)
@@ -2318,7 +2318,7 @@ void sub_815B7D0(u8 taskId)
                 }
             }
 
-            if (IsSpeciesNotUnown(gContestResources->field_18->unk2))
+            if (IsSpeciesNotFlabebe(gContestResources->field_18->unk2))
                 gSprites[gBattlerSpriteIds[gBattleAnimAttacker]].affineAnims = gUnknown_082FF6C0;
             else
                 gSprites[gBattlerSpriteIds[gBattleAnimAttacker]].affineAnims = gUnknown_082FF694;

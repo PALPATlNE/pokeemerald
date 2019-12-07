@@ -5,7 +5,7 @@ FortreeCity_House1_EventScript_2162BB:: @ 82162BB
 	lock
 	faceplayer
 	goto_if_set FLAG_FORTREE_NPC_TRADE_COMPLETED, FortreeCity_House1_EventScript_216355
-	setvar VAR_0x8008, INGAME_TRADE_PLUSLE
+	setvar VAR_0x8008, INGAME_TRADE_SALANDIT
 	copyvar VAR_0x8004, VAR_0x8008
 	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
 	copyvar VAR_0x8009, VAR_RESULT
@@ -87,9 +87,9 @@ FortreeCity_House1_Text_21649F: @ 821649F
 	.string "Even after I bared my heart to you?$"
 
 FortreeCity_House1_Text_2164DB: @ 82164DB
-	.string "I'm going to make VOLBEAT super\n"
+	.string "I'm going to make RHYPERIOR super\n"
 	.string "strong from this moment on!\p"
-	.string "I hope you do the same with PLUSLE!$"
+	.string "I hope you do the same with SALANDIT!$"
 
 FortreeCity_House1_Text_21653B: @ 821653B
 	.string "Trading POKéMON with others…\p"

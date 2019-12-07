@@ -28,7 +28,7 @@
       "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_MOM"
     },
     {
-      "graphics_id": "EVENT_OBJ_GFX_VIGOROTH_CARRYING_BOX",
+      "graphics_id": "EVENT_OBJ_GFX_FLETCHINDR_CARRYING_BOX",
       "x": 1,
       "y": 3,
       "elevation": 3,
@@ -38,10 +38,10 @@
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LittlerootTown_BrendansHouse_1F_EventScript_292ACD",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2"
+      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_FLETCHINDR_2"
     },
     {
-      "graphics_id": "EVENT_OBJ_GFX_VIGOROTH_FACING_AWAY",
+      "graphics_id": "EVENT_OBJ_GFX_FLETCHINDR_FACING_AWAY",
       "x": 4,
       "y": 5,
       "elevation": 3,
@@ -51,7 +51,7 @@
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LittlerootTown_BrendansHouse_1F_EventScript_292ABA",
-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1"
+      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_FLETCHINDR_1"
     },
     {
       "graphics_id": "EVENT_OBJ_GFX_WOMAN_4",

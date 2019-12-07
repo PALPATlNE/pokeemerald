@@ -54,7 +54,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "EVENT_OBJ_GFX_DUSCLOPS",
+      "graphics_id": "EVENT_OBJ_GFX_CONKELDURR",
       "x": 13,
       "y": 1,
       "elevation": 3,
@@ -67,7 +67,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "EVENT_OBJ_GFX_AZURILL",
+      "graphics_id": "EVENT_OBJ_GFX_CARRACOSTA",
       "x": 13,
       "y": 1,
       "elevation": 3,

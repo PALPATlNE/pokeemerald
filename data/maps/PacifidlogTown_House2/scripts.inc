@@ -137,14 +137,14 @@ PacifidlogTown_House2_Text_203AF4: @ 8203AF4
 	.string "your POKéMON.$"
 
 PacifidlogTown_House2_Text_203B8D: @ 8203B8D
-	.string "AZURILL: Rurii.$"
+	.string "CARRACOSTA: Rurii.$"
 
 PacifidlogTown_House2_Text_203B9D: @ 8203B9D
 	.string "It appears to be very friendly with the\n"
 	.string "TRAINER.$"
 
 PacifidlogTown_House2_Text_203BCE: @ 8203BCE
-	.string "AZURILL: Rururi!$"
+	.string "CARRACOSTA: Rururi!$"
 
 PacifidlogTown_House2_Text_203BDF: @ 8203BDF
 	.string "It doesn't appear to like the TRAINER\n"

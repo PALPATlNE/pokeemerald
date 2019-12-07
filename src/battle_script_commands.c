@@ -9891,7 +9891,7 @@ static void atkE6_docastformchangeanimation(void)
     if (gBattleMons[gActiveBattler].status2 & STATUS2_SUBSTITUTE)
         *(&gBattleStruct->formToChangeInto) |= 0x80;
 
-    BtlController_EmitBattleAnimation(0, B_ANIM_CASTFORM_CHANGE, gBattleStruct->formToChangeInto);
+    BtlController_EmitBattleAnimation(0, B_ANIM_FILLER3_CHANGE, gBattleStruct->formToChangeInto);
     MarkBattlerForControllerExec(gActiveBattler);
 
     gBattlescriptCurrInstr++;
@@ -9902,10 +9902,10 @@ static void atkE7_trycastformdatachange(void)
     u8 form;
 
     gBattlescriptCurrInstr++;
-    form = CastformDataTypeChange(gBattleScripting.battler);
+    form = Filler3DataTypeChange(gBattleScripting.battler);
     if (form)
     {
-        BattleScriptPushCursorAndCallback(BattleScript_CastformChange);
+        BattleScriptPushCursorAndCallback(BattleScript_Filler3Change);
         *(&gBattleStruct->formToChangeInto) = form - 1;
     }
 }

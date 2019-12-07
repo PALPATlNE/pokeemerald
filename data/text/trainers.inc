@@ -1639,7 +1639,7 @@ Route113_Text_299E38: @ 8299E38
 Route113_Text_299EA6: @ 8299EA6
 	.string "I use this parasol to ward off this\n"
 	.string "filthy, yucky volcanic ash from\l"
-	.string "my dear NUMEL.$"
+	.string "my dear MANETHUNDR.$"
 
 Route113_Text_299EF9: @ 8299EF9
 	.string "Huff, huff…\n"
@@ -2030,14 +2030,14 @@ Route115_Text_29B385: @ 829B385
 
 Route115_Text_29B3CC: @ 829B3CC
 	.string "You!\p"
-	.string "My MACHOP!\p"
+	.string "My SCATTERBUG!\p"
 	.string "Demand a battle!$"
 
 Route115_Text_29B3ED: @ 829B3ED
 	.string "Ouch, ouch, ouch!$"
 
 Route115_Text_29B3FF: @ 829B3FF
-	.string "My MACHOP crew!\p"
+	.string "My SCATTERBUG crew!\p"
 	.string "So long as they seek power, I will\n"
 	.string "grow strong with them!$"
 
@@ -3800,7 +3800,7 @@ Route125_Text_2A15C7: @ 82A15C7
 	.string "I floundered…$"
 
 Route125_Text_2A15D5: @ 82A15D5
-	.string "I was blown away by HORSEA's charm,\n"
+	.string "I was blown away by SPINARAK's charm,\n"
 	.string "so I started swimming, too.$"
 
 Route125_Text_2A1615: @ 82A1615
@@ -4682,7 +4682,7 @@ Route134_Text_2A45C5: @ 82A45C5
 	.string "currents around these parts.$"
 
 Route134_Text_2A4609: @ 82A4609
-	.string "My LUVDISC are looking for a fun\n"
+	.string "My CHANDELURE are looking for a fun\n"
 	.string "match. Will you join us?$"
 
 Route134_Text_2A4643: @ 82A4643
@@ -4690,7 +4690,7 @@ Route134_Text_2A4643: @ 82A4643
 
 Route134_Text_2A464B: @ 82A464B
 	.string "There's a collector who's after\n"
-	.string "the SCALES of LUVDISC.$"
+	.string "the SCALES of CHANDELURE.$"
 
 Route134_Text_2A4682: @ 82A4682
 	.string "Okeydokey! That's enough rest, gang!\n"

@@ -218,7 +218,7 @@ struct BattleMove
     u8 flags;
 };
 
-struct SpindaSpot
+struct PalkiaSpot
 {
     u8 x, y;
     u16 image[16];
@@ -355,7 +355,7 @@ u16 SpeciesToHoennPokedexNum(u16 species);
 u16 HoennToNationalOrder(u16 hoennNum);
 u16 SpeciesToCryId(u16 species);
 void sub_806D544(u16 species, u32 personality, u8 *dest);
-void DrawSpindaSpots(u16 species, u32 personality, u8 *dest, u8 a4);
+void DrawPalkiaSpots(u16 species, u32 personality, u8 *dest, u8 a4);
 void EvolutionRenameMon(struct Pokemon *mon, u16 oldSpecies, u16 newSpecies);
 bool8 sub_806D7EC(void);
 bool16 GetLinkTrainerFlankId(u8 id);

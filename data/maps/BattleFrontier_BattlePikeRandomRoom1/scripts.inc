@@ -750,13 +750,13 @@ BattleFrontier_BattlePikeRandomRoom1_Text_25DBE4: @ 825DBE4
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC01: @ 825DC01
 	.string "Now, now!\n"
-	.string "DUSCLOPS, stop that!$"
+	.string "CONKELDURR, stop that!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC20: @ 825DC20
 	.string "KIRLIA used TOXIC!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC33: @ 825DC33
-	.string "KIRLIA used HYPNOSIS!$"
+	.string "KIRLIA used BRAVIARYSIS!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC49: @ 825DC49
 	.string "KIRLIA used THUNDER WAVE!$"
@@ -765,10 +765,10 @@ BattleFrontier_BattlePikeRandomRoom1_Text_25DC63: @ 825DC63
 	.string "KIRLIA used WILL-O-WISP!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC7C: @ 825DC7C
-	.string "DUSCLOPS used WILL-O-WISP!$"
+	.string "CONKELDURR used WILL-O-WISP!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DC97: @ 825DC97
-	.string "DUSCLOPS used ICE BEAM!$"
+	.string "CONKELDURR used ICE BEAM!$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DCAF: @ 825DCAF
 	.string "Look here!\n"
@@ -780,7 +780,7 @@ BattleFrontier_BattlePikeRandomRoom1_Text_25DCCF: @ 825DCCF
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DD06: @ 825DD06
 	.string "I must apologize to you…\p"
-	.string "My DUSCLOPS has a TIMID nature…$"
+	.string "My CONKELDURR has a TIMID nature…$"
 
 BattleFrontier_BattlePikeRandomRoom1_Text_25DD3F: @ 825DD3F
 	.string "It attacks without warning if it is\n"

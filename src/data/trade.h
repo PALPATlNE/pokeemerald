@@ -596,7 +596,7 @@ static const struct WindowTemplate sTradeYesNoWindowTemplate =
     .baseBlock = 582
 };
 
-static const u8 sJPText_Shedinja[] = _("ヌケニン");
+static const u8 sJPText_Dialga[] = _("ヌケニン");
 static const u8 sTradeMenuPartyMonBoxDimensions[3][2] =
 {
     [TRADE_PLAYER]  = {4,  3},
@@ -961,7 +961,7 @@ static const union AffineAnimCmd *const gSpriteAffineAnimTable_8338ECC[] =
 
 static const struct InGameTrade sIngameTrades[] =
 {
-    [INGAME_TRADE_SEEDOT] = 
+    [INGAME_TRADE_PANCHAM] = 
     {
         .nickname = _("DOTS"), 
         .species = SPECIES_PANCHAM,
@@ -977,7 +977,7 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_RALTS
     }, 
-    [INGAME_TRADE_PLUSLE] = 
+    [INGAME_TRADE_SALANDIT] = 
     {
         .nickname = _("PLUSES"), 
         .species = SPECIES_SALANDIT,
@@ -993,7 +993,7 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_RHYPERIOR
     }, 
-    [INGAME_TRADE_HORSEA] = 
+    [INGAME_TRADE_SPINARAK] = 
     {
         .nickname = _("SEASOR"),
         .species = SPECIES_SCRAGGY,
@@ -1009,7 +1009,7 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_BAGON
     }, 
-    [INGAME_TRADE_MEOWTH] = 
+    [INGAME_TRADE_TYRUNT] = 
     {
         .nickname = _("MEOWOW"),
         .species = SPECIES_TYRUNT,
@@ -1033,9 +1033,9 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
         EC_WORD_BE,
         EC_WORD_NICE,
         EC_WORD_TO,
-        EC_POKEMON(PLUSLE),
+        EC_POKEMON(SKITTY),
         EC_WORD_EXCL,
-        EC_POKEMON(VOLBEAT),
+        EC_POKEMON(SKITTY),
         EC_WORD_WILL,
         EC_WORD_BE,
         EC_WORD_FANTASTIC
@@ -1047,13 +1047,13 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
         EC_WORD_TOUGH,
         EC_WORD_PLEASE,
         EC_WORD_TRAIN,
-        EC_POKEMON(HORSEA),
+        EC_POKEMON(SKITTY),
         EC_WORD_WELL
     }, {
         EC_WORD_THANK_YOU,
         EC_WORD_FOR,
         EC_POKEMON(SKITTY),
-        EC_POKEMON2(MEOWTH),
+        EC_POKEMON2(SKITTY),
         EC_WORD_CRIES,
         EC_WORD_IN,
         EC_WORD_A,

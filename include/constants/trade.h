@@ -7,10 +7,10 @@
 #define LINK_TRADE_TIMEOUT 300
 
 // In-game Trade IDs
-#define INGAME_TRADE_SEEDOT 0
-#define INGAME_TRADE_PLUSLE 1
-#define INGAME_TRADE_HORSEA 2
-#define INGAME_TRADE_MEOWTH 3
+#define INGAME_TRADE_PANCHAM 0
+#define INGAME_TRADE_SALANDIT 1
+#define INGAME_TRADE_SPINARAK 2
+#define INGAME_TRADE_TYRUNT 3
 
 // Flag IDs for sending link data
 #define INITIATE_TRADE  1

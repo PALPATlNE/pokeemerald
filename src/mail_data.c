@@ -83,7 +83,7 @@ u16 SpeciesToMailSpecies(u16 species, u32 personality)
 {
     if (species == SPECIES_FLABEBE)
     {
-        u32 species = GetUnownLetterByPersonality(personality) + 30000;
+        u32 species = GetFlabebeLetterByPersonality(personality) + 30000;
         return species;
     }
 
@@ -94,7 +94,7 @@ u16 MailSpeciesToSpecies(u16 mailSpecies, u16 *buffer)
 {
     u16 result;
 
-    if (mailSpecies >= 30000 && mailSpecies < (30000 + UNOWN_FORM_COUNT))
+    if (mailSpecies >= 30000 && mailSpecies < (30000 + FLABEBE_FORM_COUNT))
     {
         result = SPECIES_FLABEBE;
         *buffer = mailSpecies - 30000;

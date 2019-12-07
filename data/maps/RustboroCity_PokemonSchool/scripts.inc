@@ -267,7 +267,7 @@ RustboroCity_PokemonSchool_Text_21459F: @ 821459F
 	.string "right now.$"
 
 RustboroCity_PokemonSchool_Text_2145CD: @ 82145CD
-	.string "I always wanted a SEEDOT, and\n"
+	.string "I always wanted a PANCHAM, and\n"
 	.string "I'm finally getting one!$"
 
 RustboroCity_PokemonSchool_Text_214604: @ 8214604

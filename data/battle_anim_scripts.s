@@ -110,7 +110,7 @@ gBattleAnims_Moves::
 	.4byte Move_TOXIC
 	.4byte Move_CONFUSION
 	.4byte Move_PSYCHIC
-	.4byte Move_HYPNOSIS
+	.4byte Move_BRAVIARYSIS
 	.4byte Move_MEDITATE
 	.4byte Move_AGILITY
 	.4byte Move_QUICK_ATTACK
@@ -386,7 +386,7 @@ gBattleAnims_StatusConditions::
 
 	.align 2
 gBattleAnims_General::
-	.4byte General_CastformChange
+	.4byte General_Filler3Change
 	.4byte General_StatsChange
 	.4byte General_SubstituteFade
 	.4byte General_SubstituteAppear
@@ -7146,18 +7146,18 @@ Psybeam1:
 	delay 4
 	return
 
-Move_HYPNOSIS:
+Move_BRAVIARYSIS:
 	loadspritegfx ANIM_TAG_GOLD_RING
 	call SetPsychicBackground
-	call Hypnosis1
-	call Hypnosis1
-	call Hypnosis1
+	call Braviarysis1
+	call Braviarysis1
+	call Braviarysis1
 	createvisualtask sub_8115A04, 2, 4, 2, 2, 0, 12, RGB(31, 18, 31)
 	waitforvisualfinish
 	delay 1
 	call UnsetPsychicBackground
 	end
-Hypnosis1:
+Braviarysis1:
 	playsewithpan SE_W048, SOUND_PAN_ATTACKER
 	createsprite gUnknown_0859663C, ANIM_TARGET, 2, 0, 8, 0, 8, 27, 0
 	createsprite gUnknown_0859663C, ANIM_TARGET, 2, 16, -8, 0, -8, 27, 0
@@ -10291,7 +10291,7 @@ Status_Nightmare:
 	clearmonbg ANIM_DEF_PARTNER
 	end
 
-General_CastformChange:
+General_Filler3Change:
 	createvisualtask sub_815BB18, 2
 	jumpreteq 1, AnimScript_82D7ECA
 	goto AnimScript_82D7EB2

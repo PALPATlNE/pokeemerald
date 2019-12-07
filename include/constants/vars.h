@@ -85,7 +85,7 @@
 #define VAR_TRICK_HOUSE_LEVEL                0x4044
 #define VAR_POKELOT_PRIZE_ITEM               0x4045
 #define VAR_NATIONAL_DEX                     0x4046
-#define VAR_SEEDOT_SIZE_RECORD               0x4047
+#define VAR_PANCHAM_SIZE_RECORD               0x4047
 #define VAR_ASH_GATHER_COUNT                 0x4048
 #define VAR_BIRCH_STATE                      0x4049
 #define VAR_CRUISE_STEP_COUNT                0x404A
@@ -93,7 +93,7 @@
 #define VAR_POKELOT_RND2                     0x404C
 #define VAR_POKELOT_PRIZE_PLACE              0x404D
 #define VAR_UNUSED_0x404E                    0x404E // Unused Var
-#define VAR_LOTAD_SIZE_RECORD                0x404F
+#define VAR_DUOSIS_SIZE_RECORD                0x404F
 #define VAR_LITTLEROOT_TOWN_STATE            0x4050
 #define VAR_OLDALE_TOWN_STATE                0x4051
 #define VAR_DEWFORD_TOWN_STATE               0x4052 // Unused Var
@@ -235,7 +235,7 @@
 #define VAR_REGISTER_BIRCH_STATE             0x40DA
 #define VAR_UNUSED_0x40DB                    0x40DB // Unused Var
 #define VAR_UNUSED_0x40DC                    0x40DC // Unused Var
-#define VAR_EVENT_PICHU_SLOT                 0x40DD
+#define VAR_EVENT_FOONGUS_SLOT                 0x40DD
 #define VAR_NEVER_READ_0x40DE                0x40DE // Var is written to, but never read
 #define VAR_NEVER_READ_0x40DF                0x40DF // Var is written to, but never read
 #define VAR_NEVER_READ_0x40E0                0x40E0 // Var is written to, but never read

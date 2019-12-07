@@ -22,5 +22,5 @@ LilycoveCity_House1_Text_21ECEA: @ 821ECEA
 	.string "who fail to understand that…$"
 
 LilycoveCity_House1_Text_21ED63: @ 821ED63
-	.string "KECLEON: Ruroro?$"
+	.string "ROGGENROLA: Ruroro?$"
 

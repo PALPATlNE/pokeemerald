@@ -33,18 +33,18 @@ MysteryEventScript_StampCard:: @ 8674CB0
 sText_MysteryGiftStampCard:
 	.string "Thank you for using the STAMP CARD\nSystem.\pYou have {STR_VAR_1} more to collect to\nfill your STAMP CARD.$"
 
-MysteryEventScript_SurfPichu:: @ 8674D3D
-	setvaddress MysteryEventScript_SurfPichu
+MysteryEventScript_SurfFoongus:: @ 8674D3D
+	setvaddress MysteryEventScript_SurfFoongus
 	checkflag FLAG_MYSTERY_EVENT_DONE
-	vgoto_if 0, SurfPichu_GiveIfPossible
+	vgoto_if 0, SurfFoongus_GiveIfPossible
 	returnram
 
-SurfPichu_GiveIfPossible: @ 8674D4C
-	specialvar VAR_EVENT_PICHU_SLOT, CalculatePlayerPartyCount
-	compare_var_to_value VAR_EVENT_PICHU_SLOT, 6
-	vgoto_if 1, SurfPichu_FullParty
+SurfFoongus_GiveIfPossible: @ 8674D4C
+	specialvar VAR_EVENT_FOONGUS_SLOT, CalculatePlayerPartyCount
+	compare_var_to_value VAR_EVENT_FOONGUS_SLOT, 6
+	vgoto_if 1, SurfFoongus_FullParty
 	setflag FLAG_MYSTERY_EVENT_DONE
-	vcall SurfPichu_GiveEgg
+	vcall SurfFoongus_GiveEgg
 	lock
 	faceplayer
 	vmessage sText_MysteryGiftEgg
@@ -55,7 +55,7 @@ SurfPichu_GiveIfPossible: @ 8674D4C
 	release
 	end
 
-SurfPichu_FullParty: @ 8674D73
+SurfFoongus_FullParty: @ 8674D73
 	lock
 	faceplayer
 	vmessage sText_FullParty
@@ -64,39 +64,39 @@ SurfPichu_FullParty: @ 8674D73
 	release
 	end
 
-SurfPichu_GiveEgg: @ 8674D7E
+SurfFoongus_GiveEgg: @ 8674D7E
 	giveegg SPECIES_FOONGUS
-	setmonobedient VAR_EVENT_PICHU_SLOT
-	setmonmetlocation VAR_EVENT_PICHU_SLOT, METLOC_FATEFUL_ENCOUNTER
-	compare_var_to_value VAR_EVENT_PICHU_SLOT, 1
-	vgoto_if 1, SurfPichu_Slot1
-	compare_var_to_value VAR_EVENT_PICHU_SLOT, 2
-	vgoto_if 1, SurfPichu_Slot2
-	compare_var_to_value VAR_EVENT_PICHU_SLOT, 3
-	vgoto_if 1, SurfPichu_Slot3
-	compare_var_to_value VAR_EVENT_PICHU_SLOT, 4
-	vgoto_if 1, SurfPichu_Slot4
-	compare_var_to_value VAR_EVENT_PICHU_SLOT, 5
-	vgoto_if 1, SurfPichu_Slot5
+	setmonobedient VAR_EVENT_FOONGUS_SLOT
+	setmonmetlocation VAR_EVENT_FOONGUS_SLOT, METLOC_FATEFUL_ENCOUNTER
+	compare_var_to_value VAR_EVENT_FOONGUS_SLOT, 1
+	vgoto_if 1, SurfFoongus_Slot1
+	compare_var_to_value VAR_EVENT_FOONGUS_SLOT, 2
+	vgoto_if 1, SurfFoongus_Slot2
+	compare_var_to_value VAR_EVENT_FOONGUS_SLOT, 3
+	vgoto_if 1, SurfFoongus_Slot3
+	compare_var_to_value VAR_EVENT_FOONGUS_SLOT, 4
+	vgoto_if 1, SurfFoongus_Slot4
+	compare_var_to_value VAR_EVENT_FOONGUS_SLOT, 5
+	vgoto_if 1, SurfFoongus_Slot5
 	return
 
-SurfPichu_Slot1: @ 8674DC0
+SurfFoongus_Slot1: @ 8674DC0
 	setmonmove 1, 2, MOVE_SURF
 	return
 
-SurfPichu_Slot2:: @ 8674DC6
+SurfFoongus_Slot2:: @ 8674DC6
 	setmonmove 2, 2, MOVE_SURF
 	return
 
-SurfPichu_Slot3: @ 8674DCC
+SurfFoongus_Slot3: @ 8674DCC
 	setmonmove 3, 2, MOVE_SURF
 	return
 
-SurfPichu_Slot4: @ 8674DD2
+SurfFoongus_Slot4: @ 8674DD2
 	setmonmove 4, 2, MOVE_SURF
 	return
 
-SurfPichu_Slot5: @ 8674DD8
+SurfFoongus_Slot5: @ 8674DD8
 	setmonmove 5, 2, MOVE_SURF
 	return
 

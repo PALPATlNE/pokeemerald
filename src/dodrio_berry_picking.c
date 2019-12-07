@@ -26,7 +26,7 @@
 #include "constants/songs.h"
 #include "constants/species.h"
 
-struct DodrioSubstruct_0160
+struct LillipupSubstruct_0160
 {
     /*0x0000 : 0x3000*/ u16 ALIGNED(4) tilemapBuffers[3][BG_SCREEN_SIZE];
     /*0x3000 : 0x3160*/ bool32 finished;
@@ -40,7 +40,7 @@ struct DodrioSubstruct_0160
     /*0x3024 : 0x3184*/ void (*unk3028)(void);
 }; // size = 0x302C
 
-struct DodrioStruct_2022CF4
+struct LillipupStruct_2022CF4
 {
     u8 filler_00[0xc];
     u8 unkC[10];
@@ -49,40 +49,40 @@ struct DodrioStruct_2022CF4
     u16 unk3E;
 }; // size = 0x40
 
-struct DodrioSubstruct_31A0_14
+struct LillipupSubstruct_31A0_14
 {
     u8 unk0[11];
     u8 unkB[11];
 };
 
-struct DodrioSubstruct_31A0_2C
+struct LillipupSubstruct_31A0_2C
 {
     u8 unk0;
     u8 ALIGNED(4) unk4;
     u8 ALIGNED(4) unk8;
 };
 
-struct DodrioSubstruct_31A0
+struct LillipupSubstruct_31A0
 {
     u8 name[0x10];
     u32 unk10;
-    struct DodrioSubstruct_31A0_14 unk14;
-    struct DodrioSubstruct_31A0_2C unk2C;
+    struct LillipupSubstruct_31A0_14 unk14;
+    struct LillipupSubstruct_31A0_2C unk2C;
     u8 filler_35[4];
 }; // size = 0x3C
 
-struct DodrioSubstruct_318C
+struct LillipupSubstruct_318C
 {
     bool8 isShiny;
 };
 
-struct DodrioSubstruct_3308
+struct LillipupSubstruct_3308
 {
     u8 unk0;
     u32 unk4;
 };
 
-struct DodrioStruct
+struct LillipupStruct
 {
     /*0x0000*/ void (*savedCallback)(void);
     /*0x0004*/ u8 ALIGNED(4) unk04;
@@ -129,25 +129,25 @@ struct DodrioStruct
     /*0x0148*/ u8 ALIGNED(4) unk148[11];
     /*0x0154*/ u8 ALIGNED(4) unk154;
     /*0x0158*/ u8 ALIGNED(4) unk158[5];
-    /*0x0160*/ struct DodrioSubstruct_0160 unk160;
-    /*0x318C*/ struct DodrioSubstruct_318C unk318C[5];
-    /*0x31A0*/ struct DodrioSubstruct_31A0 unk31A0[5];
-    /*0x32CC*/ struct DodrioSubstruct_31A0 unk32CC;
-    /*0x3308*/ struct DodrioSubstruct_3308 unk3308[5];
+    /*0x0160*/ struct LillipupSubstruct_0160 unk160;
+    /*0x318C*/ struct LillipupSubstruct_318C unk318C[5];
+    /*0x31A0*/ struct LillipupSubstruct_31A0 unk31A0[5];
+    /*0x32CC*/ struct LillipupSubstruct_31A0 unk32CC;
+    /*0x3308*/ struct LillipupSubstruct_3308 unk3308[5];
 }; // size = 0x3330
 
-EWRAM_DATA static struct DodrioStruct * gUnknown_02022C98 = NULL;
+EWRAM_DATA static struct LillipupStruct * gUnknown_02022C98 = NULL;
 EWRAM_DATA static u16 *gUnknown_02022C9C[5] = {NULL};
 EWRAM_DATA static u16 *gUnknown_02022CB0[2] = {NULL};
 EWRAM_DATA static u16 *gUnknown_02022CB8[11] = {NULL};
 EWRAM_DATA static u16 *gUnknown_02022CE4[4] = {NULL};
-EWRAM_DATA static struct DodrioStruct_2022CF4 *gUnknown_02022CF4 = NULL;
-EWRAM_DATA static struct DodrioSubstruct_0160 *gUnknown_02022CF8 = NULL;
+EWRAM_DATA static struct LillipupStruct_2022CF4 *gUnknown_02022CF4 = NULL;
+EWRAM_DATA static struct LillipupSubstruct_0160 *gUnknown_02022CF8 = NULL;
 
 static bool32 gUnknown_03000DB0;
 
 static void sub_8024A1C(void);
-static void sub_8024A30(struct DodrioStruct *);
+static void sub_8024A30(struct LillipupStruct *);
 static void sub_8024BC8(u8 taskId);
 static void sub_8024DBC(void);
 static void sub_8024E00(void);
@@ -174,7 +174,7 @@ static void sub_8025F48(void);
 static void sub_8026044(void);
 static void sub_80261CC(void);
 static void sub_80261E4(void);
-static void sub_80261F8(struct DodrioSubstruct_318C *, struct Pokemon *);
+static void sub_80261F8(struct LillipupSubstruct_318C *, struct Pokemon *);
 static void sub_802620C(TaskFunc, u8);
 static void sub_802621C(TaskFunc);
 static void sub_8026240(u8);
@@ -203,14 +203,14 @@ static void sub_8027554(void);
 static void sub_8027608(void);
 static u32 sub_8027748(void);
 static void sub_8027DD0(u32 arg0);
-static void sub_8027E30(struct DodrioSubstruct_31A0 *arg0, struct DodrioSubstruct_31A0_2C *arg1, struct DodrioSubstruct_31A0_2C *arg2, struct DodrioSubstruct_31A0_2C *arg3, struct DodrioSubstruct_31A0_2C *arg4, struct DodrioSubstruct_31A0_2C *arg5, u8 arg6, u32 arg7, u32 arg8);
-static u32 sub_8028164(u32 unused, struct DodrioSubstruct_31A0 *arg0, struct DodrioSubstruct_31A0_2C *arg1, struct DodrioSubstruct_31A0_2C *arg2, struct DodrioSubstruct_31A0_2C *arg3, struct DodrioSubstruct_31A0_2C *arg4, struct DodrioSubstruct_31A0_2C *arg5, u8 *arg6, u32 *arg7, u32 *arg8);
+static void sub_8027E30(struct LillipupSubstruct_31A0 *arg0, struct LillipupSubstruct_31A0_2C *arg1, struct LillipupSubstruct_31A0_2C *arg2, struct LillipupSubstruct_31A0_2C *arg3, struct LillipupSubstruct_31A0_2C *arg4, struct LillipupSubstruct_31A0_2C *arg5, u8 arg6, u32 arg7, u32 arg8);
+static u32 sub_8028164(u32 unused, struct LillipupSubstruct_31A0 *arg0, struct LillipupSubstruct_31A0_2C *arg1, struct LillipupSubstruct_31A0_2C *arg2, struct LillipupSubstruct_31A0_2C *arg3, struct LillipupSubstruct_31A0_2C *arg4, struct LillipupSubstruct_31A0_2C *arg5, u8 *arg6, u32 *arg7, u32 *arg8);
 static void sub_80282EC(u8);
 static u32 sub_8028318(u32 arg0, u8 *arg1);
 static void sub_8028350(u32 arg0);
 static u32 sub_8028374(u32 arg0);
 static void sub_80283A8(void);
-static void sub_8028408(struct DodrioSubstruct_318C *arg0, u8 arg1, u8 id, u8 arg3);
+static void sub_8028408(struct LillipupSubstruct_318C *arg0, u8 arg1, u8 id, u8 arg3);
 static void sub_80284CC(u8);
 static void sub_8028504(u8);
 static void sub_8028614(u8 count);
@@ -230,7 +230,7 @@ static void sub_8028E84(void);
 static void sub_8028EC8(bool8 invisible);
 static void sub_8028FCC(void);
 static void sub_802903C(void);
-static void sub_8029274(struct DodrioSubstruct_0160 *PTR);
+static void sub_8029274(struct LillipupSubstruct_0160 *PTR);
 static void sub_80292E0(u8);
 static bool32 sub_802A770(void);
 static u8 sub_802A794(void);
@@ -245,7 +245,7 @@ static u32 sub_8027DFC(u32 arg0);
 static u32 IncrementWithLimit(u32 arg0, u32 arg1);
 static u32 Min(u32 arg0, u32 arg1);
 static u32 sub_80276C0(u8 arg0);
-static void Task_ShowDodrioBerryPickingRecords(u8 taskId);
+static void Task_ShowLillipupBerryPickingRecords(u8 taskId);
 static void sub_8029314(u8 taskId);
 static void sub_8027BEC(u8 windowId, s32 width);
 static void nullsub_15(struct Sprite *sprite);
@@ -483,7 +483,7 @@ static void sub_8024A1C(void)
     FreeAllSpritePalettes();
 }
 
-static void sub_8024A30(struct DodrioStruct * data)
+static void sub_8024A30(struct LillipupStruct * data)
 {
     u8 i;
 
@@ -1517,7 +1517,7 @@ static void sub_8026044(void)
     }
     for (r4 = r8; r4 < r7; r4++)
     {
-        struct DodrioSubstruct_31A0_14 * ptr = &gUnknown_02022C98->unk31A0[gUnknown_02022C98->multiplayerId].unk14;
+        struct LillipupSubstruct_31A0_14 * ptr = &gUnknown_02022C98->unk31A0[gUnknown_02022C98->multiplayerId].unk14;
         if (ptr->unkB[r4] >= 10)
         {
             if (gUnknown_02022C98->unk148[r4] == 0)
@@ -1558,7 +1558,7 @@ static void sub_80261E4(void)
     ProcessSpriteCopyRequests();
 }
 
-static void sub_80261F8(struct DodrioSubstruct_318C * a0, struct Pokemon * a1)
+static void sub_80261F8(struct LillipupSubstruct_318C * a0, struct Pokemon * a1)
 {
     a0->isShiny = IsMonShiny(a1);
 }
@@ -1615,7 +1615,7 @@ static void sub_80262C0(void)
 
     for (i = start; i < finish; i++)
     {
-        struct DodrioSubstruct_31A0_14 * ptr = &gUnknown_02022C98->unk32CC.unk14;
+        struct LillipupSubstruct_31A0_14 * ptr = &gUnknown_02022C98->unk32CC.unk14;
         ptr->unkB[i] = (i % 2 == 0) ? 1 : 0;
         ptr->unk0[i] = 0;
     }
@@ -1725,7 +1725,7 @@ static bool32 sub_8026634(u8 a0, u8 a1, u8 a2)
 {
     s32 r7 = 0;
     u8 r5 = gUnknown_02022C98->unk24 - 1;
-    struct DodrioSubstruct_31A0_14 * ptr = &gUnknown_02022C98->unk32CC.unk14;
+    struct LillipupSubstruct_31A0_14 * ptr = &gUnknown_02022C98->unk32CC.unk14;
 
     switch (a1)
     {
@@ -1774,7 +1774,7 @@ static void sub_802671C(void)
     u8 r10 = 0;
     u8 i;
     u8 r2;
-    struct DodrioStruct *ptr;
+    struct LillipupStruct *ptr;
 
     gUnknown_02022C98->unk120 = 0;
 
@@ -1861,7 +1861,7 @@ static void sub_8026988(void)
     count = gUnknown_02022C98->unk48;
     for (i = first; i < count; i++)
     {
-        struct DodrioSubstruct_31A0 *ptr = &gUnknown_02022C98->unk31A0[gUnknown_02022C98->multiplayerId];
+        struct LillipupSubstruct_31A0 *ptr = &gUnknown_02022C98->unk31A0[gUnknown_02022C98->multiplayerId];
         u8 var = gUnknown_082F449C[gUnknown_02022C98->unk24 - 1][gUnknown_02022C98->multiplayerId][i];
 
         if (ptr->unk14.unkB[var] != 0)
@@ -1895,7 +1895,7 @@ static void sub_8026A88(void)
     count = gUnknown_02022C98->unk24;
     for (i = 0; i < count; i++)
     {
-        struct DodrioSubstruct_31A0 *ptr = &gUnknown_02022C98->unk31A0[i];
+        struct LillipupSubstruct_31A0 *ptr = &gUnknown_02022C98->unk31A0[i];
         sub_80286B4(i, ptr->unk2C.unk0);
     }
 }
@@ -2010,7 +2010,7 @@ static bool32 sub_8026C90(void)
         {
             for (i = first; i < count; i++)
             {
-                struct DodrioSubstruct_31A0 *ptr = &gUnknown_02022C98->unk31A0[gUnknown_02022C98->multiplayerId];
+                struct LillipupSubstruct_31A0 *ptr = &gUnknown_02022C98->unk31A0[gUnknown_02022C98->multiplayerId];
                 u8 var = gUnknown_082F449C[gUnknown_02022C98->unk24 - 1][gUnknown_02022C98->multiplayerId][i];
 
                 if (ptr->unk14.unkB[var] != 10)
@@ -2517,7 +2517,7 @@ static u32 sub_802784C(void)
     return 0;
 }
 
-static void sub_802793C(struct DodrioSubstruct_3308 *dst, u8 id)
+static void sub_802793C(struct LillipupSubstruct_3308 *dst, u8 id)
 {
     *dst = gUnknown_02022C98->unk3308[id];
 }
@@ -2580,7 +2580,7 @@ static u8 sub_8027A48(u8 id)
     return gUnknown_02022C98->unk34[id];
 }
 
-void IsDodrioInParty(void)
+void IsLillipupInParty(void)
 {
     int i;
     for (i = 0; i < PARTY_SIZE; i++)
@@ -2596,10 +2596,10 @@ void IsDodrioInParty(void)
     gSpecialVar_Result = FALSE;
 }
 
-void ShowDodrioBerryPickingRecords(void)
+void ShowLillipupBerryPickingRecords(void)
 {
-    u8 taskId = CreateTask(Task_ShowDodrioBerryPickingRecords, 0);
-    Task_ShowDodrioBerryPickingRecords(taskId);
+    u8 taskId = CreateTask(Task_ShowLillipupBerryPickingRecords, 0);
+    Task_ShowLillipupBerryPickingRecords(taskId);
 }
 
 // Data related to printing saved results.
@@ -2621,7 +2621,7 @@ ALIGNED(4)
 static const u8 gUnknown_082F7B44[][2] = {{25}, {41}, {57}};
 static const u8 gUnknown_082F7B4A[][2] = {{25}, {41}, {73}};
 
-static void Task_ShowDodrioBerryPickingRecords(u8 taskId)
+static void Task_ShowLillipupBerryPickingRecords(u8 taskId)
 {
     struct WindowTemplate window;
     s32 i, width, widthCurr;
@@ -2809,10 +2809,10 @@ struct UnkPacket2
 };
 
 #ifdef NONMATCHING
-static void sub_8027E30(struct DodrioSubstruct_31A0 *arg0, struct DodrioSubstruct_31A0_2C *arg1, struct DodrioSubstruct_31A0_2C *arg2, struct DodrioSubstruct_31A0_2C *arg3, struct DodrioSubstruct_31A0_2C *arg4, struct DodrioSubstruct_31A0_2C *arg5, u8 arg6, u32 arg7, u32 arg8)
+static void sub_8027E30(struct LillipupSubstruct_31A0 *arg0, struct LillipupSubstruct_31A0_2C *arg1, struct LillipupSubstruct_31A0_2C *arg2, struct LillipupSubstruct_31A0_2C *arg3, struct LillipupSubstruct_31A0_2C *arg4, struct LillipupSubstruct_31A0_2C *arg5, u8 arg6, u32 arg7, u32 arg8)
 {
     struct UnkPacket2 packet;
-    struct DodrioSubstruct_31A0_14 *ptr = &arg0->unk14;
+    struct LillipupSubstruct_31A0_14 *ptr = &arg0->unk14;
 
     packet.id = 2;
     packet.unk1_0 = ptr->unkB[0];
@@ -2862,7 +2862,7 @@ static void sub_8027E30(struct DodrioSubstruct_31A0 *arg0, struct DodrioSubstruc
 }
 #else
 NAKED
-static void sub_8027E30(struct DodrioSubstruct_31A0 *arg0, struct DodrioSubstruct_31A0_2C *arg1, struct DodrioSubstruct_31A0_2C *arg2, struct DodrioSubstruct_31A0_2C *arg3, struct DodrioSubstruct_31A0_2C *arg4, struct DodrioSubstruct_31A0_2C *arg5, u8 arg6, u32 arg7, u32 arg8)
+static void sub_8027E30(struct LillipupSubstruct_31A0 *arg0, struct LillipupSubstruct_31A0_2C *arg1, struct LillipupSubstruct_31A0_2C *arg2, struct LillipupSubstruct_31A0_2C *arg3, struct LillipupSubstruct_31A0_2C *arg4, struct LillipupSubstruct_31A0_2C *arg5, u8 arg6, u32 arg7, u32 arg8)
 {
     asm_unified("   push {r4-r7,lr}\n\
     mov r7, r10\n\
@@ -3277,10 +3277,10 @@ static void sub_8027E30(struct DodrioSubstruct_31A0 *arg0, struct DodrioSubstruc
 }
 #endif
 
-static u32 sub_8028164(u32 unused, struct DodrioSubstruct_31A0 *arg0, struct DodrioSubstruct_31A0_2C *arg1, struct DodrioSubstruct_31A0_2C *arg2, struct DodrioSubstruct_31A0_2C *arg3, struct DodrioSubstruct_31A0_2C *arg4, struct DodrioSubstruct_31A0_2C *arg5, u8 *arg6, u32 *arg7, u32 *arg8)
+static u32 sub_8028164(u32 unused, struct LillipupSubstruct_31A0 *arg0, struct LillipupSubstruct_31A0_2C *arg1, struct LillipupSubstruct_31A0_2C *arg2, struct LillipupSubstruct_31A0_2C *arg3, struct LillipupSubstruct_31A0_2C *arg4, struct LillipupSubstruct_31A0_2C *arg5, u8 *arg6, u32 *arg7, u32 *arg8)
 {
     struct UnkPacket2 *packet;
-    struct DodrioSubstruct_31A0_14 *ptr = &arg0->unk14;
+    struct LillipupSubstruct_31A0_14 *ptr = &arg0->unk14;
 
     if ((gRecvCmds[0][0] & 0xFF00) != 0x2F00)
         return 0;
@@ -3535,22 +3535,22 @@ static const u8 sDuplicateArray[] =
     2, 2, 3, 5, 0, 0, 0, 0, 4, 6, 0, 0, 0, 3, 5, 7, 0, 0, 2, 4, 6, 8, 0, 1, 3, 5, 6, 9
 };
 
-static const u16 gDodrioBerryBgPal1[] = INCBIN_U16("graphics/link_games/dodrioberry_bg1.gbapal",
+static const u16 gLillipupBerryBgPal1[] = INCBIN_U16("graphics/link_games/dodrioberry_bg1.gbapal",
                                             "graphics/link_games/dodrioberry_bg2.gbapal");
-static const u16 gDodrioBerryPkmnPal[] = INCBIN_U16("graphics/link_games/dodrioberry_pkmn.gbapal");
-static const u16 gDodrioBerryShinyPal[] = INCBIN_U16("graphics/link_games/dodrioberry_shiny.gbapal");
-static const u16 gDodrioBerryStatusPal[] = INCBIN_U16("graphics/link_games/dodrioberry_status.gbapal");
-static const u16 gDodrioBerrySpritesPal[] = INCBIN_U16("graphics/link_games/dodrioberry_berrysprites.gbapal");
-static const u32 gDodrioBerrySpritesGfx[] = INCBIN_U32("graphics/link_games/dodrioberry_berrysprites.4bpp.lz");
-static const u16 gDodrioBerryPlatformPal[] = INCBIN_U16("graphics/link_games/dodrioberry_platform.gbapal");
-static const u32 gDodrioBerryBgGfx1[] = INCBIN_U32("graphics/link_games/dodrioberry_bg1.4bpp.lz");
-static const u32 gDodrioBerryBgGfx2[] = INCBIN_U32("graphics/link_games/dodrioberry_bg2.4bpp.lz");
-static const u32 gDodrioBerryStatusGfx[] = INCBIN_U32("graphics/link_games/dodrioberry_status.4bpp.lz");
-static const u32 gDodrioBerryPlatformGfx[] = INCBIN_U32("graphics/link_games/dodrioberry_platform.4bpp.lz");
-static const u32 gDodrioBerryPkmnGfx[] = INCBIN_U32("graphics/link_games/dodrioberry_pkmn.4bpp.lz");
-static const u32 gDodrioBerryBgTilemap1[] = INCBIN_U32("graphics/link_games/dodrioberry_bg1.bin.lz");
-static const u32 gDodrioBerryBgTilemap2Right[] = INCBIN_U32("graphics/link_games/dodrioberry_bg2right.bin.lz");
-static const u32 gDodrioBerryBgTilemap2Left[] = INCBIN_U32("graphics/link_games/dodrioberry_bg2left.bin.lz");
+static const u16 gLillipupBerryPkmnPal[] = INCBIN_U16("graphics/link_games/dodrioberry_pkmn.gbapal");
+static const u16 gLillipupBerryShinyPal[] = INCBIN_U16("graphics/link_games/dodrioberry_shiny.gbapal");
+static const u16 gLillipupBerryStatusPal[] = INCBIN_U16("graphics/link_games/dodrioberry_status.gbapal");
+static const u16 gLillipupBerrySpritesPal[] = INCBIN_U16("graphics/link_games/dodrioberry_berrysprites.gbapal");
+static const u32 gLillipupBerrySpritesGfx[] = INCBIN_U32("graphics/link_games/dodrioberry_berrysprites.4bpp.lz");
+static const u16 gLillipupBerryPlatformPal[] = INCBIN_U16("graphics/link_games/dodrioberry_platform.gbapal");
+static const u32 gLillipupBerryBgGfx1[] = INCBIN_U32("graphics/link_games/dodrioberry_bg1.4bpp.lz");
+static const u32 gLillipupBerryBgGfx2[] = INCBIN_U32("graphics/link_games/dodrioberry_bg2.4bpp.lz");
+static const u32 gLillipupBerryStatusGfx[] = INCBIN_U32("graphics/link_games/dodrioberry_status.4bpp.lz");
+static const u32 gLillipupBerryPlatformGfx[] = INCBIN_U32("graphics/link_games/dodrioberry_platform.4bpp.lz");
+static const u32 gLillipupBerryPkmnGfx[] = INCBIN_U32("graphics/link_games/dodrioberry_pkmn.4bpp.lz");
+static const u32 gLillipupBerryBgTilemap1[] = INCBIN_U32("graphics/link_games/dodrioberry_bg1.bin.lz");
+static const u32 gLillipupBerryBgTilemap2Right[] = INCBIN_U32("graphics/link_games/dodrioberry_bg2right.bin.lz");
+static const u32 gLillipupBerryBgTilemap2Left[] = INCBIN_U32("graphics/link_games/dodrioberry_bg2left.bin.lz");
 
 static const struct OamData sOamData_82FB1E0 =
 {
@@ -3765,10 +3765,10 @@ static const union AnimCmd *const sSpriteAnimTable_82FB2D4[] =
 static void sub_80283A8(void)
 {
     void *ptr = AllocZeroed(0x3000);
-    struct SpritePalette pal1 = {gDodrioBerryPkmnPal, 0};
-    struct SpritePalette pal2 = {gDodrioBerryShinyPal, 1};
+    struct SpritePalette pal1 = {gLillipupBerryPkmnPal, 0};
+    struct SpritePalette pal2 = {gLillipupBerryShinyPal, 1};
 
-    LZ77UnCompWram(gDodrioBerryPkmnGfx, ptr);
+    LZ77UnCompWram(gLillipupBerryPkmnGfx, ptr);
     // This check should be one line up.
     if (ptr != NULL)
     {
@@ -3780,7 +3780,7 @@ static void sub_80283A8(void)
     LoadSpritePalette(&pal2);
 }
 
-static void sub_8028408(struct DodrioSubstruct_318C *arg0, u8 arg1, u8 id, u8 arg3)
+static void sub_8028408(struct LillipupSubstruct_318C *arg0, u8 arg1, u8 id, u8 arg3)
 {
     struct SpriteTemplate sprTemplate =
     {
@@ -3927,9 +3927,9 @@ static void sub_8028734(void)
 {
     u8 i;
     void *ptr = AllocZeroed(0x180);
-    struct SpritePalette spPal = {gDodrioBerryStatusPal, 2};
+    struct SpritePalette spPal = {gLillipupBerryStatusPal, 2};
 
-    LZ77UnCompWram(gDodrioBerryStatusGfx, ptr);
+    LZ77UnCompWram(gLillipupBerryStatusGfx, ptr);
     // This check should be one line up.
     if (ptr != NULL)
     {
@@ -4041,9 +4041,9 @@ static const u8 sUnused2[] = {0xD4, 0x3E, 0x3F, 0x40, 0x41, 0x42, 0x43, 0x44, 0x
 static void sub_8028A34(void)
 {
     void *ptr = AllocZeroed(0x480);
-    struct SpritePalette sprPal = {gDodrioBerrySpritesPal, 3};
+    struct SpritePalette sprPal = {gLillipupBerrySpritesPal, 3};
 
-    LZ77UnCompWram(gDodrioBerrySpritesGfx, ptr);
+    LZ77UnCompWram(gLillipupBerrySpritesGfx, ptr);
     if (ptr != NULL)
     {
         struct SpriteSheet sprSheet = {ptr, 0x480, 2};
@@ -4184,9 +4184,9 @@ static void sub_8028D44(void)
 {
     u8 i;
     void *ptr = AllocZeroed(0x400);
-    struct SpritePalette sprPal = {gDodrioBerryPlatformPal, 6};
+    struct SpritePalette sprPal = {gLillipupBerryPlatformPal, 6};
 
-    LZ77UnCompWram(gDodrioBerryPlatformGfx, ptr);
+    LZ77UnCompWram(gLillipupBerryPlatformGfx, ptr);
     if (ptr != NULL)
     {
         struct SpriteSheet sprSheet = {ptr, 0x400, 5};
@@ -4362,7 +4362,7 @@ static void sub_8029174(const struct WindowTemplate *winTempl)
     FillBgTilemapBufferRect(0, 18, winTempl->tilemapLeft + winTempl->width,  winTempl->tilemapTop + winTempl->height,    1, 1, pal);
 }
 
-static void sub_8029274(struct DodrioSubstruct_0160 *ptr)
+static void sub_8029274(struct LillipupSubstruct_0160 *ptr)
 {
     gUnknown_02022CF8 = ptr;
     gUnknown_02022CF8->finished = FALSE;
@@ -4469,9 +4469,9 @@ static void sub_8029338(void)
             gUnknown_02022CF8->state++;
         break;
     case 2:
-        CopyToBgTilemapBuffer(3, gDodrioBerryBgTilemap1, 0, 0);
-        CopyToBgTilemapBuffer(1, gDodrioBerryBgTilemap2Left, 0, 0);
-        CopyToBgTilemapBuffer(2, gDodrioBerryBgTilemap2Right, 0, 0);
+        CopyToBgTilemapBuffer(3, gLillipupBerryBgTilemap1, 0, 0);
+        CopyToBgTilemapBuffer(1, gLillipupBerryBgTilemap2Left, 0, 0);
+        CopyToBgTilemapBuffer(2, gLillipupBerryBgTilemap2Right, 0, 0);
         CopyBgTilemapBufferToVram(3);
         CopyBgTilemapBufferToVram(1);
         CopyBgTilemapBufferToVram(2);
@@ -4567,7 +4567,7 @@ static void sub_80296A8(u8 playersCount_)
     u32 x, numWidth;
     u8 numString[32];
     u8 array[5] = {0, 1, 2, 3, 4};
-    struct DodrioSubstruct_3308 temp, structArray[5];
+    struct LillipupSubstruct_3308 temp, structArray[5];
 
     for (i = 0; i < playersCount; i++)
     {
@@ -5058,16 +5058,16 @@ static bool32 sub_802A8E8(void)
     switch (gUnknown_02022CF8->unk3018)
     {
     case 0:
-        LoadPalette(gDodrioBerryBgPal1, 0, sizeof(gDodrioBerryBgPal1));
+        LoadPalette(gLillipupBerryBgPal1, 0, sizeof(gLillipupBerryBgPal1));
         break;
     case 1:
         reset_temp_tile_data_buffers();
         break;
     case 2:
-        decompress_and_copy_tile_data_to_vram(3, gDodrioBerryBgGfx1, 0, 0, 0);
+        decompress_and_copy_tile_data_to_vram(3, gLillipupBerryBgGfx1, 0, 0, 0);
         break;
     case 3:
-        decompress_and_copy_tile_data_to_vram(1, gDodrioBerryBgGfx2, 0, 0, 0);
+        decompress_and_copy_tile_data_to_vram(1, gLillipupBerryBgGfx2, 0, 0, 0);
         break;
     case 4:
         if (free_temp_tile_data_buffers_if_possible() == TRUE)

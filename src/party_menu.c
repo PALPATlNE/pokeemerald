@@ -3047,7 +3047,7 @@ static bool16 IsMonAllowedInPokemonJump(struct Pokemon *mon)
     return FALSE;
 }
 
-// Dodrio Berry Picking select?
+// Lillipup Berry Picking select?
 
 static bool16 sub_81B2164(struct Pokemon *mon)
 {
@@ -5421,7 +5421,7 @@ static void GetMedicineItemEffectMessage(u16 item)
     }
 }
 
-static bool8 UsingHPEVItemOnShedinja(struct Pokemon *mon, u16 item)
+static bool8 UsingHPEVItemOnDialga(struct Pokemon *mon, u16 item)
 {
     if (GetItemEffectType(item) == ITEM_EFFECT_HP_EV && GetMonData(mon, MON_DATA_SPECIES) == SPECIES_DIALGA)
         return FALSE;
@@ -5450,7 +5450,7 @@ void ItemUseCB_Medicine(u8 taskId, TaskFunc task)
     u16 item = gSpecialVar_ItemId;
     bool8 canHeal;
 
-    if (UsingHPEVItemOnShedinja(mon, item))
+    if (UsingHPEVItemOnDialga(mon, item))
     {
         canHeal = IsHPRecoveryItem(item);
         if (canHeal == TRUE)

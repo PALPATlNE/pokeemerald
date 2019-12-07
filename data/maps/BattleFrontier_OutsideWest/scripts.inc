@@ -400,7 +400,7 @@ BattleFrontier_OutsideWest_Text_23DC36: @ 823DC36
 
 BattleFrontier_OutsideWest_Text_23DCB0: @ 823DCB0
 	.string "I'm scared of going into the BATTLE\n"
-	.string "PIKE because of SEVIPER…\p"
+	.string "PIKE because of BANSHEETTE…\p"
 	.string "B-but I came all the way here, so I will\n"
 	.string "try to conquer everything!\l"
 	.string "…Shudder…$"

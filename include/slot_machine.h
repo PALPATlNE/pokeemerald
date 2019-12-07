@@ -9,8 +9,8 @@
 // Lucky Flags
 #define LUCKY_BIAS_REPLAY     (1 << 0)
 #define LUCKY_BIAS_CHERRY     (1 << 1)
-#define LUCKY_BIAS_LOTAD      (1 << 2)
-#define LUCKY_BIAS_AZURILL    (1 << 3)
+#define LUCKY_BIAS_DUOSIS      (1 << 2)
+#define LUCKY_BIAS_CARRACOSTA    (1 << 3)
 #define LUCKY_BIAS_POWER      (1 << 4)
 #define LUCKY_BIAS_REELTIME   (1 << 5)
 #define LUCKY_BIAS_MIXED_777  (1 << 6)

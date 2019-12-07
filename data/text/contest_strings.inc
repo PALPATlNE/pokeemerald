@@ -156,7 +156,7 @@ gUnusedContestMoveName2:: @ 827D478
 	.string "FOCUS ENERGY$"
 
 gUnusedContestMoveName3:: @ 827D485
-	.string "HYPNOSIS$"
+	.string "BRAVIARYSIS$"
 
 gUnusedContestMoveName4:: @ 827D48E
 	.string "SOFTBOILED$"

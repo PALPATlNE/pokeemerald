@@ -560,9 +560,9 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[] =
     [6] = {
         .facilityClass = FACILITY_CLASS_RICH_BOY,
         .trainerName = _("RODOLFO"),
-        .speechBefore = {EC_WORD_GO, EC_WORD_GET, EC_WORD_A, EC_POKEMON(WHISCASH), EC_WORD_FOR, EC_WORD_ME},
-        .speechWin = {EC_WORD_AWW, EC_WORD_YOU, EC_WORD_DON_T, EC_WORD_HAVE, EC_WORD_A, EC_POKEMON(WHISCASH)},
-        .speechLose = {EC_WORD_PLEASE, EC_WORD_I, EC_WORD_NEED, EC_WORD_A, EC_POKEMON(WHISCASH), EC_WORD_BADLY},
+        .speechBefore = {EC_WORD_GO, EC_WORD_GET, EC_WORD_A, EC_POKEMON(LAMPENT), EC_WORD_FOR, EC_WORD_ME},
+        .speechWin = {EC_WORD_AWW, EC_WORD_YOU, EC_WORD_DON_T, EC_WORD_HAVE, EC_WORD_A, EC_POKEMON(LAMPENT)},
+        .speechLose = {EC_WORD_PLEASE, EC_WORD_I, EC_WORD_NEED, EC_WORD_A, EC_POKEMON(LAMPENT), EC_WORD_BADLY},
         .monSets = gSlateportBattleTentTrainerMons_Rodolfo
     },
     [7] = {
@@ -616,9 +616,9 @@ const struct BattleFrontierTrainer gSlateportBattleTentTrainers[] =
     [13] = {
         .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
         .trainerName = _("MAGGIE"),
-        .speechBefore = {EC_POKEMON(VULPIX), EC_POKEMON(XATU), EC_POKEMON2(UMBREON), EC_WORD_ELLIPSIS, EC_WORD_UM, EC_WORD_ELLIPSIS},
-        .speechWin = {EC_POKEMON(NOSEPASS), EC_WORD_ELLIPSIS, EC_WORD_UM, EC_POKEMON(SEVIPER), EC_WORD_EXCL, -1},
-        .speechLose = {EC_POKEMON(NOSEPASS), EC_WORD_ELLIPSIS, EC_WORD_UM, EC_POKEMON2(SNORLAX), EC_WORD_ELLIPSIS, EC_WORD_UH_OH},
+        .speechBefore = {EC_POKEMON(VULPIX), EC_POKEMON(PHANTUMP), EC_POKEMON2(UMBREON), EC_WORD_ELLIPSIS, EC_WORD_UM, EC_WORD_ELLIPSIS},
+        .speechWin = {EC_POKEMON(SANDSHREW_A), EC_WORD_ELLIPSIS, EC_WORD_UM, EC_POKEMON(BANSHEETTE), EC_WORD_EXCL, -1},
+        .speechLose = {EC_POKEMON(SANDSHREW_A), EC_WORD_ELLIPSIS, EC_WORD_UM, EC_POKEMON2(SNORLAX), EC_WORD_ELLIPSIS, EC_WORD_UH_OH},
         .monSets = gSlateportBattleTentTrainerMons_Maggie
     },
     [14] = {
@@ -979,7 +979,7 @@ const struct FacilityMon gSlateportBattleTentMons[] =
     },
     [32] = {
         .species = SPECIES_PALKIA,
-        .moves = {MOVE_DIZZY_PUNCH, MOVE_FAINT_ATTACK, MOVE_HYPNOSIS, MOVE_REST},
+        .moves = {MOVE_DIZZY_PUNCH, MOVE_FAINT_ATTACK, MOVE_BRAVIARYSIS, MOVE_REST},
         .itemTableId = BATTLE_FRONTIER_ITEM_CHESTO_BERRY,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT
@@ -1147,7 +1147,7 @@ const struct FacilityMon gSlateportBattleTentMons[] =
     },
     [56] = {
         .species = SPECIES_RALTS,
-        .moves = {MOVE_HYPNOSIS, MOVE_IMPRISON, MOVE_PSYCHIC, MOVE_DREAM_EATER},
+        .moves = {MOVE_BRAVIARYSIS, MOVE_IMPRISON, MOVE_PSYCHIC, MOVE_DREAM_EATER},
         .itemTableId = BATTLE_FRONTIER_ITEM_MAGO_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
         .nature = NATURE_TIMID
@@ -2471,8 +2471,8 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[] =
         .facilityClass = FACILITY_CLASS_TUBER_M,
         .trainerName = _("TREVE"),
         .speechBefore = {EC_WORD_LOOK, EC_WORD_AT, EC_WORD_MY, EC_MOVE2(METRONOME), EC_WORD_AND, EC_WORD_SLEEP},
-        .speechWin = {EC_WORD_YEAH, EC_WORD_EXCL, EC_MOVE(HYPNOSIS), EC_WORD_IS, EC_WORD_TOTALLY, EC_WORD_GREAT},
-        .speechLose = {EC_WORD_MY, EC_MOVE(HYPNOSIS), EC_WORD_DIDN_T, EC_WORD_WORK, EC_WORD_ELLIPSIS, -1},
+        .speechWin = {EC_WORD_YEAH, EC_WORD_EXCL, EC_MOVE(BRAVIARYSIS), EC_WORD_IS, EC_WORD_TOTALLY, EC_WORD_GREAT},
+        .speechLose = {EC_WORD_MY, EC_MOVE(BRAVIARYSIS), EC_WORD_DIDN_T, EC_WORD_WORK, EC_WORD_ELLIPSIS, -1},
         .monSets = gFallarborBattleTentTrainerMons_Treve
     },
     [4] = {
@@ -2976,7 +2976,7 @@ const struct FacilityMon gFallarborBattleTentMons[] =
     },
     [41] = {
         .species = SPECIES_KIRLIA,
-        .moves = {MOVE_HYPNOSIS, MOVE_GROWL, MOVE_ATTRACT, MOVE_DREAM_EATER},
+        .moves = {MOVE_BRAVIARYSIS, MOVE_GROWL, MOVE_ATTRACT, MOVE_DREAM_EATER},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT

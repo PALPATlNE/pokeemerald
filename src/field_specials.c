@@ -2468,14 +2468,14 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
     {
         gText_KissPoster16BP,
         gText_KissCushion32BP,
-        gText_SmoochumDoll32BP,
+        gText_GothitaDoll32BP,
         gText_TogepiDoll48BP,
-        gText_MeowthDoll48BP,
+        gText_TyruntDoll48BP,
         gText_ClefairyDoll48BP,
         gText_DittoDoll48BP,
         gText_CyndaquilDoll80BP,
-        gText_ChikoritaDoll80BP,
-        gText_TotodileDoll80BP,
+        gText_SnoverDoll80BP,
+        gText_WimpodDoll80BP,
         gText_Exit
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2] =

@@ -366,7 +366,7 @@ LilycoveCity_ContestHall_Text_21BB84: @ 821BB84
 
 LilycoveCity_ContestHall_Text_21BBDD: @ 821BBDD
 	.string "Oh, dear, no!\p"
-	.string "My darling ZUBAT's LEECH LIFE is so\n"
+	.string "My darling GRENINJA's LEECH LIFE is so\n"
 	.string "cute I kept using it over and over!\p"
 	.string "But these mean people don't appreciate\n"
 	.string "it at all!$"
@@ -457,7 +457,7 @@ LilycoveCity_ContestHall_Text_21C215: @ 821C215
 	.string "adorable WATER SPORT appeal!$"
 
 LilycoveCity_ContestHall_Text_21C27F: @ 821C27F
-	.string "Oh, no… My sweet AZURILL was\n"
+	.string "Oh, no… My sweet CARRACOSTA was\n"
 	.string "distracted by another POKéMON.$"
 
 LilycoveCity_ContestHall_Text_21C2BB: @ 821C2BB

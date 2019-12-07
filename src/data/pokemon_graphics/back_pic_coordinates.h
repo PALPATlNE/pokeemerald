@@ -415,7 +415,7 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x66,
         .y_offset = 0x0a,
     },
-    [SPECIES_MAGNEZONE =
+    [SPECIES_MAGNEZONE] =
     {
         .size = 0x66,
         .y_offset = 0x0a,
@@ -580,12 +580,12 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x77,
         .y_offset = 0x05,
     },
-    [SPECIES_SCRAGGY] =
+    [SPECIES_SPINARAK] =
     {
         .size = 0x66,
         .y_offset = 0x09,
     },
-    [SPECIES_SCRAFTY] =
+    [SPECIES_ARIADOS] =
     {
         .size = 0x66,
         .y_offset = 0x08,
@@ -965,7 +965,7 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x66,
         .y_offset = 0x08,
     },
-    [SPECIES_YANMA] =
+    [SPECIES_WEAVILE] =
     {
         .size = 0x77,
         .y_offset = 0x04,
@@ -1030,7 +1030,7 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x84,
         .y_offset = 0x10,
     },
-    [SPECIES_DEERLING] =
+    [SPECIES_AUDINO] =
     {
         .size = 0x85,
         .y_offset = 0x0f,
@@ -1260,127 +1260,127 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x66,
         .y_offset = 0x08,
     },
-    [SPECIES_OLD_UNOWN_B] =
+    [SPECIES_OLD_FLABEBE_B] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_C] =
+    [SPECIES_OLD_FLABEBE_C] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_D] =
+    [SPECIES_OLD_FLABEBE_D] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_E] =
+    [SPECIES_OLD_FLABEBE_E] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_F] =
+    [SPECIES_OLD_FLABEBE_F] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_G] =
+    [SPECIES_OLD_FLABEBE_G] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_H] =
+    [SPECIES_OLD_FLABEBE_H] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_I] =
+    [SPECIES_OLD_FLABEBE_I] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_J] =
+    [SPECIES_OLD_FLABEBE_J] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_K] =
+    [SPECIES_OLD_FLABEBE_K] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_L] =
+    [SPECIES_OLD_FLABEBE_L] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_M] =
+    [SPECIES_OLD_FLABEBE_M] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_N] =
+    [SPECIES_OLD_FLABEBE_N] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_O] =
+    [SPECIES_OLD_FLABEBE_O] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_P] =
+    [SPECIES_OLD_FLABEBE_P] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_Q] =
+    [SPECIES_OLD_FLABEBE_Q] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_R] =
+    [SPECIES_OLD_FLABEBE_R] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_S] =
+    [SPECIES_OLD_FLABEBE_S] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_T] =
+    [SPECIES_OLD_FLABEBE_T] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_U] =
+    [SPECIES_OLD_FLABEBE_U] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_V] =
+    [SPECIES_OLD_FLABEBE_V] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_W] =
+    [SPECIES_OLD_FLABEBE_W] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_X] =
+    [SPECIES_OLD_FLABEBE_X] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_Y] =
+    [SPECIES_OLD_FLABEBE_Y] =
     {
         .size = 0x88,
         .y_offset = 0x02,
     },
-    [SPECIES_OLD_UNOWN_Z] =
+    [SPECIES_OLD_FLABEBE_Z] =
     {
         .size = 0x88,
         .y_offset = 0x02,
@@ -1925,7 +1925,7 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x87,
         .y_offset = 0x07,
     },
-    [SPECIES_CELEBI] =
+    [SPECIES_FILLER3] =
     {
         .size = 0x45,
         .y_offset = 0x0d,

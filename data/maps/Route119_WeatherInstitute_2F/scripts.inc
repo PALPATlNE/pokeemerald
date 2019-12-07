@@ -126,7 +126,7 @@ Route119_WeatherInstitute_2F_EventScript_2700DB:: @ 82700DB
 
 Route119_WeatherInstitute_2F_EventScript_2700EA:: @ 82700EA
 	msgbox Route119_WeatherInstitute_2F_Text_2706FE, MSGBOX_DEFAULT
-	setflag FLAG_RECEIVED_CASTFORM
+	setflag FLAG_RECEIVED_FILLER3
 	release
 	end
 
@@ -209,7 +209,7 @@ Route119_WeatherInstitute_2F_Movement_270187: @ 8270187
 Route119_WeatherInstitute_2F_EventScript_27018B:: @ 827018B
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_CASTFORM, Route119_WeatherInstitute_2F_EventScript_2700F7
+	goto_if_set FLAG_RECEIVED_FILLER3, Route119_WeatherInstitute_2F_EventScript_2700F7
 	goto Route119_WeatherInstitute_2F_EventScript_27004D
 	end
 
@@ -298,7 +298,7 @@ Route119_WeatherInstitute_2F_Text_2706B2: @ 82706B2
 	.string "for this POKéMON.$"
 
 Route119_WeatherInstitute_2F_Text_2706E8: @ 82706E8
-	.string "{PLAYER} received CASTFORM!$"
+	.string "{PLAYER} received FILLER3!$"
 
 Route119_WeatherInstitute_2F_Text_2706FE: @ 82706FE
 	.string "That POKéMON changes shape according\n"

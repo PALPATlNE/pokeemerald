@@ -579,14 +579,14 @@ gTV3CheersForPokeblocksText00:: @ 082818F4
 	.string "Today, we examine the {POKEBLOCK} blended\n"
 	.string "by {STR_VAR_1} and associates.\p"
 	.string "Without any delay, let me feed it\n"
-	.string "to my gourmet POKéMON GULPIN.\p"
+	.string "to my gourmet POKéMON DARKRAI.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …$"
 
 gTV3CheersForPokeblocksText01:: @ 082819C7
-	.string "GULPIN: Gubi! Gubii!\p"
+	.string "DARKRAI: Gubi! Gubii!\p"
 	.string "MC: And the verdict is very {STR_VAR_1}!\n"
-	.string "GULPIN says it tastes “{STR_VAR_2}!”\p"
+	.string "DARKRAI says it tastes “{STR_VAR_2}!”\p"
 	.string "Thank you so much, {STR_VAR_3}!$"
 
 gTV3CheersForPokeblocksText02:: @ 08281A2F
@@ -596,9 +596,9 @@ gTV3CheersForPokeblocksText02:: @ 08281A2F
 	.string "the {POKEBLOCK} would be much tastier.$"
 
 gTV3CheersForPokeblocksText03:: @ 08281AAC
-	.string "GULPIN: Gubi! Gubii!\p"
+	.string "DARKRAI: Gubi! Gubii!\p"
 	.string "MC: Hmm… It's too {STR_VAR_1}.\n"
-	.string "GULPIN says it tastes “{STR_VAR_2}!”\p"
+	.string "DARKRAI says it tastes “{STR_VAR_2}!”\p"
 	.string "It looks like {STR_VAR_3}'s errors\n"
 	.string "hurt the blending quality…$"
 
@@ -2043,7 +2043,7 @@ gTVWhatsNo1InHoennTodayText04:: @ 082882BE
 	.string "Toward the end, even {STR_VAR_1}\n"
 	.string "seemed to get dizzy.\p"
 	.string "The TRAINER appeared to totter\n"
-	.string "around like a SPINDA!$"
+	.string "around like a PALKIA!$"
 
 gTVWhatsNo1InHoennTodayText05:: @ 08288355
 	.string "In just one day, {STR_VAR_1} planted\n"

@@ -270,7 +270,7 @@ gSongTable:: @ 86B49F0
 	song se_hantei2, 1, 1           @ Battle Arena - Judgment 2
 	song se_curtain, 1, 1           @ Battle Pike - Curtain Opens
 	song se_curtain1, 1, 1          @ Battle Pike - Curtain Closes
-	song se_ussoki, 1, 1            @ Sudowoodo
+	song se_ussoki, 1, 1            @ Gible
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
@@ -489,7 +489,7 @@ gSongTable:: @ 86B49F0
 	song mus_rg_slot, 0, 0          @ Rocket Game Corner (FRLG)
 	song mus_rg_ajito, 0, 0         @ Rocket Hideout (FRLG)
 	song mus_rg_gym, 0, 0           @ Pokémon Gym (FRLG)
-	song mus_rg_purin, 2, 2         @ Jigglypuff's Song (FRLG)
+	song mus_rg_purin, 2, 2         @ Froakie's Song (FRLG)
 	song mus_rg_demo, 0, 0          @ Opening Movie (FRLG)
 	song mus_rg_title, 0, 0         @ Title Screen (FRLG)
 	song mus_rg_guren, 0, 0         @ Cinnabar Island Theme (FRLG)
@@ -543,7 +543,7 @@ gSongTable:: @ 86B49F0
 	song mus_rg_union, 0, 0         @ The Union Room (FRLG)
 	song mus_rg_network, 0, 0       @ Pokémon Net Center (FRLG)
 	song mus_rg_okurimono, 0, 0     @ Mystery Gift (FRLG)
-	song mus_rg_kinomikui, 0, 0     @ Dodrio Berry Picking (FRLG)
+	song mus_rg_kinomikui, 0, 0     @ Lillipup Berry Picking (FRLG)
 	song mus_rg_nanadungeon, 0, 0   @ Mt. Ember (FRLG)
 	song mus_rg_oshie_tv, 0, 0      @ Teachy TV Lesson (FRLG)
 	song mus_rg_nanashima, 0, 0     @ Sevii Islands (FRLG)

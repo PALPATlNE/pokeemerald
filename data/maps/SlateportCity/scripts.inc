@@ -498,7 +498,7 @@ SlateportCity_EventScript_1DD16A:: @ 81DD16A
 
 	.align 2
 SlateportCity_PokemartDecor_Dolls: @ 81DD184
-	.2byte DECOR_AZURILL_DOLL
+	.2byte DECOR_CARRACOSTA_DOLL
 	.2byte DECOR_MARILL_DOLL
 	.2byte DECOR_SKITTY_DOLL
 	.2byte DECOR_NONE

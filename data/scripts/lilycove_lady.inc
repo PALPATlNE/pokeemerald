@@ -540,7 +540,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_ContestLadyMon:: @ 82A89C7
     compare VAR_RESULT, CONTEST_CATEGORY_CUTE
     goto_if_eq LilycoveCity_PokemonCenter_1F_EventScript_Poochyena
     compare VAR_RESULT, CONTEST_CATEGORY_SMART
-    goto_if_eq LilycoveCity_PokemonCenter_1F_EventScript_Kecleon
+    goto_if_eq LilycoveCity_PokemonCenter_1F_EventScript_Roggenrola
     compare VAR_RESULT, CONTEST_CATEGORY_TOUGH
     goto_if_eq LilycoveCity_PokemonCenter_1F_EventScript_Pikachu
     end
@@ -575,12 +575,12 @@ LilycoveCity_PokemonCenter_1F_EventScript_Poochyena:: @ 82A8A30
     release
     end
 
-LilycoveCity_PokemonCenter_1F_EventScript_Kecleon:: @ 82A8A43
+LilycoveCity_PokemonCenter_1F_EventScript_Roggenrola:: @ 82A8A43
     lock
     faceplayer
     waitse
     playmoncry VAR_0x8005, 0
-    msgbox LilycoveCity_PokemonCenter_1F_Text_Kecleon, MSGBOX_DEFAULT
+    msgbox LilycoveCity_PokemonCenter_1F_Text_Roggenrola, MSGBOX_DEFAULT
     waitmoncry
     release
     end
@@ -843,7 +843,7 @@ LilycoveCity_PokemonCenter_1F_Text_ReadyToEnterContests: @ 82A9669
 LilycoveCity_PokemonCenter_1F_Text_Zigzagoon: @ 82A96DA
     .string "{STR_VAR_1}: Guguuh!$"
 
-LilycoveCity_PokemonCenter_1F_Text_Kecleon: @ 82A96E6
+LilycoveCity_PokemonCenter_1F_Text_Roggenrola: @ 82A96E6
     .string "{STR_VAR_1}: Igigigiiih!$"
 
 LilycoveCity_PokemonCenter_1F_Text_Poochyena: @ 82A96F6

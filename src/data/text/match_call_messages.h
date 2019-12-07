@@ -238,10 +238,10 @@ const u8 gMatchCallFlavorText_BattleGirl_Cyndy_Pokemon[] = _("Speedy FIGHTING ty
 const u8 gMatchCallFlavorText_BattleGirl_Cyndy_Intro1[] = _("If my POKéMON lose,");
 const u8 gMatchCallFlavorText_BattleGirl_Cyndy_Intro2[] = _("I'll carry on the fight!");
 
-const u8 gMatchCallFlavorText_ParasolLady_Madeline_Strategy[] = _("Go, go, my POKéMON!");
-const u8 gMatchCallFlavorText_ParasolLady_Madeline_Pokemon[] = _("I'll raise anything.");
-const u8 gMatchCallFlavorText_ParasolLady_Madeline_Intro1[] = _("UV rays are your skin's");
-const u8 gMatchCallFlavorText_ParasolLady_Madeline_Intro2[] = _("enemy. Get protected.");
+const u8 gMatchCallFlavorText_BidoofolLady_Madeline_Strategy[] = _("Go, go, my POKéMON!");
+const u8 gMatchCallFlavorText_BidoofolLady_Madeline_Pokemon[] = _("I'll raise anything.");
+const u8 gMatchCallFlavorText_BidoofolLady_Madeline_Intro1[] = _("UV rays are your skin's");
+const u8 gMatchCallFlavorText_BidoofolLady_Madeline_Intro2[] = _("enemy. Get protected.");
 
 const u8 gMatchCallFlavorText_Swimmer_Jenny_Strategy[] = _("No mercy!");
 const u8 gMatchCallFlavorText_Swimmer_Jenny_Pokemon[] = _("Cute WATER POKéMON.");

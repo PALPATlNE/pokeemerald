@@ -4016,7 +4016,7 @@ BattleScript_WeatherFormChangesLoop::
 	jumpifbytenotequal sBATTLER, gBattlersCount, BattleScript_WeatherFormChangesLoop
 	return
 
-BattleScript_CastformChange::
+BattleScript_Filler3Change::
 	call BattleScript_82DB4AF
 	end3
 

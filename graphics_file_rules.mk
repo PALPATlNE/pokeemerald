@@ -1,4 +1,4 @@
-CASTFORMGFXDIR := graphics/pokemon/castform
+FILLER3GFXDIR := graphics/pokemon/castform
 TILESETGFXDIR := data/tilesets
 FONTGFXDIR := data/graphics/fonts
 INTERFACEGFXDIR := graphics/interface
@@ -23,36 +23,36 @@ contest_types := cool beauty cute smart tough
 
 
 
-### Castform ###
+### Filler3 ###
 
-$(CASTFORMGFXDIR)/front.4bpp: $(CASTFORMGFXDIR)/front_normal_form.4bpp \
-							  $(CASTFORMGFXDIR)/front_sunny_form.4bpp \
-							  $(CASTFORMGFXDIR)/front_rainy_form.4bpp \
-							  $(CASTFORMGFXDIR)/front_snowy_form.4bpp
+$(FILLER3GFXDIR)/front.4bpp: $(FILLER3GFXDIR)/front_normal_form.4bpp \
+							  $(FILLER3GFXDIR)/front_sunny_form.4bpp \
+							  $(FILLER3GFXDIR)/front_rainy_form.4bpp \
+							  $(FILLER3GFXDIR)/front_snowy_form.4bpp
 	@cat $^ >$@
 
-$(CASTFORMGFXDIR)/back.4bpp: $(CASTFORMGFXDIR)/back_normal_form.4bpp \
-							 $(CASTFORMGFXDIR)/back_sunny_form.4bpp \
-							 $(CASTFORMGFXDIR)/back_rainy_form.4bpp \
-							 $(CASTFORMGFXDIR)/back_snowy_form.4bpp
+$(FILLER3GFXDIR)/back.4bpp: $(FILLER3GFXDIR)/back_normal_form.4bpp \
+							 $(FILLER3GFXDIR)/back_sunny_form.4bpp \
+							 $(FILLER3GFXDIR)/back_rainy_form.4bpp \
+							 $(FILLER3GFXDIR)/back_snowy_form.4bpp
 	@cat $^ >$@
 
-$(CASTFORMGFXDIR)/anim_front.4bpp: $(CASTFORMGFXDIR)/anim_front_normal_form.4bpp \
-								   $(CASTFORMGFXDIR)/anim_front_sunny_form.4bpp \
-								   $(CASTFORMGFXDIR)/anim_front_rainy_form.4bpp \
-								   $(CASTFORMGFXDIR)/anim_front_snowy_form.4bpp
+$(FILLER3GFXDIR)/anim_front.4bpp: $(FILLER3GFXDIR)/anim_front_normal_form.4bpp \
+								   $(FILLER3GFXDIR)/anim_front_sunny_form.4bpp \
+								   $(FILLER3GFXDIR)/anim_front_rainy_form.4bpp \
+								   $(FILLER3GFXDIR)/anim_front_snowy_form.4bpp
 	@cat $^ >$@
 
-$(CASTFORMGFXDIR)/normal.gbapal: $(CASTFORMGFXDIR)/normal_normal_form.gbapal \
-								 $(CASTFORMGFXDIR)/normal_sunny_form.gbapal \
-								 $(CASTFORMGFXDIR)/normal_rainy_form.gbapal \
-								 $(CASTFORMGFXDIR)/normal_snowy_form.gbapal
+$(FILLER3GFXDIR)/normal.gbapal: $(FILLER3GFXDIR)/normal_normal_form.gbapal \
+								 $(FILLER3GFXDIR)/normal_sunny_form.gbapal \
+								 $(FILLER3GFXDIR)/normal_rainy_form.gbapal \
+								 $(FILLER3GFXDIR)/normal_snowy_form.gbapal
 	@cat $^ >$@
 
-$(CASTFORMGFXDIR)/shiny.gbapal: $(CASTFORMGFXDIR)/shiny_normal_form.gbapal \
-								$(CASTFORMGFXDIR)/shiny_sunny_form.gbapal \
-								$(CASTFORMGFXDIR)/shiny_rainy_form.gbapal \
-								$(CASTFORMGFXDIR)/shiny_snowy_form.gbapal
+$(FILLER3GFXDIR)/shiny.gbapal: $(FILLER3GFXDIR)/shiny_normal_form.gbapal \
+								$(FILLER3GFXDIR)/shiny_sunny_form.gbapal \
+								$(FILLER3GFXDIR)/shiny_rainy_form.gbapal \
+								$(FILLER3GFXDIR)/shiny_snowy_form.gbapal
 	@cat $^ >$@
 
 

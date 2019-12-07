@@ -17,11 +17,11 @@ BattleFrontier_OutsideEast_EventScript_242C19:: @ 8242C19
 BattleFrontier_OutsideEast_MapScript1_242C2D: @ 8242C2D
 	setvar VAR_BRAVO_TRAINER_BATTLE_TOWER_ON, 0
 	setflag FLAG_HIDE_BATTLE_TOWER_REPORTER
-	call_if_unset FLAG_DEFEATED_SUDOWOODO, BattleFrontier_OutsideEast_EventScript_242C3F
+	call_if_unset FLAG_DEFEATED_GIBLE, BattleFrontier_OutsideEast_EventScript_242C3F
 	end
 
 BattleFrontier_OutsideEast_EventScript_242C3F:: @ 8242C3F
-	clearflag FLAG_HIDE_BATTLE_FRONTIER_SUDOWOODO
+	clearflag FLAG_HIDE_BATTLE_FRONTIER_GIBLE
 	return
 
 BattleFrontier_OutsideEast_EventScript_242C43:: @ 8242C43
@@ -102,53 +102,53 @@ BattleFrontier_OutsideEast_EventScript_242CE1:: @ 8242CE1
 	msgbox BattleFrontier_OutsideEast_Text_243230, MSGBOX_NPC
 	end
 
-BattleFrontier_OutsideEast_EventScript_Sudowoodo:: @ 8242CEA
+BattleFrontier_OutsideEast_EventScript_Gible:: @ 8242CEA
 	lock
 	faceplayer
 	waitse
 	playse 269
-	applymovement 14, BattleFrontier_OutsideEast_Movement_SudowoodoShake
+	applymovement 14, BattleFrontier_OutsideEast_Movement_GibleShake
 	waitmovement 0
 	release
 	end
 
-BattleFrontier_OutsideEast_EventScript_WaterSudowoodo:: @ 8242CFC
+BattleFrontier_OutsideEast_EventScript_WaterGible:: @ 8242CFC
 	lock
 	faceplayer
 	special DoWateringBerryTreeAnim
 	waitstate
 	waitse
 	playse SE_USSOKI
-	applymovement 14, BattleFrontier_OutsideEast_Movement_SudowoodoShake
+	applymovement 14, BattleFrontier_OutsideEast_Movement_GibleShake
 	waitmovement 0
-	msgbox gText_Sudowoodo_Attacked, MSGBOX_DEFAULT
+	msgbox gText_Gible_Attacked, MSGBOX_DEFAULT
 	closemessage
 	waitse
 	playmoncry SPECIES_GIBLE, 2
 	delay 40
 	waitmoncry
-	setvar VAR_LAST_TALKED, 14  @ Sudowoodo object event id
+	setvar VAR_LAST_TALKED, 14  @ Gible object event id
 	setwildbattle SPECIES_GIBLE, 40, ITEM_NONE
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_WON
-	goto_if_eq BattleFrontier_OutsideEast_EventScript_RemoveSudowoodo
+	goto_if_eq BattleFrontier_OutsideEast_EventScript_RemoveGible
 	compare VAR_RESULT, B_OUTCOME_RAN
-	goto_if_eq BattleFrontier_OutsideEast_EventScript_RemoveSudowoodo
+	goto_if_eq BattleFrontier_OutsideEast_EventScript_RemoveGible
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
-	goto_if_eq BattleFrontier_OutsideEast_EventScript_RemoveSudowoodo
-	setflag FLAG_DEFEATED_SUDOWOODO
+	goto_if_eq BattleFrontier_OutsideEast_EventScript_RemoveGible
+	setflag FLAG_DEFEATED_GIBLE
 	release
 	end
 
-BattleFrontier_OutsideEast_EventScript_RemoveSudowoodo:: @ 8242D60
-	setflag FLAG_DEFEATED_SUDOWOODO
+BattleFrontier_OutsideEast_EventScript_RemoveGible:: @ 8242D60
+	setflag FLAG_DEFEATED_GIBLE
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 
-BattleFrontier_OutsideEast_Movement_SudowoodoShake: @ 8242D69
+BattleFrontier_OutsideEast_Movement_GibleShake: @ 8242D69
 	face_right
 	delay_8
 	face_down
@@ -221,7 +221,7 @@ BattleFrontier_OutsideEast_EventScript_242DE0:: @ 8242DE0
 BattleFrontier_OutsideEast_EventScript_242DE9:: @ 8242DE9
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_SUDOWOODO, BattleFrontier_OutsideEast_EventScript_242DFE
+	goto_if_set FLAG_DEFEATED_GIBLE, BattleFrontier_OutsideEast_EventScript_242DFE
 	msgbox BattleFrontier_OutsideEast_Text_243C2C, MSGBOX_DEFAULT
 	release
 	end

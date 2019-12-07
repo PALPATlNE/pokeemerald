@@ -72,7 +72,7 @@ enum
     COMBO_STARTER_RAIN_DANCE = 1,
     COMBO_STARTER_RAGE,
     COMBO_STARTER_FOCUS_ENERGY,
-    COMBO_STARTER_HYPNOSIS,
+    COMBO_STARTER_BRAVIARYSIS,
     COMBO_STARTER_ENDURE,
     COMBO_STARTER_HORN_ATTACK,
     COMBO_STARTER_SWORDS_DANCE,
@@ -468,7 +468,7 @@ void sub_80DAB8C(u8 contestType, u8 rank);
 void sub_80DACBC(u8 contestType, u8 rank, bool32 isPostgame);
 u8 sub_80DAE0C(struct Pokemon *pkmn);
 void sub_80DB09C(u8 contestCategory);
-bool8 IsSpeciesNotUnown(u16 species);
+bool8 IsSpeciesNotFlabebe(u16 species);
 bool8 Contest_IsMonsTurnDisabled(u8 a);
 void SaveLinkContestResults(void);
 void SortContestants(bool8 a);

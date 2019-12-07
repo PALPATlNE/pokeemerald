@@ -2,7 +2,7 @@
 // 255 (MON_GENDERLESS) is reserved for genderless Pokémon.
 #define PERCENT_FEMALE(percent) min(254, ((percent * 255) / 100))
 
-#define OLD_UNOWN_BASE_STATS                \
+#define OLD_FLABEBE_BASE_STATS                \
     {                                       \
         .baseHP = 50,                       \
         .baseAttack = 150,                  \
@@ -1734,7 +1734,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_PSYDUCK] =
+    [SPECIES_COMBEE] =
     {
         .baseHP        = 50,
         .baseAttack    = 52,
@@ -3718,7 +3718,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SCRAGGY] =
+    [SPECIES_SPINARAK] =
     {
         .baseHP        = 30,
         .baseAttack    = 40,
@@ -3750,7 +3750,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SCRAFTY] =
+    [SPECIES_ARIADOS] =
     {
         .baseHP        = 55,
         .baseAttack    = 65,
@@ -6182,7 +6182,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_YANMA] //REPLACE=
+    [SPECIES_WEAVILE] //REPLACE=
     {
         .baseHP        = 65,
         .baseAttack    = 65,
@@ -8070,55 +8070,55 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_OLD_UNOWN_B] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_B] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_C] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_C] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_D] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_D] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_E] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_E] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_F] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_F] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_G] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_G] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_H] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_H] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_I] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_I] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_J] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_J] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_K] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_K] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_L] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_L] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_M] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_M] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_N] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_N] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_O] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_O] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_P] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_P] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_Q] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_Q] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_R] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_R] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_S] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_S] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_T] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_T] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_U] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_U] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_V] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_V] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_W] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_W] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_X] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_X] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_Y] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_Y] = OLD_FLABEBE_BASE_STATS,
 
-    [SPECIES_OLD_UNOWN_Z] = OLD_UNOWN_BASE_STATS,
+    [SPECIES_OLD_FLABEBE_Z] = OLD_FLABEBE_BASE_STATS,
 
     [SPECIES_TREECKO] =
     {
@@ -11032,7 +11032,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SWALOT] =
+    [SPECIES_CRESSELIA] =
     {
         .baseHP        = 100,
         .baseAttack    = 73,
@@ -11576,7 +11576,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_CELEBI] =
+    [SPECIES_FILLER3] =
     {
         .baseHP        = 70,
         .baseAttack    = 70,

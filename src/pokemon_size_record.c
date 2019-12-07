@@ -155,40 +155,40 @@ static void GetMonSizeRecordInfo(u16 species, u16 *sizeRecord)
         StringCopy(gStringVar2, gSaveBlock2Ptr->playerName);
 }
 
-void InitSeedotSizeRecord(void)
+void InitPanchamSizeRecord(void)
 {
-    VarSet(VAR_SEEDOT_SIZE_RECORD, DEFAULT_MAX_SIZE);
+    VarSet(VAR_PANCHAM_SIZE_RECORD, DEFAULT_MAX_SIZE);
 }
 
-void GetSeedotSizeRecordInfo(void)
+void GetPanchamSizeRecordInfo(void)
 {
-    u16 *sizeRecord = GetVarPointer(VAR_SEEDOT_SIZE_RECORD);
+    u16 *sizeRecord = GetVarPointer(VAR_PANCHAM_SIZE_RECORD);
 
     GetMonSizeRecordInfo(SPECIES_PANCHAM, sizeRecord);
 }
 
-void CompareSeedotSize(void)
+void ComparePanchamSize(void)
 {
-    u16 *sizeRecord = GetVarPointer(VAR_SEEDOT_SIZE_RECORD);
+    u16 *sizeRecord = GetVarPointer(VAR_PANCHAM_SIZE_RECORD);
 
     gSpecialVar_Result = CompareMonSize(SPECIES_PANCHAM, sizeRecord);
 }
 
-void InitLotadSizeRecord(void)
+void InitDuosisSizeRecord(void)
 {
-    VarSet(VAR_LOTAD_SIZE_RECORD, DEFAULT_MAX_SIZE);
+    VarSet(VAR_DUOSIS_SIZE_RECORD, DEFAULT_MAX_SIZE);
 }
 
-void GetLotadSizeRecordInfo(void)
+void GetDuosisSizeRecordInfo(void)
 {
-    u16 *sizeRecord = GetVarPointer(VAR_LOTAD_SIZE_RECORD);
+    u16 *sizeRecord = GetVarPointer(VAR_DUOSIS_SIZE_RECORD);
 
     GetMonSizeRecordInfo(SPECIES_DUOSIS, sizeRecord);
 }
 
-void CompareLotadSize(void)
+void CompareDuosisSize(void)
 {
-    u16 *sizeRecord = GetVarPointer(VAR_LOTAD_SIZE_RECORD);
+    u16 *sizeRecord = GetVarPointer(VAR_DUOSIS_SIZE_RECORD);
 
     gSpecialVar_Result = CompareMonSize(SPECIES_DUOSIS, sizeRecord);
 }

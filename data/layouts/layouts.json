@@ -2961,11 +2961,11 @@
             "width": 14
         },
         {
-            "blockdata_filepath": "data/layouts/SootopolisCity_LotadAndSeedotHouse/map.bin",
-            "border_filepath": "data/layouts/SootopolisCity_LotadAndSeedotHouse/border.bin",
+            "blockdata_filepath": "data/layouts/SootopolisCity_DuosisAndPanchamHouse/map.bin",
+            "border_filepath": "data/layouts/SootopolisCity_DuosisAndPanchamHouse/border.bin",
             "height": 7,
-            "id": "LAYOUT_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE",
-            "name": "SootopolisCity_LotadAndSeedotHouse_Layout",
+            "id": "LAYOUT_SOOTOPOLIS_CITY_DUOSIS_AND_PANCHAM_HOUSE",
+            "name": "SootopolisCity_DuosisAndPanchamHouse_Layout",
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_GenericBuilding",
             "width": 8

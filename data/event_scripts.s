@@ -297,7 +297,7 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/maps/SootopolisCity_House5/scripts.inc"
 	.include "data/maps/SootopolisCity_House6/scripts.inc"
 	.include "data/maps/SootopolisCity_House7/scripts.inc"
-	.include "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc"
+	.include "data/maps/SootopolisCity_DuosisAndPanchamHouse/scripts.inc"
 	.include "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc"
 	.include "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc"
 	.include "data/maps/EverGrandeCity_SidneysRoom/scripts.inc"
@@ -1079,7 +1079,7 @@ gText_PlayerFoundOneTMHM:: @ 82731A9
 	.string "{PLAYER} found one {STR_VAR_1}\n"
 	.string "{STR_VAR_2}!$"
 
-gText_Sudowoodo_Attacked:: @ 82731BD
+gText_Gible_Attacked:: @ 82731BD
 	.string "The weird tree doesn't like the\n"
 	.string "WAILMER PAIL!\p"
 	.string "The weird tree attacked!$"

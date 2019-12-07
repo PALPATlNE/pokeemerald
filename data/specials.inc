@@ -130,10 +130,10 @@ gSpecials:: @ 81DBA64
 	def_special ScrSpecial_IsDecorationFull
 	def_special ScrSpecial_TraderMenuGiveDecoration
 	def_special ScrSpecial_TraderDoDecorationTrade
-	def_special GetSeedotSizeRecordInfo
-	def_special CompareSeedotSize
-	def_special GetLotadSizeRecordInfo
-	def_special CompareLotadSize
+	def_special GetPanchamSizeRecordInfo
+	def_special ComparePanchamSize
+	def_special GetDuosisSizeRecordInfo
+	def_special CompareDuosisSize
 	def_special TV_PutNameRaterShowOnTheAirIfNicknameChanged
 	def_special TV_CopyNicknameToStringVar1AndEnsureTerminated
 	def_special TV_CheckMonOTIDEqualsPlayerID
@@ -438,8 +438,8 @@ gSpecials:: @ 81DBA64
 	def_special HasAtLeastOneBerry
 	def_special IsPokemonJumpSpeciesInParty
 	def_special ShowPokemonJumpRecords
-	def_special IsDodrioInParty
-	def_special ShowDodrioBerryPickingRecords
+	def_special IsLillipupInParty
+	def_special ShowLillipupBerryPickingRecords
 	def_special OffsetCameraForBattle
 	def_special GetDeptStoreDefaultFloorChoice
 	def_special BufferVarsForIVRater

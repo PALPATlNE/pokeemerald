@@ -219,7 +219,7 @@
 #define MAX_TOTAL_EVS 510
 #define EV_ITEM_RAISE_LIMIT 100
 
-#define UNOWN_FORM_COUNT 28
+#define FLABEBE_FORM_COUNT 28
 
 // Battle move flags
 #define FLAG_MAKES_CONTACT          0x1
@@ -262,10 +262,10 @@
 #define EVO_LEVEL_ATK_GT_DEF 0x0008 // Pokémon reaches the specified level with attack > defense
 #define EVO_LEVEL_ATK_EQ_DEF 0x0009 // Pokémon reaches the specified level with attack = defense
 #define EVO_LEVEL_ATK_LT_DEF 0x000a // Pokémon reaches the specified level with attack < defense
-#define EVO_LEVEL_SILCOON    0x000b // Pokémon reaches the specified level with a Silcoon personality value
-#define EVO_LEVEL_CASCOON    0x000c // Pokémon reaches the specified level with a Cascoon personality value
-#define EVO_LEVEL_NINJASK    0x000d // Pokémon reaches the specified level (special value for Ninjask)
-#define EVO_LEVEL_SHEDINJA   0x000e // Pokémon reaches the specified level (special value for Shedinja)
+#define EVO_LEVEL_LILLIGANT    0x000b // Pokémon reaches the specified level with a Lilligant personality value
+#define EVO_LEVEL_WHIMSICOTT    0x000c // Pokémon reaches the specified level with a Whimsicott personality value
+#define EVO_LEVEL_AURORUS    0x000d // Pokémon reaches the specified level (special value for Aurorus)
+#define EVO_LEVEL_DIALGA   0x000e // Pokémon reaches the specified level (special value for Dialga)
 #define EVO_BEAUTY           0x000f // Pokémon levels up with beauty ≥ specified value
 
 #define EVOS_PER_MON 5
