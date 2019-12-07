@@ -30,9 +30,9 @@ AquaHideout_B1F_EventScript_2339E7:: @ 82339E7
 AquaHideout_B1F_EventScript_2339EB:: @ 82339EB
 	lock
 	faceplayer
-	setwildbattle SPECIES_ELECTRODE, 30, ITEM_NONE
+	setwildbattle SPECIES_SCRAFTY, 30, ITEM_NONE
 	waitse
-	playmoncry SPECIES_ELECTRODE, 2
+	playmoncry SPECIES_SCRAFTY, 2
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -57,9 +57,9 @@ AquaHideout_B1F_EventScript_233A2F:: @ 8233A2F
 AquaHideout_B1F_EventScript_233A38:: @ 8233A38
 	lock
 	faceplayer
-	setwildbattle SPECIES_ELECTRODE, 30, ITEM_NONE
+	setwildbattle SPECIES_SCRAFTY, 30, ITEM_NONE
 	waitse
-	playmoncry SPECIES_ELECTRODE, 2
+	playmoncry SPECIES_SCRAFTY, 2
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_CTRL_OBJ_DELETE

@@ -2640,7 +2640,7 @@ static void TryCorrectShedinjaLanguage(struct Pokemon *mon)
     u8 nickname[POKEMON_NAME_LENGTH + 1];
     u8 language = LANGUAGE_JAPANESE;
 
-    if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_SHEDINJA
+    if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_DIALGA
      && GetMonData(mon, MON_DATA_LANGUAGE) != language)
     {
         GetMonData(mon, MON_DATA_NICKNAME, nickname);
@@ -2741,20 +2741,20 @@ void SpriteCB_FaintOpponentMon(struct Sprite *sprite)
 
     GetMonData(&gEnemyParty[gBattlerPartyIndexes[battler]], MON_DATA_PERSONALITY);  // Unused return value.
 
-    if (species == SPECIES_UNOWN)
+    if (species == SPECIES_FLABEBE)
     {
         u32 personalityValue = GetMonData(&gEnemyParty[gBattlerPartyIndexes[battler]], MON_DATA_PERSONALITY);
         u16 unownForm = ((((personalityValue & 0x3000000) >> 18) | ((personalityValue & 0x30000) >> 12) | ((personalityValue & 0x300) >> 6) | (personalityValue & 3)) % 0x1C);
         u16 unownSpecies;
 
         if (unownForm == 0)
-            unownSpecies = SPECIES_UNOWN;  // Use the A Unown form.
+            unownSpecies = SPECIES_FLABEBE;  // Use the A Unown form.
         else
             unownSpecies = NUM_SPECIES + unownForm;  // Use one of the other Unown letters.
 
         yOffset = gMonFrontPicCoords[unownSpecies].y_offset;
     }
-    else if (species == SPECIES_CASTFORM)
+    else if (species == SPECIES_CELEBI)
     {
         yOffset = gCastformFrontSpriteCoords[gBattleMonForms[battler]].y_offset;
     }

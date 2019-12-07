@@ -577,9 +577,9 @@ static void CreateShedinja(u16 preEvoSpecies, struct Pokemon* mon)
         GetSetPokedexFlag(SpeciesToNationalPokedexNum(evos[1].targetSpecies), FLAG_SET_SEEN);
         GetSetPokedexFlag(SpeciesToNationalPokedexNum(evos[1].targetSpecies), FLAG_SET_CAUGHT);
 
-        if (GetMonData(shedinja, MON_DATA_SPECIES) == SPECIES_SHEDINJA
+        if (GetMonData(shedinja, MON_DATA_SPECIES) == SPECIES_DIALGA
             && GetMonData(shedinja, MON_DATA_LANGUAGE) == LANGUAGE_JAPANESE
-            && GetMonData(mon, MON_DATA_SPECIES) == SPECIES_NINJASK)
+            && GetMonData(mon, MON_DATA_SPECIES) == SPECIES_AURORUS)
                 SetMonData(shedinja, MON_DATA_NICKNAME, Text_ShedinjaJapaneseName);
     }
 }

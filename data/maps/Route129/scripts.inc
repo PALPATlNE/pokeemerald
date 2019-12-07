@@ -12,14 +12,7 @@ Route129_MapScript1_1F7294: @ 81F7294
 	end
 
 Route129_OnTransition: @ 81F72AB
-	compare VAR_SHOULD_END_UNUSUAL_WEATHER, 1
-	call_if_eq UnusualWeather_EventScript_HideMapNamePopup
-	compare VAR_SOOTOPOLIS_CITY_STATE, 4
-	call_if_ge Route129_EventScript_1F72D8
-	compare VAR_UNUSUAL_WEATHER_LOCATION, UNUSUAL_WEATHER_ROUTE_129_WEST
-	call_if_eq UnusualWeather_StartKyogreWeather
-	compare VAR_UNUSUAL_WEATHER_LOCATION, UNUSUAL_WEATHER_ROUTE_129_EAST
-	call_if_eq UnusualWeather_StartKyogreWeather
+	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetWeather15
 	end
 
 Route129_EventScript_1F72D8:: @ 81F72D8
@@ -54,4 +47,3 @@ Route129_EventScript_1F7348:: @ 81F7348
 	trainerbattle_single TRAINER_CLARENCE, Route129_Text_2A3204, Route129_Text_2A3239
 	msgbox Route129_Text_2A3252, MSGBOX_AUTOCLOSE
 	end
-

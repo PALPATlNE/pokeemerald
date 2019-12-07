@@ -75,7 +75,7 @@ FortreeCity_EventScript_1E2645:: @ 81E2645
 	applymovement VAR_LAST_TALKED, Movement_KecleonAppears
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_KECLEON, 2
+	playmoncry SPECIES_ROGGENROLA, 2
 	delay 40
 	waitmoncry
 	applymovement VAR_LAST_TALKED, FortreeCity_Movement_1E2674

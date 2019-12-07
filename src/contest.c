@@ -2994,7 +2994,7 @@ static u8 sub_80DB174(u16 species, u32 otId, u32 personality, u32 index)
 
 bool8 IsSpeciesNotUnown(u16 species)
 {
-    if (species == SPECIES_UNOWN)
+    if (species == SPECIES_FLABEBE)
         return FALSE;
     else
         return TRUE;

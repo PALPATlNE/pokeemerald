@@ -62,7 +62,7 @@ SootopolisCity_OnTransition: @ 81E56EF
 	end
 
 SootopolisCity_EventScript_1E5781:: @ 81E5781
-	setflag FLAG_HIDE_MAP_NAME_POPUP
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	return
 
 SootopolisCity_EventScript_1E5785:: @ 81E5785

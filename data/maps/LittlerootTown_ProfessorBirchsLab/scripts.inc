@@ -301,7 +301,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1F9FEF:: @ 81F9FEF
 	goto_if_ge LittlerootTown_ProfessorBirchsLab_EventScript_1FA057
 	applymovement 2, Common_Movement_WalkInPlaceFastestRight
 	waitmovement 0
-	showmonpic SPECIES_TOTODILE, 10, 3
+	showmonpic SPECIES_WIMPOD, 10, 3
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_1FB869, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA061
@@ -314,7 +314,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1FA023:: @ 81FA023
 	goto_if_ge LittlerootTown_ProfessorBirchsLab_EventScript_1FA057
 	applymovement 2, Common_Movement_WalkInPlaceFastestRight
 	waitmovement 0
-	showmonpic SPECIES_CHIKORITA, 10, 3
+	showmonpic SPECIES_SNOVER, 10, 3
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_1FB8E0, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA061
@@ -378,9 +378,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1FA0FD:: @ 81FA0FD
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_1FA10D:: @ 81FA10D
-	bufferspeciesname 0, SPECIES_TOTODILE
-	setvar VAR_TEMP_1, SPECIES_TOTODILE
-	givemon SPECIES_TOTODILE, 5, ITEM_NONE
+	bufferspeciesname 0, SPECIES_WIMPOD
+	setvar VAR_TEMP_1, SPECIES_WIMPOD
+	givemon SPECIES_WIMPOD, 5, ITEM_NONE
 	compare VAR_RESULT, 0
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA142
 	compare VAR_RESULT, 1
@@ -423,9 +423,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_1FA19E:: @ 81FA19E
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_1FA1AE:: @ 81FA1AE
-	bufferspeciesname 0, SPECIES_CHIKORITA
-	setvar VAR_TEMP_1, SPECIES_CHIKORITA
-	givemon SPECIES_CHIKORITA, 5, ITEM_NONE
+	bufferspeciesname 0, SPECIES_SNOVER
+	setvar VAR_TEMP_1, SPECIES_SNOVER
+	givemon SPECIES_SNOVER, 5, ITEM_NONE
 	compare VAR_RESULT, 0
 	goto_if_eq LittlerootTown_ProfessorBirchsLab_EventScript_1FA1E3
 	compare VAR_RESULT, 1

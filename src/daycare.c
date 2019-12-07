@@ -732,16 +732,16 @@ void RejectEggFromDayCare(void)
 static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare)
 {
     u16 motherItem, fatherItem;
-    if (*species == SPECIES_WYNAUT || *species == SPECIES_AZURILL)
+    if (*species == SPECIES_TIMBURR || *species == SPECIES_CARRACOSTA)
     {
         motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
         fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
-        if (*species == SPECIES_WYNAUT && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
+        if (*species == SPECIES_TIMBURR && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
         {
-            *species = SPECIES_WOBBUFFET;
+            *species = SPECIES_FLOETTE;
         }
 
-        if (*species == SPECIES_AZURILL && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
+        if (*species == SPECIES_CARRACOSTA && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
         {
             *species = SPECIES_MARILL;
         }
@@ -786,9 +786,9 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
     {
         eggSpecies = SPECIES_NIDORAN_M;
     }
-    if (eggSpecies == SPECIES_ILLUMISE && daycare->offspringPersonality & EGG_GENDER_MALE)
+    if (eggSpecies == SPECIES_GALLADE && daycare->offspringPersonality & EGG_GENDER_MALE)
     {
-        eggSpecies = SPECIES_VOLBEAT;
+        eggSpecies = SPECIES_RHYPERIOR;
     }
 
     // Make Ditto the "mother" slot if the other daycare mon is male.
@@ -815,7 +815,7 @@ static void _GiveEggFromDaycare(struct DayCare *daycare)
     InheritIVs(&egg, daycare);
     BuildEggMoveset(&egg, &daycare->mons[parentSlots[1]].mon, &daycare->mons[parentSlots[0]].mon);
 
-    if (species == SPECIES_PICHU)
+    if (species == SPECIES_FOONGUS)
         GiveVoltTackleIfLightBall(&egg, daycare);
 
     isEgg = TRUE;

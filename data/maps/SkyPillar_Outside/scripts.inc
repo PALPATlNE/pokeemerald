@@ -12,7 +12,7 @@ SkyPillar_Outside_OnTransition: @ 82392B8
 	end
 
 SkyPillar_Outside_EventScript_2392CF:: @ 82392CF
-	setflag FLAG_HIDE_MAP_NAME_POPUP
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	return
 
 SkyPillar_Outside_EventScript_2392D3:: @ 82392D3

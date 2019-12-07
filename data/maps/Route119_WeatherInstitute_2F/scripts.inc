@@ -83,8 +83,8 @@ Route119_WeatherInstitute_2F_EventScript_26FFC8:: @ 826FFC8
 
 Route119_WeatherInstitute_2F_EventScript_27004D:: @ 827004D
 	msgbox Route119_WeatherInstitute_2F_Text_270650, MSGBOX_DEFAULT
-	setvar VAR_TEMP_1, SPECIES_CASTFORM
-	givemon SPECIES_CASTFORM, 25, ITEM_MYSTIC_WATER
+	setvar VAR_TEMP_1, SPECIES_CELEBI
+	givemon SPECIES_CELEBI, 25, ITEM_MYSTIC_WATER
 	compare VAR_RESULT, 0
 	goto_if_eq Route119_WeatherInstitute_2F_EventScript_270085
 	compare VAR_RESULT, 1
@@ -121,7 +121,7 @@ Route119_WeatherInstitute_2F_EventScript_2700DB:: @ 82700DB
 	message Route119_WeatherInstitute_2F_Text_2706E8
 	waitmessage
 	waitfanfare
-	bufferspeciesname 0, SPECIES_CASTFORM
+	bufferspeciesname 0, SPECIES_CELEBI
 	return
 
 Route119_WeatherInstitute_2F_EventScript_2700EA:: @ 82700EA

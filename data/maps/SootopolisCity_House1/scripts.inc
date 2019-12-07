@@ -23,7 +23,7 @@ SootopolisCity_House1_EventScript_22698E:: @ 822698E
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_KECLEON, 0
+	playmoncry SPECIES_ROGGENROLA, 0
 	msgbox SootopolisCity_House1_Text_226A60, MSGBOX_DEFAULT
 	waitmoncry
 	release

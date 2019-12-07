@@ -317,7 +317,7 @@ static void GenerateOpponentMons(void)
     while (i != 3)
     {
         u16 monSetId = GetMonSetId(lvlMode, challengeNum, FALSE);
-        if (gFacilityTrainerMons[monSetId].species == SPECIES_UNOWN)
+        if (gFacilityTrainerMons[monSetId].species == SPECIES_FLABEBE)
             continue;
 
         for (j = 0; j < 6; j++)
@@ -537,7 +537,7 @@ static void GenerateInitialRentalMons(void)
         else
             monSetId = GetMonSetId(factoryLvlMode, challengeNum, FALSE);
 
-        if (gFacilityTrainerMons[monSetId].species == SPECIES_UNOWN)
+        if (gFacilityTrainerMons[monSetId].species == SPECIES_FLABEBE)
             continue;
 
         // Cannot have two pokemon of the same species.
@@ -721,7 +721,7 @@ void FillFactoryBrainParty(void)
     {
         u16 monSetId = GetMonSetId(lvlMode, challengeNum, FALSE);
 
-        if (gFacilityTrainerMons[monSetId].species == SPECIES_UNOWN)
+        if (gFacilityTrainerMons[monSetId].species == SPECIES_FLABEBE)
             continue;
         if (monLevel == 50 && monSetId > 849)
             continue;

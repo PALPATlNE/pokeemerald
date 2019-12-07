@@ -10,11 +10,11 @@ static const union AnimCmd gAnimCmd_Brendan_1[] =
 
 static const union AnimCmd gAnimCmd_May_Steven_1[] =
 {
-    ANIMCMD_FRAME(0, 24),
-    ANIMCMD_FRAME(1, 9),
-    ANIMCMD_FRAME(2, 24),
-    ANIMCMD_FRAME(0, 9),
-    ANIMCMD_FRAME(3, 50),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(2, 6),
+    ANIMCMD_FRAME(3, 6),
+    ANIMCMD_FRAME(4, 24),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 

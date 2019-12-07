@@ -190,22 +190,22 @@ static const struct {
     u8 location;
 } sPokeOutbreakSpeciesList[] = {
     {
-        SPECIES_SEEDOT,
+        SPECIES_PANCHAM,
         {MOVE_BIDE, MOVE_HARDEN, MOVE_LEECH_SEED},
         3, 0x11 // Route 102
     },
     {
-        SPECIES_NUZLEAF,
+        SPECIES_MIENFOO,
         {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
         15, 0x1D // Route 114
     },
     {
-        SPECIES_SEEDOT,
+        SPECIES_PANCHAM,
         {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
         13, 0x20 // Route 117
     },
     {
-        SPECIES_SEEDOT,
+        SPECIES_PANCHAM,
         {MOVE_GIGA_DRAIN, MOVE_FRUSTRATION, MOVE_SOLAR_BEAM, MOVE_LEECH_SEED},
         25, 0x23 // Route 110
     },

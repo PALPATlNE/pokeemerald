@@ -36,7 +36,7 @@ SlateportCity_EventScript_1DCC99:: @ 81DCC99
 	return
 
 SlateportCity_EventScript_1DCCE7:: @ 81DCCE7
-	setflag FLAG_HIDE_MAP_NAME_POPUP
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	getplayerxy VAR_0x8004, VAR_0x8005
 	compare VAR_0x8004, 30
 	goto_if_eq SlateportCity_EventScript_1DCD06

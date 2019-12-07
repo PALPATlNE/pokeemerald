@@ -12,7 +12,7 @@ Route101_MapScript2_1EBCCB: @ 81EBCCB
 	.2byte 0
 
 Route101_EventScript_HideMapNamePopup:: @ 81EBCD5
-	setflag FLAG_HIDE_MAP_NAME_POPUP
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	setvar VAR_ROUTE101_STATE, 1
 	end
 

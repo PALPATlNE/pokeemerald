@@ -31,7 +31,7 @@ LittlerootTown_EventScript_1E7E45:: @ 81E7E45
 	return
 
 LittlerootTown_EventScript_1E7E4B:: @ 81E7E4B
-	setflag FLAG_HIDE_MAP_NAME_POPUP
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	return
 
 LittlerootTown_EventScript_1E7E4F:: @ 81E7E4F

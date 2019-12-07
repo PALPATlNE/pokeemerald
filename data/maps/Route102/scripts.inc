@@ -74,7 +74,7 @@ Route102_EventScript_Allen:: @ 81EC1E1
 	trainerbattle_single TRAINER_ALLEN, Route102_Text_AllenIntro, Route102_Text_AllenDefeated
 	msgbox Route102_Text_AllenPostBattle, MSGBOX_AUTOCLOSE
 	end
-
+	
 Route102_Text_WatchMeCatchPokemon: @ 81EC1F8
 	.string "WALLY: {PLAYER}…\n"
 	.string "POKéMON hide in tall grass like this,\l"

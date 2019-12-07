@@ -370,7 +370,7 @@ BattleFrontier_BattlePikeRandomRoom1_EventScript_25D6D5:: @ 825D6D5
 	msgbox BattleFrontier_BattlePikeRandomRoom1_Text_25DC01, MSGBOX_DEFAULT
 	closemessage
 	waitse
-	playmoncry SPECIES_DUSCLOPS, 0
+	playmoncry SPECIES_CONKELDURR, 0
 	waitmoncry
 	setvar VAR_0x8004, BATTLE_PIKE_FUNC_GET_ROOM_STATUS
 	special CallBattlePikeFunction
@@ -386,11 +386,11 @@ BattleFrontier_BattlePikeRandomRoom1_EventScript_25D6D5:: @ 825D6D5
 	applymovement 2, BattleFrontier_BattlePikeRandomRoom1_Movement_25D7B1
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_DUSCLOPS, 0
+	playmoncry SPECIES_CONKELDURR, 0
 	waitmoncry
 	msgbox BattleFrontier_BattlePikeRandomRoom1_Text_25DCAF, MSGBOX_DEFAULT
 	waitse
-	playmoncry SPECIES_DUSCLOPS, 0
+	playmoncry SPECIES_CONKELDURR, 0
 	waitmoncry
 	closemessage
 	applymovement 2, BattleFrontier_BattlePikeRandomRoom1_Movement_25D7B3

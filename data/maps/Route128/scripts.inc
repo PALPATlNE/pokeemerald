@@ -301,4 +301,3 @@ Route128_Text_1F721B: @ 81F721B
 	.string "but don't do anything reckless.\p"
 	.string "Okay.\n"
 	.string "I'm going to SOOTOPOLIS.$"
-

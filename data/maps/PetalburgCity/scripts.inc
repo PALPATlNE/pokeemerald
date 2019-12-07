@@ -20,7 +20,7 @@ PetalburgCity_EventScript_MoveBoyToWestEntrance:: @ 81DC307
 	return
 
 PetalburgCity_EventScript_DisableMapNameAndMusic:: @ 81DC30F
-	setflag FLAG_HIDE_MAP_NAME_POPUP
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	savebgm MUS_TSURETEK
 	return
 
@@ -61,7 +61,7 @@ PetalburgCity_EventScript_WallyTutorial:: @ 81DC32E
 
 PetalburgCity_EventScript_WalkToWallyHouse:: @ 81DC390
 	lockall
-	setflag FLAG_HIDE_MAP_NAME_POPUP
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	applymovement 5, PetalburgCity_Movement_WalkToWallyHouseUncle
 	applymovement EVENT_OBJ_ID_PLAYER, PetalburgCity_Movement_WalkToWallyHousePlayer
 	waitmovement 0

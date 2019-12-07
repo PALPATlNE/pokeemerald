@@ -24,7 +24,7 @@ RustboroCity_EventScript_1E06FF:: @ 81E06FF
 	end
 
 RustboroCity_EventScript_1E0707:: @ 81E0707
-	setflag FLAG_HIDE_MAP_NAME_POPUP
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	return
 
 RustboroCity_MapScript2_1E070B: @ 81E070B

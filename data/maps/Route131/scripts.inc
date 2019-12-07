@@ -3,14 +3,8 @@ Route131_MapScripts:: @ 81F7404
 	.byte 0
 
 Route131_OnTransition: @ 81F740A
-	compare VAR_SOOTOPOLIS_CITY_STATE, 4
-	call_if_ge Route131_EventScript_1F741F
-	call Route131_EventScript_1F741B
+	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetWeather15
 	end
-
-Route131_EventScript_1F741B:: @ 81F741B
-	setmaplayoutindex LAYOUT_ROUTE131_SKY_PILLAR
-	return
 
 Route131_EventScript_1F741F:: @ 81F741F
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetWeather15
@@ -55,4 +49,3 @@ Route131_EventScript_1F74D2:: @ 81F74D2
 	trainerbattle_single TRAINER_KEVIN, Route131_Text_2A3AA0, Route131_Text_2A3AFC
 	msgbox Route131_Text_2A3B02, MSGBOX_AUTOCLOSE
 	end
-

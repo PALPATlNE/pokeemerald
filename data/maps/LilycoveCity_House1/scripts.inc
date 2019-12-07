@@ -9,7 +9,7 @@ LilycoveCity_House1_EventScript_21ECD7:: @ 821ECD7
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_KECLEON, 0
+	playmoncry SPECIES_ROGGENROLA, 0
 	msgbox LilycoveCity_House1_Text_21ED63, MSGBOX_DEFAULT
 	waitmoncry
 	release

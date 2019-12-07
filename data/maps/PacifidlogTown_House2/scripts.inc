@@ -77,7 +77,7 @@ PacifidlogTown_House2_EventScript_203891:: @ 8203891
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_AZURILL, 0
+	playmoncry SPECIES_CARRACOSTA, 0
 	msgbox PacifidlogTown_House2_Text_203B8D, MSGBOX_DEFAULT
 	waitmoncry
 	msgbox PacifidlogTown_House2_Text_203B9D, MSGBOX_DEFAULT
@@ -88,7 +88,7 @@ PacifidlogTown_House2_EventScript_2038AC:: @ 82038AC
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_AZURILL, 2
+	playmoncry SPECIES_CARRACOSTA, 2
 	msgbox PacifidlogTown_House2_Text_203BCE, MSGBOX_DEFAULT
 	waitmoncry
 	msgbox PacifidlogTown_House2_Text_203BDF, MSGBOX_DEFAULT

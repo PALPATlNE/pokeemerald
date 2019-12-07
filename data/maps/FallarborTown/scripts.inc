@@ -33,7 +33,7 @@ FallarborTown_EventScript_1EB23D:: @ 81EB23D
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_AZURILL, 0
+	playmoncry SPECIES_CARRACOSTA, 0
 	msgbox FallarborTown_Text_1EB3B5, MSGBOX_DEFAULT
 	waitmoncry
 	release

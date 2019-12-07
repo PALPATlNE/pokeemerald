@@ -181,9 +181,9 @@ NewMauville_Inside_EventScript_2377A5:: @ 82377A5
 NewMauville_Inside_EventScript_2377AF:: @ 82377AF
 	lock
 	faceplayer
-	setwildbattle SPECIES_VOLTORB, 25, ITEM_NONE
+	setwildbattle SPECIES_SCRAGGY, 25, ITEM_NONE
 	waitse
-	playmoncry SPECIES_VOLTORB, 2
+	playmoncry SPECIES_SCRAGGY, 2
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -208,9 +208,9 @@ NewMauville_Inside_EventScript_2377F3:: @ 82377F3
 NewMauville_Inside_EventScript_2377FC:: @ 82377FC
 	lock
 	faceplayer
-	setwildbattle SPECIES_VOLTORB, 25, ITEM_NONE
+	setwildbattle SPECIES_SCRAGGY, 25, ITEM_NONE
 	waitse
-	playmoncry SPECIES_VOLTORB, 2
+	playmoncry SPECIES_SCRAGGY, 2
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -235,9 +235,9 @@ NewMauville_Inside_EventScript_237840:: @ 8237840
 NewMauville_Inside_EventScript_237849:: @ 8237849
 	lock
 	faceplayer
-	setwildbattle SPECIES_VOLTORB, 25, ITEM_NONE
+	setwildbattle SPECIES_SCRAGGY, 25, ITEM_NONE
 	waitse
-	playmoncry SPECIES_VOLTORB, 2
+	playmoncry SPECIES_SCRAGGY, 2
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_CTRL_OBJ_DELETE

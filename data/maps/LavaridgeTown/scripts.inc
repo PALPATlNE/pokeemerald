@@ -37,7 +37,7 @@ LavaridgeTown_EventScript_1EA53F:: @ 81EA53F
 	return
 
 LavaridgeTown_EventScript_1EA543:: @ 81EA543
-	setflag FLAG_HIDE_MAP_NAME_POPUP
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	return
 
 LavaridgeTown_MapScript2_1EA547: @ 81EA547
@@ -258,7 +258,7 @@ LavaridgeTown_EventScript_1EA744:: @ 81EA744
 	playfanfare MUS_FANFA4
 	message LavaridgeTown_Text_1EACF4
 	waitfanfare
-	giveegg SPECIES_WYNAUT
+	giveegg SPECIES_TIMBURR
 	release
 	end
 

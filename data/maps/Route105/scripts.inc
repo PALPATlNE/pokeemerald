@@ -5,17 +5,11 @@ Route105_MapScripts:: @ 81EE1DB
 	.byte 0
 
 Route105_OnLoad: @ 81EE1EB
-	call_if_unset FLAG_REGI_DOORS_OPENED, Route105_CloseRegiEntrance
 	compare VAR_UNUSUAL_WEATHER_LOCATION, UNUSUAL_WEATHER_ROUTE_105_NORTH
 	call_if_eq UnusualWeather_EventScript_PlaceTilesRoute105North
 	compare VAR_UNUSUAL_WEATHER_LOCATION, UNUSUAL_WEATHER_ROUTE_105_SOUTH
 	call_if_eq UnusualWeather_EventScript_PlaceTilesRoute105South
 	end
-
-Route105_CloseRegiEntrance:: @ 81EE20B
-	setmetatile 9, 19, METATILE_General_RockWall_RockBase, 1
-	setmetatile 9, 20, METATILE_General_RockWall_SandBase, 1
-	return
 
 Route105_OnTransition: @ 81EE21E
 	compare VAR_SHOULD_END_UNUSUAL_WEATHER, 1

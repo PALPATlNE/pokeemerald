@@ -1733,7 +1733,7 @@ enum
 u8 CastformDataTypeChange(u8 battler)
 {
     u8 formChange = 0;
-    if (gBattleMons[battler].species != SPECIES_CASTFORM || gBattleMons[battler].ability != ABILITY_FORECAST || gBattleMons[battler].hp == 0)
+    if (gBattleMons[battler].species != SPECIES_CELEBI || gBattleMons[battler].ability != ABILITY_FORECAST || gBattleMons[battler].hp == 0)
         return CASTFORM_NO_CHANGE;
     if (!WEATHER_HAS_EFFECT && !IS_BATTLER_OF_TYPE(battler, TYPE_NORMAL))
     {

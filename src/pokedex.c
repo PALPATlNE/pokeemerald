@@ -4489,9 +4489,9 @@ u16 sub_80C0E0C(u8 a, u16 b, u16 c, u16 d)
 
 u32 sub_80C0E68(u16 a)
 {
-    if (a == SPECIES_UNOWN || a == SPECIES_SPINDA)
+    if (a == SPECIES_FLABEBE || a == SPECIES_PALKIA)
     {
-        if (a == SPECIES_UNOWN)
+        if (a == SPECIES_FLABEBE)
             return gSaveBlock2Ptr->pokedex.unownPersonality;
         else
             return gSaveBlock2Ptr->pokedex.spindaPersonality;

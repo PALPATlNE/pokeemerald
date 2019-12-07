@@ -58,7 +58,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
             [1] = NULL_BATTLE_TOWER_POKEMON,
             [2] = NULL_BATTLE_TOWER_POKEMON,
             [3] = {
-                .species = SPECIES_SWALOT,
+                .species = SPECIES_CRESSELIA,
                 .heldItem = ITEM_SHELL_BELL,
                 .moves = { MOVE_SLUDGE_BOMB, MOVE_SHADOW_BALL, MOVE_PAIN_SPLIT, MOVE_YAWN },
                 .level = 0,
@@ -82,7 +82,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .friendship = 255
             },
             [4] = {
-                .species = SPECIES_DUSTOX,
+                .species = SPECIES_SOLOSIS,
                 .heldItem = ITEM_BRIGHT_POWDER,
                 .moves = { MOVE_SILVER_WIND, MOVE_SLUDGE_BOMB, MOVE_SHADOW_BALL, MOVE_GIGA_DRAIN },
                 .level = 0,
@@ -192,7 +192,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .friendship = 255
             },
             [5] = {
-                .species = SPECIES_WHISCASH,
+                .species = SPECIES_LAMPENT,
                 .heldItem = ITEM_CHESTO_BERRY,
                 .moves = { MOVE_SURF, MOVE_EARTHQUAKE, MOVE_AMNESIA, MOVE_REST },
                 .level = 0,
@@ -254,7 +254,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .friendship = 255
             },
             [4] = {
-                .species = SPECIES_ROSELIA,
+                .species = SPECIES_GIRATINA,
                 .heldItem = ITEM_LEFTOVERS,
                 .moves = { MOVE_GIGA_DRAIN, MOVE_GRASS_WHISTLE, MOVE_TOXIC, MOVE_LEECH_SEED },
                 .level = 0,
@@ -278,7 +278,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .friendship = 255
             },
             [5] = {
-                .species = SPECIES_BEAUTIFLY,
+                .species = SPECIES_COTTONEE,
                 .heldItem = ITEM_BRIGHT_POWDER,
                 .moves = { MOVE_SILVER_WIND, MOVE_AERIAL_ACE, MOVE_ATTRACT, MOVE_PSYCHIC },
                 .level = 0,
