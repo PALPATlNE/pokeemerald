@@ -460,8 +460,8 @@ const u16 DecorGfx_KISS_POSTER[] = {
     0x12D
 };
 
-const u16 DecorGfx_FOONGUS_DOLL[] = {
-    EVENT_OBJ_GFX_FOONGUS_DOLL
+const u16 DecorGfx_PICHU_DOLL[] = {
+    EVENT_OBJ_GFX_PICHU_DOLL
 };
 
 const u16 DecorGfx_PIKACHU_DOLL[] = {

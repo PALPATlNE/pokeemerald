@@ -683,12 +683,8 @@ Cry_Espurr::
 	.incbin "sound/direct_sound_samples/cry_espurr.bin"
 
 	.align 2
-Cry_Meowstic_Male::
-	.incbin "sound/direct_sound_samples/cry_meowstic_male.bin"
-
-	.align 2
-Cry_Meowstic_Female::
-	.incbin "sound/direct_sound_samples/cry_meowstic_female.bin"
+Cry_Meowstic::
+	.incbin "sound/direct_sound_samples/cry_meowstic.bin"
 
 	.align 2
 Cry_Ponyta::
@@ -716,7 +712,7 @@ Cry_Magneton::
 
 	.align 2
 Cry_Magnezone::
-	.incbin "sound/direct_sound_samples/cry_farfetchd.bin"
+	.incbin "sound/direct_sound_samples/cry_magnezone.bin"
 
 	.align 2
 Cry_Rotom::
@@ -1188,7 +1184,7 @@ Cry_Sylveon::
 
 	.align 2
 Cry_Flabebe::
-	.incbin "sound/direct_sound_samples/cry_unown.bin"
+	.incbin "sound/direct_sound_samples/cry_flabebe.bin"
 
 	.align 2
 Cry_Floette::

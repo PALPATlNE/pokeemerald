@@ -14113,8 +14113,8 @@ gCryTable:: @ 869DCF4
 	cry Cry_Tentacool  @ 869E048
 	cry Cry_Tentacruel  @ 869E054
 	cry Cry_Espurr  @ 869E060
-	cry Cry_Meowstic_Male  @ 869E06C
-	cry Cry_Meowstic_Female  @ 869E078
+	cry Cry_Meowstic  @ 869E06C
+	cry Cry_Meowstic  @ 869E078
 	cry Cry_Ponyta  @ 869E084
 	cry Cry_Rapidash  @ 869E090
 	cry Cry_Vullaby  @ 869E09C
@@ -14504,8 +14504,8 @@ gCryTable2:: @ 869EF24
 	cry2 Cry_Tentacool  @ 869F278
 	cry2 Cry_Tentacruel  @ 869F284
 	cry2 Cry_Espurr  @ 869F290
-	cry2 Cry_Meowstic_Male  @ 869F29C
-	cry2 Cry_Meowstic_Female  @ 869F2A8
+	cry2 Cry_Meowstic  @ 869F29C
+	cry2 Cry_Meowstic  @ 869F2A8
 	cry2 Cry_Ponyta  @ 869F2B4
 	cry2 Cry_Rapidash  @ 869F2C0
 	cry2 Cry_Vullaby  @ 869F2CC

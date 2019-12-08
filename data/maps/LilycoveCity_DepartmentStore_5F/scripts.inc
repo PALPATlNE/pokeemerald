@@ -25,7 +25,7 @@ LilycoveCity_DepartmentStore_5F_EventScript_21FFA6:: @ 821FFA6
 
 	.align 2
 LilycoveCity_DepartmentStore_5F_Pokemart_Dolls: @ 821FFC0
-	.2byte DECOR_FOONGUS_DOLL
+	.2byte DECOR_PICHU_DOLL
 	.2byte DECOR_PIKACHU_DOLL
 	.2byte DECOR_MARILL_DOLL
 	.2byte DECOR_FROAKIE_DOLL

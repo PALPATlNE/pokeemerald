@@ -334,7 +334,7 @@ LilycoveCity_EventScript_1E2F3E:: @ 81E2F3E
 	compare VAR_RESULT, 1
 	call_if_eq LilycoveCity_EventScript_1E2F8F
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_FOONGUS_DOLL
+	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_PICHU_DOLL
 	goto LilycoveCity_EventScript_1E3006
 	end
 
