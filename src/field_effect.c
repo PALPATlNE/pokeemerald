@@ -756,8 +756,15 @@ bool8 FieldEffectCmd_chooseloadfadedpal(u8 **script, u32 *val)
 {
     (*script)++;
     if (gFieldEffectArguments[7] & 2) // Use second pal
+    {
         (*script) += 4;
-    FieldEffectScript_LoadFadedPalette(script);
+        FieldEffectScript_LoadFadedPalette(script);
+    }
+    else
+    {
+        FieldEffectScript_LoadFadedPalette(script);
+        (*script) += 4;
+    }
 }
 
 u32 FieldEffectScript_ReadWord(u8 **script)
