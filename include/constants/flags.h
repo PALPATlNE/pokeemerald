@@ -541,7 +541,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_103_ORAN_BERRY                (FLAG_HIDDEN_ITEMS_START + 0x08)
 #define FLAG_HIDDEN_ITEM_VOLTAIC_CAVERNS_THUNDERSTONE        (FLAG_HIDDEN_ITEMS_START + 0x09)
 #define FLAG_HIDDEN_ITEM_ALCOR_TUNNEL_FIRE_STONE             (FLAG_HIDDEN_ITEMS_START + 0x0A)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_1_BIG_PEARL              (FLAG_HIDDEN_ITEMS_START + 0x0B)
+#define FLAG_HIDDEN_ITEM_SARIN_FOREST_LEAF_STONE             (FLAG_HIDDEN_ITEMS_START + 0x0B)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_1_HEART_SCALE_1          (FLAG_HIDDEN_ITEMS_START + 0x0D)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_1_CALCIUM                (FLAG_HIDDEN_ITEMS_START + 0x24)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_1_HEART_SCALE_2          (FLAG_HIDDEN_ITEMS_START + 0x26)
@@ -1048,10 +1048,10 @@
 #define FLAG_ITEM_ENIF_CITY_METAL_COAT                              0x3E9
 #define FLAG_ITEM_ALCOR_TUNNEL_POTION                               0x3EA
 #define FLAG_ITEM_ALCOR_TUNNEL_HARD_STONE                           0x3EB
-#define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
-#define FLAG_ITEM_ROUTE_102_PP_UP                                   0x3ED
-#define FLAG_ITEM_ROUTE_109_RARE_CANDY                              0x3EE
-#define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF
+#define FLAG_ITEM_ROUTE_102_PP_UP                                   0x3EC
+#define FLAG_ITEM_SARIN_FOREST_ANTIDOTE                             0x3ED
+#define FLAG_ITEM_SARIN_FOREST_SUPER_POTION                         0x3EE
+#define FLAG_ITEM_SARIN_FOREST_REPEL                                0x3EF
 #define FLAG_ITEM_ROUTE_111_TM_37                                   0x3F0
 #define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1
 #define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2

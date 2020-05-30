@@ -109,6 +109,18 @@ Route02_Fisherman::
 Route02_Fisherman_Text:
 	.string "I like fishing.$"
 
+Route02_Sign_House::
+	msgbox Route02_Sign_House_Text, MSGBOX_SIGN
+	end
+	
+Route02_Sign_Tunnel::
+	msgbox Route02_Tunnel_Sign_Text, MSGBOX_SIGN
+	end
+	
+Route02_Sign_Route03::
+	msgbox Route02_Sign_Route03_Text, MSGBOX_SIGN
+	end
+
 Route02_Clair_Exit:
 	walk_up
 	walk_up
@@ -164,3 +176,12 @@ Route02_Clair_Medicine_Text:
 	.string "Doctor.\p"
 	.string "So if you and your Pokémon ever need it,\n"
 	.string "I'll gladly help.$"
+
+Route02_Sign_House_Text:
+	.string "Moralis Household$"
+
+Route02_Tunnel_Sign_Text:
+	.string "Alcor Tunnel$"
+
+Route02_Sign_Route03_Text:
+	.string "Route 3$"

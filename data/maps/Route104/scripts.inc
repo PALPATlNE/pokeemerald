@@ -112,7 +112,14 @@ Route104_Finish_Recieving_Poochyena::
 	setflag FLAG_HIDE_ROUTE104_POKEMON
 	setvar VAR_ROUTE104_STATE, 1
 	end
-	
+
+Route4_Forest_Sign::
+	msgbox Route4_Forest_Sign_Text, MSGBOX_SIGN
+	end
+
+Route4_Route_Sign::
+	msgbox Route4_Route_Sign_Text, MSGBOX_SIGN
+	end	
 
 Route104_Growlithes_Left:
 	walk_left
@@ -210,3 +217,9 @@ Route104_Poochyena_Saved:
 	
 Route104_Poochyena_Joins:	
 	.string "Poochyena joined your team!$"
+
+Route4_Forest_Sign_Text:
+	.string "Sarin Forest$"
+
+Route4_Route_Sign_Text:
+	.string "Route 4$"

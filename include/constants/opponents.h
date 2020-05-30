@@ -16,7 +16,7 @@
 #define TRAINER_ALBERTO                      12
 #define TRAINER_ED                           13
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
-#define TRAINER_DECLAN                       15
+#define TRAINER_JOSH                         15
 #define TRAINER_GRUNT_RUSTURF_TUNNEL         16
 #define TRAINER_GRUNT_WEATHER_INST_1         17
 #define TRAINER_GRUNT_WEATHER_INST_2         18
@@ -321,7 +321,7 @@
 #define TRAINER_SHELBY_5                    317
 #define TRAINER_CALVIN_1                    318
 #define TRAINER_BILLY                       319
-#define TRAINER_JOSH                        320
+#define TRAINER_JOSHI                       320
 #define TRAINER_TOMMY                       321
 #define TRAINER_JOEY                        322
 #define TRAINER_BEN                         323

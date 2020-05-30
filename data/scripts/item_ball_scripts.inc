@@ -30,20 +30,20 @@ AlcorTunnel_EventScript_ItemHardStone:: @ 8290D33
 	finditem ITEM_HARD_STONE
 	end
 
-Route106_EventScript_ItemProtein:: @ 8290D40
-	finditem ITEM_PROTEIN
+SarinForest_EventScript_ItemAntidote:: @ 8290D40
+	finditem ITEM_ANTIDOTE
 	end
 
-Route108_EventScript_ItemStarPiece:: @ 8290D4D
-	finditem ITEM_STAR_PIECE
+SarinForest_EventScript_ItemSuperPotion:: @ 8290D4D
+	finditem ITEM_SUPER_POTION
 	end
 
 Route102_EventScript_ItemPPUp:: @ 8290D5A
 	finditem ITEM_PP_UP
 	end
 
-Route109_EventScript_ItemPotion:: @ 8290D67
-	finditem ITEM_POTION
+SarinForest_EventScript_ItemRepel:: @ 8290D67
+	finditem ITEM_REPEL
 	end
 
 Route110_EventScript_ItemRareCandy:: @ 8290D74

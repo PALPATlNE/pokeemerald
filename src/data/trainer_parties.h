@@ -160,7 +160,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern4[] =
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Declan[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Joshi[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -4229,12 +4229,26 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Billy[] = {
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_Josh[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Josh[] = {
     {
-    .iv = 100,
-    .lvl = 10,
-    .species = SPECIES_ESPURR,
-    .moves = MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_SEWADDLE,
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_VENIPEDE,
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_VIVILLON,
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_BEEDRILL,
     }
 };
 

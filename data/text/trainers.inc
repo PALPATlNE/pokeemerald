@@ -76,6 +76,16 @@ AlcorTunnel_Text_EdDefeat: @ 82A07F0
 AlcorTunnel_Text_EdPostBattle: @ 82A080D
 	.string "I should have evaded you.$"
 
+SarinForest_Text_JoshIntro: @ 82A079B
+	.string "I caught many Bug-Type Pokémon.\n"
+    .string "Marvel at my mighty collection!$"
+
+SarinForest_Text_JoshDefeat: @ 82A07F0
+	.string "My collection?! Crushed!$"
+
+SarinForest_Text_JoshPostBattle: @ 82A080D
+	.string "My collection still needs some work.$"
+
 Route103_Text_DaisyIntro: @ 829495A
 	.string "Did you feel the tug of our\n"
 	.string "soul-soothing fragrance?$"

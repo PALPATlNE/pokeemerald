@@ -11,7 +11,6 @@ Common_EventScript_SetGymTrainers:: @ 8271F43
 	end
 
 RusboroCity_Gym_SetGymTrainers:: @ 8271FA1
-	settrainerflag TRAINER_JOSH
 	settrainerflag TRAINER_TOMMY
 	settrainerflag TRAINER_MARC
 	return

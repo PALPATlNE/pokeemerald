@@ -4,6 +4,22 @@
     "allow_running": true,
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "Route4_Forest_Sign",
+            "type": "sign",
+            "x": 15,
+            "y": 29
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "Route4_Route_Sign",
+            "type": "sign",
+            "x": 13,
+            "y": 48
+        }
     ],
     "connections": [
         {

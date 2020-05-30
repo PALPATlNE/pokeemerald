@@ -19,6 +19,30 @@
             "type": "hidden_item",
             "x": 17,
             "y": 61
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "Route02_Sign_Tunnel",
+            "type": "sign",
+            "x": 15,
+            "y": 28
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "Route02_Sign_Route03",
+            "type": "sign",
+            "x": 19,
+            "y": 17
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "Route02_Sign_House",
+            "type": "sign",
+            "x": 10,
+            "y": 67
         }
     ],
     "connections": [
@@ -68,7 +92,7 @@
             "movement_type": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT",
             "script": "Route02_Youngster_Trainer",
             "trainer_sight_or_berry_tree_id": "3",
-            "trainer_type": "1",
+            "trainer_type": "3",
             "x": 6,
             "y": 65
         },
@@ -133,7 +157,7 @@
             "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
             "script": "Route02_Lass_Trainer",
             "trainer_sight_or_berry_tree_id": "5",
-            "trainer_type": "1",
+            "trainer_type": "3",
             "x": 11,
             "y": 56
         }

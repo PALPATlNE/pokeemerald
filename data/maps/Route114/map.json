@@ -4,6 +4,22 @@
     "allow_running": true,
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "Route14_Route_Sign",
+            "type": "sign",
+            "x": 29,
+            "y": 44
+        },
+        {
+            "elevation": 0,
+            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+            "script": "Route14_Lake_Sign",
+            "type": "sign",
+            "x": 32,
+            "y": 20
+        }
     ],
     "connections": [
         {
@@ -25,6 +41,19 @@
     "music": "MUS_DOORO_X1",
     "name": "Route114",
     "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 20,
+            "y": 8
+        }
     ],
     "region_map_section": "MAPSEC_ROUTE_114",
     "requires_flash": false,

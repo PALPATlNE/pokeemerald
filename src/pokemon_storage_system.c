@@ -3048,14 +3048,9 @@ static void Cb_ReleaseMon(u8 taskId)
             while (1)
             {
                 s8 r0 = RunCanReleaseMon();
-                if (r0 == 1)
+                if (r0 == 1 || r0 == 0)
                 {
                     sPSSData->state++;
-                    break;
-                }
-                else if (r0 == 0)
-                {
-                    sPSSData->state = 8; // Can't release the mon.
                     break;
                 }
             }
