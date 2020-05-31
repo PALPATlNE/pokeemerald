@@ -1784,3 +1784,11 @@ const u8 gText_DexDef[] = _("DEF");
 const u8 gText_DexSpe[] = _("SpA");
 const u8 gText_DexSpA[] = _("SpD");
 const u8 gText_DexSpD[] = _("SPE");
+
+const u8 gText_Sunday[] = _("Sunday");
+const u8 gText_Monday[] = _("Monday");
+const u8 gText_Tuesday[] = _("Tuesday");
+const u8 gText_Wednesday[] = _("Wednesday");
+const u8 gText_Thursday[] = _("Thursday");
+const u8 gText_Friday[] = _("Friday");
+const u8 gText_Saturday[] = _("Saturday");

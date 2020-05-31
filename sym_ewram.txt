@@ -147,4 +147,5 @@
 	.include "src/faraway_island.o"
 	.include "src/trainer_hill.o"
 	.include "src/rayquaza_scene.o"
-    .include "src/field_pic.o"
+        .include "src/field_pic.o"
+        .include "src/day_night.o"
