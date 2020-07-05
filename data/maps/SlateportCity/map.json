@@ -1,277 +1,280 @@
 {
-    "allow_bike": true,
-    "allow_escape_rope": false,
-    "allow_running": true,
-    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-    "bg_events": [
-        {
-            "elevation": 0,
-            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-            "script": "ZaurakCity_Sign",
-            "type": "sign",
-            "x": 22,
-            "y": 18
-        },
-        {
-            "elevation": 0,
-            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-            "script": "ZaurakCity_Subway_Sign",
-            "type": "sign",
-            "x": 19,
-            "y": 28
-        },
-        {
-            "elevation": 0,
-            "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-            "script": "ZaurakCity_Hotel_Sign",
-            "type": "sign",
-            "x": 24,
-            "y": 28
-        },
-        {
-            "elevation": 0,
-            "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-            "script": "ZaurakCity_Lake_Sign",
-            "type": "sign",
-            "x": 24,
-            "y": 7
-        }
-    ],
-    "connections": [
-        {
-            "direction": "up",
-            "map": "MAP_ROUTE102",
-            "offset": 14
-        },
-        {
-            "direction": "down",
-            "map": "MAP_ROUTE131",
-            "offset": 7
-        },
-        {
-            "direction": "down",
-            "map": "MAP_ROUTE131",
-            "offset": 7
-        }
-    ],
-    "coord_events": [
-    ],
-    "id": "MAP_SLATEPORT_CITY",
-    "layout": "LAYOUT_SLATEPORT_CITY",
-    "map_type": "MAP_TYPE_UNUSED_1",
-    "music": "MUS_FINECITY",
-    "name": "SlateportCity",
-    "object_events": [
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDE_ZAURAKCITY_RIVAL",
-            "graphics_id": "OBJ_EVENT_GFX_VAR_0",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "ZaurakCity_Conversation_Rival",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 9,
-            "y": 29
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "ZaurakCity_Fat_Man",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 13,
-            "y": 27
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "ZaurakCity_Old_Man",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 23,
-            "y": 12
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "ZaurakCity_Old_Woman",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 22,
-            "y": 12
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_GAMEBOY_KID",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "ZaurakCity_Gameboy_Kid",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 26,
-            "y": 12
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "ZaurakCity_Gentleman",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 14,
-            "y": 19
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_MARILL_DOLL",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "ZaurakCity_MarillDoll",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 20,
-            "y": 23
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "ZaurakCity_Little_Girl",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 21,
-            "y": 23
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "ZaurakCity_Balding_Man",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 22,
-            "y": 23
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-            "script": "ZaurakCity_Old_Lady_Lake",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 29,
-            "y": 9
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDE_ZAURAKCITY_TOUR_FINISH",
-            "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-            "script": "ZaurakCity_Seraph_Blockade",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 19,
-            "y": 4
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDE_ZAURAKCITY_TOUR_FINISH",
-            "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-            "script": "ZaurakCity_Seraph_Blockade",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 20,
-            "y": 4
-        }
-    ],
-    "region_map_section": "MAPSEC_SLATEPORT_CITY",
-    "requires_flash": false,
-    "show_map_name": true,
-    "warp_events": [
-        {
-            "dest_map": "MAP_ZAURAK_CITY_LAB",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 9,
-            "y": 28
-        },
-        {
-            "dest_map": "MAP_ZAURAK_CITY_STATION",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 21,
-            "y": 27
-        },
-        {
-            "dest_map": "MAP_ZAURAK_CITY_STATION",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 22,
-            "y": 27
-        },
-        {
-            "dest_map": "MAP_ZAURAK_CITY_HOUSE",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 11,
-            "y": 18
-        },
-        {
-            "dest_map": "MAP_ZAURAK_CITY_APARTMENT_1F",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 29,
-            "y": 18
-        },
-        {
-            "dest_map": "MAP_ZAURAK_CITY_HOTEL",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 28,
-            "y": 28
-        },
-        {
-            "dest_map": "MAP_ZAURAK_CITY_MART",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 15,
-            "y": 18
-        }
-    ],
-    "weather": "WEATHER_NONE"
+  "id": "MAP_SLATEPORT_CITY",
+  "name": "SlateportCity",
+  "layout": "LAYOUT_SLATEPORT_CITY",
+  "music": "MUS_FINECITY",
+  "region_map_section": "MAPSEC_SLATEPORT_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNUSED_1",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "up",
+      "offset": 14,
+      "map": "MAP_ROUTE102"
+    },
+    {
+      "direction": "down",
+      "offset": 7,
+      "map": "MAP_ROUTE131"
+    },
+    {
+      "direction": "down",
+      "offset": 7,
+      "map": "MAP_ROUTE131"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 9,
+      "y": 29,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZaurakCity_Conversation_Rival",
+      "flag": "FLAG_HIDE_ZAURAKCITY_RIVAL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "x": 13,
+      "y": 27,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZaurakCity_Fat_Man",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
+      "x": 23,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZaurakCity_Old_Man",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
+      "x": 22,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZaurakCity_Old_Woman",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GAMEBOY_KID",
+      "x": 26,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZaurakCity_Gameboy_Kid",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
+      "x": 14,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZaurakCity_Gentleman",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MARILL_DOLL",
+      "x": 20,
+      "y": 23,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZaurakCity_MarillDoll",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "x": 21,
+      "y": 23,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZaurakCity_Little_Girl",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 22,
+      "y": 23,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZaurakCity_Balding_Man",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
+      "x": 29,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZaurakCity_Old_Lady_Lake",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
+      "x": 19,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZaurakCity_Seraph_Blockade",
+      "flag": "FLAG_HIDE_ZAURAKCITY_TOUR_FINISH"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 20,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZaurakCity_Seraph_Blockade",
+      "flag": "FLAG_HIDE_ZAURAKCITY_TOUR_FINISH"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_ZAURAK_CITY_LAB",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 21,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_ZAURAK_CITY_STATION",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 22,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_ZAURAK_CITY_STATION",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 11,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_ZAURAK_CITY_HOUSE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 29,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_ZAURAK_CITY_APARTMENT_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 28,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_ZAURAK_CITY_HOTEL",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 15,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_ZAURAK_CITY_MART",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "ZaurakCity_Sign"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 28,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "ZaurakCity_Subway_Sign"
+    },
+    {
+      "type": "sign",
+      "x": 24,
+      "y": 28,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "ZaurakCity_Hotel_Sign"
+    },
+    {
+      "type": "sign",
+      "x": 24,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ZaurakCity_Lake_Sign"
+    }
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
 }
