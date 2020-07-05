@@ -1,74 +1,79 @@
 {
-    "allow_bike": true,
-    "allow_escape_rope": false,
-    "allow_running": true,
-    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-    "bg_events": [
-    ],
-    "connections": [
-        {
-            "direction": "left",
-            "map": "MAP_ROUTE103",
-            "offset": 23
-        },
-        {
-            "direction": "up",
-            "map": "MAP_ROUTE104",
-            "offset": 20
-        }
-    ],
-    "coord_events": [
-    ],
-    "id": "MAP_MAUVILLE_CITY",
-    "layout": "LAYOUT_MAUVILLE_CITY",
-    "map_type": "MAP_TYPE_CITY",
-    "music": "MUS_GOTOWN",
-    "name": "MauvilleCity",
-    "object_events": [
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_MAXIE",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "0x0",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 25,
-            "y": 29
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDE_ENIF_CITY_PIDGEY",
-            "graphics_id": "OBJ_EVENT_GFX_ZIGZAGOON_2",
-            "movement_range_x": 1,
-            "movement_range_y": 1,
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "script": "Enif_City_Pidgey_Eventscript",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 32,
-            "y": 6
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_ITEM_ENIF_CITY_METAL_COAT",
-            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "EnifCity_EventScript_ItemMetalCoat",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 40,
-            "y": 43
-        }
-    ],
-    "region_map_section": "MAPSEC_MAUVILLE_CITY",
-    "requires_flash": false,
-    "show_map_name": true,
-    "warp_events": [
-    ],
-    "weather": "WEATHER_SUNNY"
+  "id": "MAP_MAUVILLE_CITY",
+  "name": "MauvilleCity",
+  "layout": "LAYOUT_MAUVILLE_CITY",
+  "music": "MUS_GOTOWN",
+  "region_map_section": "MAPSEC_MAUVILLE_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "left",
+      "offset": 23,
+      "map": "MAP_ROUTE103"
+    },
+    {
+      "direction": "up",
+      "offset": 20,
+      "map": "MAP_ROUTE104"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAXIE",
+      "x": 25,
+      "y": 29,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ZIGZAGOON_2",
+      "x": 32,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Enif_City_Pidgey_Eventscript",
+      "flag": "FLAG_HIDE_ENIF_CITY_PIDGEY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 40,
+      "y": 43,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EnifCity_EventScript_ItemMetalCoat",
+      "flag": "FLAG_ITEM_ENIF_CITY_METAL_COAT"
+    }
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
 }

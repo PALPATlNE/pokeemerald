@@ -1,197 +1,200 @@
 {
-    "allow_bike": true,
-    "allow_escape_rope": false,
-    "allow_running": true,
-    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-    "bg_events": [
-    ],
-    "connections": [
-        {
-            "direction": "right",
-            "map": "MAP_ROUTE101",
-            "offset": 2
-        }
-    ],
-    "coord_events": [
-        {
-            "elevation": 0,
-            "script": "EventScript_Lesson_Trigger1",
-            "type": "trigger",
-            "var": "VAR_PETALBURG_CITY_STATE",
-            "var_value": "0",
-            "x": 36,
-            "y": 31
-        },
-        {
-            "elevation": 0,
-            "script": "EventScript_Lesson_Trigger2",
-            "type": "trigger",
-            "var": "VAR_PETALBURG_CITY_STATE",
-            "var_value": "0",
-            "x": 36,
-            "y": 32
-        },
-        {
-            "elevation": 0,
-            "script": "EventScript_Lesson_Trigger3",
-            "type": "trigger",
-            "var": "VAR_PETALBURG_CITY_STATE",
-            "var_value": "0",
-            "x": 36,
-            "y": 33
-        }
-    ],
-    "id": "MAP_PETALBURG_CITY",
-    "layout": "LAYOUT_PETALBURG_CITY",
-    "map_type": "MAP_TYPE_CITY",
-    "music": "MUS_MACHI_S2",
-    "name": "PetalburgCity",
-    "object_events": [
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_POOCHYENA",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT",
-            "script": "Deneb_Academy_Poochyena",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 15,
-            "y": 36
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_ZIGZAGOON_1",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_LEFT",
-            "script": "Deneb_Academy_Zigzagoon",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 16,
-            "y": 36
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDE_DENEB_NICK_AND_CARLY",
-            "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-            "script": "Deneb_Academy_Carly",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 13,
-            "y": 36
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDE_DENEB_NICK_AND_CARLY",
-            "graphics_id": "OBJ_EVENT_GFX_BOY_3",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-            "script": "Deneb_Academy_Lukas",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 18,
-            "y": 36
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_TEALA",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-            "script": "Teala_EventScript",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 12,
-            "y": 31
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_VAR_0",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-            "script": "NULL",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 39,
-            "y": 49
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDE_DENEB_NICK_AND_CARLY",
-            "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-            "script": "Mart_Clerk_EventScript",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 27,
-            "y": 37
-        }
-    ],
-    "region_map_section": "MAPSEC_PETALBURG_CITY",
-    "requires_flash": false,
-    "show_map_name": true,
-    "warp_events": [
-        {
-            "dest_map": "MAP_DENEB_PLAYERS_HOUSE",
-            "dest_warp_id": 0,
-            "elevation": 3,
-            "x": 27,
-            "y": 24
-        },
-        {
-            "dest_map": "MAP_DENEB_MART",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 27,
-            "y": 36
-        },
-        {
-            "dest_map": "MAP_DENEB_CLASSROOM",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 12,
-            "y": 30
-        },
-        {
-            "dest_map": "MAP_DENEB_HOUSE1",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 21,
-            "y": 24
-        },
-        {
-            "dest_map": "MAP_DENEB_HOUSE2",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 21,
-            "y": 30
-        },
-        {
-            "dest_map": "MAP_DENEB_HOUSE3",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 33,
-            "y": 24
-        },
-        {
-            "dest_map": "MAP_DENEB_HOUSE4",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 33,
-            "y": 30
-        }
-    ],
-    "weather": "WEATHER_SUNNY"
+  "id": "MAP_PETALBURG_CITY",
+  "name": "PetalburgCity",
+  "layout": "LAYOUT_PETALBURG_CITY",
+  "music": "MUS_MACHI_S2",
+  "region_map_section": "MAPSEC_PETALBURG_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "right",
+      "offset": 2,
+      "map": "MAP_ROUTE101"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POOCHYENA",
+      "x": 15,
+      "y": 36,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Deneb_Academy_Poochyena",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ZIGZAGOON_1",
+      "x": 16,
+      "y": 36,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Deneb_Academy_Zigzagoon",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
+      "x": 13,
+      "y": 36,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Deneb_Academy_Carly",
+      "flag": "FLAG_HIDE_DENEB_NICK_AND_CARLY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_3",
+      "x": 18,
+      "y": 36,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Deneb_Academy_Lukas",
+      "flag": "FLAG_HIDE_DENEB_NICK_AND_CARLY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TEALA",
+      "x": 12,
+      "y": 31,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Teala_EventScript",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 39,
+      "y": 49,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
+      "x": 27,
+      "y": 37,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Mart_Clerk_EventScript",
+      "flag": "FLAG_HIDE_DENEB_NICK_AND_CARLY"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 27,
+      "y": 24,
+      "elevation": 3,
+      "dest_map": "MAP_DENEB_PLAYERS_HOUSE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 27,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_DENEB_MART",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 12,
+      "y": 30,
+      "elevation": 0,
+      "dest_map": "MAP_DENEB_CLASSROOM",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 21,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_DENEB_HOUSE1",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 21,
+      "y": 30,
+      "elevation": 0,
+      "dest_map": "MAP_DENEB_HOUSE2",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 33,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_DENEB_HOUSE3",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 33,
+      "y": 30,
+      "elevation": 0,
+      "dest_map": "MAP_DENEB_HOUSE4",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_CITY_STATE",
+      "var_value": "0",
+      "script": "EventScript_Lesson_Trigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 32,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_CITY_STATE",
+      "var_value": "0",
+      "script": "EventScript_Lesson_Trigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_CITY_STATE",
+      "var_value": "0",
+      "script": "EventScript_Lesson_Trigger3"
+    }
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
 }
