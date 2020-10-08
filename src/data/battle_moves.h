@@ -1330,7 +1330,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
-    [MOVE_BRAVIARYSIS] =
+    [MOVE_HYPNOSIS] =
     {
         .effect = EFFECT_SLEEP,
         .power = 0,

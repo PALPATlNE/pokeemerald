@@ -979,7 +979,7 @@ const struct FacilityMon gSlateportBattleTentMons[] =
     },
     [32] = {
         .species = SPECIES_PALKIA,
-        .moves = {MOVE_DIZZY_PUNCH, MOVE_FAINT_ATTACK, MOVE_BRAVIARYSIS, MOVE_REST},
+        .moves = {MOVE_DIZZY_PUNCH, MOVE_FAINT_ATTACK, MOVE_HYPNOSIS, MOVE_REST},
         .itemTableId = BATTLE_FRONTIER_ITEM_CHESTO_BERRY,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT
@@ -1147,7 +1147,7 @@ const struct FacilityMon gSlateportBattleTentMons[] =
     },
     [56] = {
         .species = SPECIES_RALTS,
-        .moves = {MOVE_BRAVIARYSIS, MOVE_IMPRISON, MOVE_PSYCHIC, MOVE_DREAM_EATER},
+        .moves = {MOVE_HYPNOSIS, MOVE_IMPRISON, MOVE_PSYCHIC, MOVE_DREAM_EATER},
         .itemTableId = BATTLE_FRONTIER_ITEM_MAGO_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
         .nature = NATURE_TIMID
@@ -2471,8 +2471,8 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[] =
         .facilityClass = FACILITY_CLASS_TUBER_M,
         .trainerName = _("TREVE"),
         .speechBefore = {EC_WORD_LOOK, EC_WORD_AT, EC_WORD_MY, EC_MOVE2(METRONOME), EC_WORD_AND, EC_WORD_SLEEP},
-        .speechWin = {EC_WORD_YEAH, EC_WORD_EXCL, EC_MOVE(BRAVIARYSIS), EC_WORD_IS, EC_WORD_TOTALLY, EC_WORD_GREAT},
-        .speechLose = {EC_WORD_MY, EC_MOVE(BRAVIARYSIS), EC_WORD_DIDN_T, EC_WORD_WORK, EC_WORD_ELLIPSIS, -1},
+        .speechWin = {EC_WORD_YEAH, EC_WORD_EXCL, EC_MOVE(HYPNOSIS), EC_WORD_IS, EC_WORD_TOTALLY, EC_WORD_GREAT},
+        .speechLose = {EC_WORD_MY, EC_MOVE(HYPNOSIS), EC_WORD_DIDN_T, EC_WORD_WORK, EC_WORD_ELLIPSIS, -1},
         .monSet = gFallarborBattleTentTrainerMons_Treve
     },
     [4] = {
@@ -2976,7 +2976,7 @@ const struct FacilityMon gFallarborBattleTentMons[] =
     },
     [41] = {
         .species = SPECIES_KIRLIA,
-        .moves = {MOVE_BRAVIARYSIS, MOVE_GROWL, MOVE_ATTRACT, MOVE_DREAM_EATER},
+        .moves = {MOVE_HYPNOSIS, MOVE_GROWL, MOVE_ATTRACT, MOVE_DREAM_EATER},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT

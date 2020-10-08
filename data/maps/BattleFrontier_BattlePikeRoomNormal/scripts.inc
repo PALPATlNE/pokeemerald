@@ -727,7 +727,7 @@ BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic: @ 825DC20
 	.string "KIRLIA used TOXIC!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis: @ 825DC33
-	.string "KIRLIA used BRAVIARYSIS!$"
+	.string "KIRLIA used HYPNOSIS!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave: @ 825DC49
 	.string "KIRLIA used THUNDER WAVE!$"

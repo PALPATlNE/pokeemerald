@@ -103,7 +103,7 @@ static const struct PikeWildMon sLvl50_Mons1[] =
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_BRAVIARYSIS, MOVE_BODY_SLAM, MOVE_SURF}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_SURF}
     },
     {
         .species = SPECIES_CONKELDURR,
@@ -122,7 +122,7 @@ static const struct PikeWildMon sLvl50_Mons2[] =
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_BRAVIARYSIS, MOVE_BODY_SLAM, MOVE_SURF}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_SURF}
     },
     {
         .species = SPECIES_SCRAFTY,
@@ -141,7 +141,7 @@ static const struct PikeWildMon sLvl50_Mons3[] =
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_BRAVIARYSIS, MOVE_BODY_SLAM, MOVE_SURF}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_SURF}
     },
     {
         .species = SPECIES_BRELOOM,
@@ -160,7 +160,7 @@ static const struct PikeWildMon sLvl50_Mons4[] =
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_BRAVIARYSIS, MOVE_BODY_SLAM, MOVE_SURF}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_SURF}
     },
     {
         .species = SPECIES_FLOETTE,
@@ -187,7 +187,7 @@ static const struct PikeWildMon sLvlOpen_Mons1[] =
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_BRAVIARYSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM}
     },
     {
         .species = SPECIES_CONKELDURR,
@@ -206,7 +206,7 @@ static const struct PikeWildMon sLvlOpen_Mons2[] =
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_BRAVIARYSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM}
     },
     {
         .species = SPECIES_SCRAFTY,
@@ -225,7 +225,7 @@ static const struct PikeWildMon sLvlOpen_Mons3[] =
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_BRAVIARYSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM}
     },
     {
         .species = SPECIES_BRELOOM,
@@ -244,7 +244,7 @@ static const struct PikeWildMon sLvlOpen_Mons4[] =
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_BRAVIARYSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM}
     },
     {
         .species = SPECIES_FLOETTE,

@@ -2312,14 +2312,14 @@ static const u8 sStatsSpAtk[] =   _("SpA");
 static const u8 sStatsSpDef[] =   _("SpD");
 static const u8 sStatsSpeed[] =   _("SPE");
 
-static const u8 sStatsHPValue[] =   _("{SPECIAL_F7 0x00}");
-static const u8 sStatsAttackValue[] =   _("{SPECIAL_F7 0x00}");
-static const u8 sStatsDefenseValue[] =   _("{SPECIAL_F7 0x00}");
-static const u8 sStatsSpAtkValue[] =   _("{SPECIAL_F7 0x00}");
-static const u8 sStatsSpDefValue[] =   _("{SPECIAL_F7 0x00}");
-static const u8 sStatsSpeedValue[] =   _("{SPECIAL_F7 0x00}");
+static const u8 sStatsHPValue[] =   _("{DYNAMIC 0x00}");
+static const u8 sStatsAttackValue[] =   _("{DYNAMIC 0x00}");
+static const u8 sStatsDefenseValue[] =   _("{DYNAMIC 0x00}");
+static const u8 sStatsSpAtkValue[] =   _("{DYNAMIC 0x00}");
+static const u8 sStatsSpDefValue[] =   _("{DYNAMIC 0x00}");
+static const u8 sStatsSpeedValue[] =   _("{DYNAMIC 0x00}");
 
-static const u8 sStatsAbility1[] =   _("{SPECIAL_F7 0x00}");
+static const u8 sStatsAbility1[] =   _("{DYNAMIC 0x00}");
 
 static const u8 sStatsNoValue[] =   _("---");
 

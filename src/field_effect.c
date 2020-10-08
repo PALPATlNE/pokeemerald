@@ -3905,7 +3905,7 @@ static void Fldeff_MoveBonded_AlakazamRock_Step(u8 taskId)
                 sprite->pos1.y = data[3];
                 ShiftStillObjectEventCoords(object);
                 object->triggerGroundEffectsOnStop = TRUE;
-                FieldEffectActiveListRemove(FLDEFF_MOVE_DEOXYS_ROCK);
+                FieldEffectActiveListRemove(FLDEFF_MOVE_BONDED_ALAKAZAM_ROCK);
                 DestroyTask(taskId);
             }
             break;

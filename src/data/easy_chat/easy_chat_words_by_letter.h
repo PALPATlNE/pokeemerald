@@ -755,7 +755,7 @@ const u16 gEasyChatWordsByLetter_H[] = {
     EC_MOVE2(HYPER_FANG),
     EC_MOVE2(HYPER_VOICE),
     EC_POKEMON2(BRAVIARY),
-    EC_MOVE(BRAVIARYSIS),
+    EC_MOVE(HYPNOSIS),
 };
 
 const u16 gEasyChatWordsByLetter_I[] = {

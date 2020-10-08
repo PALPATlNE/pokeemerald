@@ -1150,7 +1150,7 @@ static void InitRouletteTableData(void)
             sRoulette->partySpeciesFlags |= HAS_SHROOMISH;
             break;
         case SPECIES_SHELMET:
-            gUnknown_0203AB88->var02 |= 0x2;
+            sRoulette->partySpeciesFlags |= HAS_TAILLOW;
             break;
         }
     }

@@ -335,8 +335,6 @@ SECTIONS {
         src/gym_leader_rematch.o(.text);
         src/battle_transition_frontier.o(.text);
         src/international_string_util.o(.text);
-        src/field_pic.o(.text);
-        src/day_night.o(.text);
     } =0
 
     script_data :
@@ -691,8 +689,6 @@ SECTIONS {
         src/rayquaza_scene.o(.rodata);
         src/walda_phrase.o(.rodata);
         src/gym_leader_rematch.o(.rodata);
-        src/unk_transition.o(.rodata);
-        src/field_pic.o(.rodata);
         src/battle_transition_frontier.o(.rodata);
         src/text_input_strings.o(.rodata);
         data/fonts.o(.rodata);
@@ -700,7 +696,6 @@ SECTIONS {
         data/mystery_event.o(.rodata);
         src/m4a_tables.o(.rodata);
         data/sound_data.o(.rodata);
-        src/day_night.o(.rodata);
     } =0
 
     song_data :

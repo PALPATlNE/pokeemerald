@@ -537,7 +537,6 @@
 
 // Hidden Items -- sorted by location
 #define FLAG_HIDDEN_ITEMS_START                                                         0x1F4
-<<<<<<< HEAD
 #define FLAG_HIDDEN_ITEM_LAKE_VEGA_TINYMUSHROOM              (FLAG_HIDDEN_ITEMS_START + 0x01)
 #define FLAG_HIDDEN_ITEM_ROUTE_103_ORAN_BERRY                (FLAG_HIDDEN_ITEMS_START + 0x08)
 #define FLAG_HIDDEN_ITEM_VOLTAIC_CAVERNS_THUNDERSTONE        (FLAG_HIDDEN_ITEMS_START + 0x09)

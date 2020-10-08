@@ -96,7 +96,7 @@ const u16 gEggMoves[] = {
 
     egg_moves(VULPIX,
               MOVE_FAINT_ATTACK,
-              MOVE_BRAVIARYSIS,
+              MOVE_HYPNOSIS,
               MOVE_FLAIL,
               MOVE_SPITE,
               MOVE_DISABLE,
@@ -148,13 +148,13 @@ const u16 gEggMoves[] = {
     egg_moves(TYRUNT,
               MOVE_SPITE,
               MOVE_CHARM,
-              MOVE_BRAVIARYSIS,
+              MOVE_HYPNOSIS,
               MOVE_AMNESIA,
               MOVE_PSYCH_UP,
               MOVE_ASSIST),
 
     egg_moves(COMBEE,
-              MOVE_BRAVIARYSIS,
+              MOVE_HYPNOSIS,
               MOVE_PSYBEAM,
               MOVE_FORESIGHT,
               MOVE_LIGHT_SCREEN,
@@ -234,7 +234,7 @@ const u16 gEggMoves[] = {
               MOVE_FLAME_WHEEL,
               MOVE_THRASH,
               MOVE_DOUBLE_KICK,
-              MOVE_BRAVIARYSIS,
+              MOVE_HYPNOSIS,
               MOVE_CHARM,
               MOVE_DOUBLE_EDGE),
 
@@ -414,7 +414,7 @@ const u16 gEggMoves[] = {
 
     egg_moves(BONDED_FLYGON,
               MOVE_FUTURE_SIGHT,
-              MOVE_BRAVIARYSIS,
+              MOVE_HYPNOSIS,
               MOVE_MIMIC,
               MOVE_PSYCH_UP,
               MOVE_FAKE_OUT,
@@ -1062,7 +1062,7 @@ const u16 gEggMoves[] = {
               MOVE_MIRROR_COAT,
               MOVE_DRAGON_BREATH,
               MOVE_MUD_SPORT,
-              MOVE_BRAVIARYSIS,
+              MOVE_HYPNOSIS,
               MOVE_LIGHT_SCREEN,
               MOVE_CONFUSE_RAY),
 
@@ -1303,7 +1303,7 @@ const u16 gEggMoves[] = {
     egg_moves(ARCEUS,
               MOVE_DISABLE,
               MOVE_CURSE,
-              MOVE_BRAVIARYSIS,
+              MOVE_HYPNOSIS,
               MOVE_DREAM_EATER),
 
     EGG_MOVES_TERMINATOR

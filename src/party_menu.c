@@ -4455,7 +4455,7 @@ void Task_AbilityCapsule(u8 taskId)
         }
         break;
     case 3:
-        PlaySE(SE_KAIFUKU);
+        PlaySE(SE_USE_ITEM);
         StringExpandPlaceholders(gStringVar4, doneText);
         DisplayPartyMenuMessage(gStringVar4, 1);
         schedule_bg_copy_tilemap_to_vram(2);

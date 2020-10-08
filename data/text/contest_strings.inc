@@ -156,7 +156,7 @@ gText_FocusEnergy:: @ 827D478
 	.string "FOCUS ENERGY$"
 
 gText_Hypnosis:: @ 827D485
-	.string "BRAVIARYSIS$"
+	.string "HYPNOSIS$"
 
 gText_Softboiled:: @ 827D48E
 	.string "SOFTBOILED$"
