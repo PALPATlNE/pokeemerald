@@ -1,3 +1,9 @@
+.set LOCALID_GRUNT_1, 1
+.set LOCALID_GRUNT_2, 2
+.set LOCALID_SHELLY, 3
+.set LOCALID_SCIENTIST, 5
+.set LOCALID_GRUNT_3, 7
+.set LOCALID_GRUNT_4, 8
+
 Route119_WeatherInstitute_2F_MapScripts:: @ 826FF1E
 	.byte 0
-

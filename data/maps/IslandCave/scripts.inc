@@ -46,8 +46,6 @@ IslandCave_EventScript_OpenRegiEntrance:: @ 8238EAF
 	setmetatile 8, 20, METATILE_Cave_SealedChamberEntrance_BottomMid, 0
 	setmetatile 9, 20, METATILE_Cave_SealedChamberEntrance_BottomRight, 1
 	special DrawWholeMapView
-	playse SE_BAN
-	setflag FLAG_SYS_BRAILLE_LYCANROC_COMPLETED
 	end
 
 IslandCave_EventScript_CaveEntranceMiddle:: @ 8238EEF

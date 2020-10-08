@@ -340,7 +340,7 @@ static const struct BgTemplate sBgTemplates[] =
     },
 };
 
-static const s8 sMultiBattleOrder[] = {0, 2, 3, 1, 4, 5};
+static const s8 sMultiBattleOrder[] = { 0, 2, 3, 1, 4, 5 };
 static const struct WindowTemplate sSummaryTemplate[] =
 {
     [PSS_LABEL_WINDOW_POKEMON_INFO_TITLE] = {
@@ -559,7 +559,7 @@ static const u8 sTextColors[][3] =
 static const u8 sSummaryAButtonBitmap[] = INCBIN_U8("graphics/interface/summary_a_button.4bpp");
 static const u8 sSummaryBButtonBitmap[] = INCBIN_U8("graphics/interface/summary_b_button.4bpp");
 
-static void (*const sTextPrinterFunctions[])(void) =
+static void(*const sTextPrinterFunctions[])(void) =
 {
     [PSS_PAGE_INFO] = PrintInfoPageText,
     [PSS_PAGE_SKILLS] = PrintSkillsPageText,
@@ -567,7 +567,7 @@ static void (*const sTextPrinterFunctions[])(void) =
     [PSS_PAGE_IV_EVS] = PrintIvEvs,
 };
 
-static void (*const sTextPrinterTasks[])(u8 taskId) =
+static void(*const sTextPrinterTasks[])(u8 taskId) =
 {
     [PSS_PAGE_INFO] = Task_PrintInfoPage,
     [PSS_PAGE_SKILLS] = Task_PrintSkillsPage,
@@ -1399,13 +1399,13 @@ static const union AnimCmd *const sSpriteAnimTable_MoveSelector[] = {
 static const struct CompressedSpriteSheet sSpriteSheet_MoveSelectorBlue =
 {
     .data = gSummaryMoveSelectBlue_Gfx,
-    .size = 64*32,
+    .size = 64 * 32,
     .tag = TAG_MOVE_SELECTOR_BLUE
 };
 static const struct CompressedSpriteSheet sSpriteSheet_MoveSelectorRed =
 {
     .data = gSummaryMoveSelectRed_Gfx,
-    .size = 64*32,
+    .size = 64 * 32,
     .tag = TAG_MOVE_SELECTOR_RED
 };
 static const struct SpriteTemplate sSpriteTemplate_MoveSelectorRed =
@@ -1504,7 +1504,7 @@ static const struct SpriteTemplate sSpriteTemplate_StatusCondition =
 };
 
 // code
-void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, void (*callback)(void))
+void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, void(*callback)(void))
 {
     sMonSummaryScreen = AllocZeroed(sizeof(*sMonSummaryScreen));
     sMonSummaryScreen->mode = mode;
@@ -1547,13 +1547,13 @@ void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, 
     SetMainCallback2(CB2_InitSummaryScreen);
 }
 
-void ShowSelectMovePokemonSummaryScreen(struct Pokemon *mons, u8 monIndex, u8 maxMonIndex, void (*callback)(void), u16 newMove)
+void ShowSelectMovePokemonSummaryScreen(struct Pokemon *mons, u8 monIndex, u8 maxMonIndex, void(*callback)(void), u16 newMove)
 {
     ShowPokemonSummaryScreen(PSS_MODE_SELECT_MOVE, mons, monIndex, maxMonIndex, callback);
     sMonSummaryScreen->newMove = newMove;
 }
 
-void ShowPokemonSummaryScreenSet40EF(u8 mode, struct BoxPokemon *mons, u8 monIndex, u8 maxMonIndex, void (*callback)(void))
+void ShowPokemonSummaryScreenSet40EF(u8 mode, struct BoxPokemon *mons, u8 monIndex, u8 maxMonIndex, void(*callback)(void))
 {
     ShowPokemonSummaryScreen(mode, mons, monIndex, maxMonIndex, callback);
     sMonSummaryScreen->unk40EF = TRUE;
@@ -1833,8 +1833,8 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *mon, bool32 atOnce)
     case 1:
         for (i = 0; i < MAX_MON_MOVES; i++)
         {
-            sum->moves[i] = GetMonData(mon, MON_DATA_MOVE1+i);
-            sum->pp[i] = GetMonData(mon, MON_DATA_PP1+i);
+            sum->moves[i] = GetMonData(mon, MON_DATA_MOVE1 + i);
+            sum->pp[i] = GetMonData(mon, MON_DATA_PP1 + i);
         }
         for (i = 0, total = 0; i < NUM_STATS; i++)
         {
@@ -2307,8 +2307,8 @@ static void SwitchToMoveSelection(u8 taskId, TaskFunc func)
 
     LoadMonIconPalette(sMonSummaryScreen->summary.species);
     sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON_ICON] = CreateMonIcon(sMonSummaryScreen->summary.species,
-                                                                         SpriteCallbackDummy, 148, 34, 0,
-                                                                         sMonSummaryScreen->summary.pid, FALSE);
+        SpriteCallbackDummy, 148, 34, 0,
+        sMonSummaryScreen->summary.pid, FALSE);
     schedule_bg_copy_tilemap_to_vram(0);
     schedule_bg_copy_tilemap_to_vram(1);
     schedule_bg_copy_tilemap_to_vram(2);
@@ -2335,7 +2335,7 @@ static void Task_HandleInput_MoveSelect(u8 taskId)
         else if (gMain.newKeys & A_BUTTON)
         {
             if (sMonSummaryScreen->lockMovesFlag == TRUE
-             || (sMonSummaryScreen->newMove == MOVE_NONE && sMonSummaryScreen->firstMoveIndex == MAX_MON_MOVES))
+                || (sMonSummaryScreen->newMove == MOVE_NONE && sMonSummaryScreen->firstMoveIndex == MAX_MON_MOVES))
             {
                 PlaySE(SE_SELECT);
                 CloseMoveSelectMode(taskId);
@@ -2880,7 +2880,7 @@ static void DrawHpBar(void)
     {
         u8 *gfx = AllocZeroed(32 * 8);
         u8 *gfx2 = AllocZeroed(16 * 8);
-        struct SpriteSheet sheets[] = {{gfx, 32 * 8, TAG_HP_BAR}, {gfx2, 16 * 8, TAG_HP_BAR + 1}, {}};
+        struct SpriteSheet sheets[] = { {gfx, 32 * 8, TAG_HP_BAR}, {gfx2, 16 * 8, TAG_HP_BAR + 1}, {} };
 
         switch (GetHPBarLevel(summary->currentHP, summary->maxHP)) // percent of health
         {
@@ -3165,7 +3165,7 @@ static void PrintPageSpecificText(u8 pageIndex, bool32 scrollMon)
     {
         if (sMonSummaryScreen->windowIds[i] != 0xFF
             && !(scrollMon && pageIndex == PSS_PAGE_IV_EVS)) // Handled in the function itself to avoid lag.
-                FillWindowPixelBuffer(sMonSummaryScreen->windowIds[i], PIXEL_FILL(0));
+            FillWindowPixelBuffer(sMonSummaryScreen->windowIds[i], PIXEL_FILL(0));
     }
     sMonSummaryScreen->textScrollMon = scrollMon;
     sTextPrinterFunctions[pageIndex]();
@@ -3346,7 +3346,7 @@ static void PrintSkillsPageText(void)
 {
     u8 text[20], *txtPtr, windowId, colorId;
     u32 i, ability, exp = 0;
-    static const u8 order[] = {STAT_ATK, STAT_DEF, STAT_SPATK, STAT_SPDEF, STAT_SPEED};
+    static const u8 order[] = { STAT_ATK, STAT_DEF, STAT_SPATK, STAT_SPDEF, STAT_SPEED };
     struct PokeSummary *sum = &sMonSummaryScreen->summary;
     const s8 *natureStats = gNatureStatTable[sum->nature];
 
@@ -3425,7 +3425,7 @@ static void PrintEvStats(void)
         [STAT_SPEED] = 60,
         [NUM_STATS] = 74,
     };
-    static const char evsTotalString[][5] = {_("/252"), _("/512")};
+    static const char evsTotalString[][5] = { _("/252"), _("/512") };
 
     windowId = AddWindowFromTemplateList(sPageIvEvTemplate, PSS_EV_WINDOW_STATS);
     for (i = 0; i < NUM_STATS + 1; i++)
@@ -3740,7 +3740,7 @@ static void SetMonTypeIcons(void)
         if (sMonSummaryScreen->moveSelectionMode)
             x1 = 184, x2 = 220, y = 42;
         else
-            x1 =  66, x2 = 102, y = 54;
+            x1 = 66, x2 = 102, y = 54;
         SetTypeSpritePosAndPal(gBaseStats[summary->species].type1, x1, y, SPRITE_ARR_ID_TYPE_MON1);
         if (gBaseStats[summary->species].type1 != gBaseStats[summary->species].type2)
         {
@@ -4004,7 +4004,7 @@ static void SpriteCb_MoveSelector(struct Sprite *sprite)
     else
     {
         if (sprite->data[0] == SPRITE_ARR_ID_MOVE_SELECTOR2
-        || sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MOVE_SELECTOR2] == 0xFF)
+            || sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MOVE_SELECTOR2] == 0xFF)
         {
             sprite->data[1] = (sprite->data[1] + 1) & 0x1F;
             if (sprite->data[1] > 25)

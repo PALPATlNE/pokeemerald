@@ -1,3 +1,7 @@
+@ NOTE: Route 104's sail to Dewford script references local IDs from Dewford's map. 
+@  These are labeled in DewfordTown/scripts.inc
+.set LOCALID_RIVAL, 34
+
 Route104_MapScripts:: @ 81ECC32
 	map_script MAP_SCRIPT_ON_LOAD, Route104_OnTransition
 	.byte 0

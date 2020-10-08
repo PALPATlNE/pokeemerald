@@ -2,12 +2,12 @@
   "id": "MAP_ROUTE111",
   "name": "Route111",
   "layout": "LAYOUT_ROUTE111",
-  "music": "MUS_DOORO_X1",
+  "music": "MUS_ROUTE110",
   "region_map_section": "MAPSEC_ROUTE_111",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
-  "allow_cycling": false,
+  "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
@@ -20,7 +20,6 @@
     }
   ],
   "object_events": [
-
   ],
   "warp_events": [
     {

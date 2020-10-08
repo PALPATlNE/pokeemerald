@@ -1,3 +1,7 @@
+.set LOCALID_WALLY, 6
+.set LOCALID_WALLYS_UNCLE, 7
+.set LOCALID_SCOTT, 11
+
 MauvilleCity_MapScripts:: @ 81DF385
 	map_script MAP_SCRIPT_ON_TRANSITION, MauvilleCity_OnTransition
 	.byte 0
@@ -47,7 +51,6 @@ Enif_City_Player_Has_Oran_Berries::
 	fadescreen FADE_FROM_BLACK
 	end
 	
-
 Enif_City_Did_Not_Feed::
 	msgbox Enif_City_Pidgey_Looks_sad, MSGBOX_NPC
 	closemessage
@@ -70,7 +73,6 @@ Enif_City_Pidgey_Has_Berries:: @ 8270A72
 Enif_City_Player_Has_Oran_Berry:: @ 8270AB8
 	addvar VAR_TEMP_1, 1
 	return
-
 
 Enif_City_Pidgey_Fed::
 	lock

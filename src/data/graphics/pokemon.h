@@ -2313,7 +2313,8 @@ const u32 gMonBackPic_Bonded_Alakazam[] = INCBIN_U32("graphics/pokemon/bonded_al
 const u32 gMonShinyPalette_Bonded_Alakazam[] = INCBIN_U32("graphics/pokemon/bonded_alakazam/shiny.gbapal.lz");
 const u8 gMonIcon_Bonded_Alakazam[] = INCBIN_U8("graphics/pokemon/bonded_alakazam/icon.4bpp");
 
-asm(".space 0x6800");
+// Probably the leftover space from the other Deoxys forms
+static const u8 sEmpty[0x6800] = {0};
 
 const u16 gUnknown_D437F8[] = INCBIN_U16("graphics/unknown/unknown_D437F8.bin");
 

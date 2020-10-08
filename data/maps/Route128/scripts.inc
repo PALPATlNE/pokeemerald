@@ -1,3 +1,7 @@
+.set LOCALID_STEVEN, 3
+.set LOCALID_ARCHIE, 4
+.set LOCALID_MAXIE, 5
+
 Route128_MapScripts:: @ 81F6B38
 	map_script MAP_SCRIPT_ON_TRANSITION, Route128_OnTransition
 	.byte 0

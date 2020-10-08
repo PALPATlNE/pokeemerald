@@ -1,3 +1,6 @@
+.set LOCALID_BIRCH, 2
+.set LOCALID_ZIGZAGOON, 4
+
 Route101_MapScripts:: @ 81EBCBA
 	map_script MAP_SCRIPT_ON_TRANSITION, Route101_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route101_OnFrame
@@ -227,7 +230,7 @@ Rival_Runs_Bridge:
 	walk_fast_up
 	walk_fast_up
 	step_end
-	
+
 Route_1_Lesson_Message:
 	.string "Today's lesson will be about catching\n"
 	.string "your first Pokémon.\p"

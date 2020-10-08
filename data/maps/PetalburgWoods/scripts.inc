@@ -1,3 +1,6 @@
+.set LOCALID_GRUNT, 3
+.set LOCALID_DEVON_EMPLOYEE, 4
+
 PetalburgWoods_MapScripts:: @ 822DFD6
 	.byte 0
 

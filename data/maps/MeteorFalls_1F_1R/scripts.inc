@@ -1,3 +1,9 @@
+.set LOCALID_MAGMA_GRUNT_1, 5
+.set LOCALID_MAGMA_GRUNT_2, 6
+.set LOCALID_ARCHIE, 7
+.set LOCALID_AQUA_GRUNT_1, 8
+.set LOCALID_AQUA_GRUNT_2, 9
+
 MeteorFalls_1F_1R_MapScripts:: @ 822BD2A
 	map_script MAP_SCRIPT_ON_LOAD, Alcor_Tunnel_OnTransition
 	.byte 0

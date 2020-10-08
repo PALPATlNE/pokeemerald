@@ -1,3 +1,10 @@
+.set LOCALID_LITTLE_BOY, 7
+.set LOCALID_LITTLE_GIRL, 8
+.set LOCALID_DEVON_EMPLOYEE, 9
+.set LOCALID_GRUNT, 10
+.set LOCALID_RIVAL, 14
+.set LOCALID_SCIENTIST, 15
+
 RustboroCity_MapScripts:: @ 81E06BD
 	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_OnTransition
 	.byte 0

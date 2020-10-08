@@ -1,3 +1,6 @@
+.set LOCALID_DEOXYS_ROCK, 1
+.set LOCALID_DEOXYS, 2
+
 BirthIsland_Exterior_MapScripts:: @ 8267F15
 	map_script MAP_SCRIPT_ON_TRANSITION, BirthIsland_Exterior_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, BirthIsland_Exterior_OnResume
@@ -36,7 +39,7 @@ BirthIsland_Exterior_EventScript_TryRemoveBonded_Alakazam:: @ 8267F6F
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_ne Common_EventScript_NopReturn
-	removeobject 2
+	removeobject LOCALID_DEOXYS
 	return
 
 BirthIsland_Exterior_EventScript_Triangle:: @ 8267F83
@@ -64,38 +67,6 @@ BirthIsland_Exterior_EventScript_NotSolved3:: @ 8267FBF
 	end
 
 BirthIsland_Exterior_EventScript_Bonded_Alakazam:: @ 8267FC1
-	waitse
-	setfieldeffectargument 0, 1
-	setfieldeffectargument 1, 58
-	setfieldeffectargument 2, 26
-	dofieldeffect FLDEFF_65
-	playbgm MUS_RG_DEOEYE, 0
-	waitfieldeffect FLDEFF_65
-	addobject 2
-	applymovement 2, BirthIsland_Exterior_Movement_Bonded_AlakazamApproach
-	waitmovement 0
-	waitse
-	playmoncry SPECIES_BONDED_ALAKAZAM, 2
-	delay 40
-	waitmoncry
-	setvar VAR_LAST_TALKED, 2
-	setvar VAR_0x8004, SPECIES_BONDED_ALAKAZAM
-	setvar VAR_0x8005, 30 @ level
-	setvar VAR_0x8006, ITEM_NONE
-	special CreateObedientEnemyMon
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	special BattleSetup_StartLegendaryBattle
-	waitstate
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-	specialvar VAR_RESULT, GetBattleOutcome
-	compare VAR_RESULT, B_OUTCOME_WON
-	goto_if_eq BirthIsland_Exterior_EventScript_DefeatedBonded_Alakazam
-	compare VAR_RESULT, B_OUTCOME_RAN
-	goto_if_eq BirthIsland_Exterior_EventScript_RanFromBonded_Alakazam
-	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
-	goto_if_eq BirthIsland_Exterior_EventScript_RanFromBonded_Alakazam
-	setflag FLAG_BATTLED_BONDED_ALAKAZAM
-	release
 	end
 
 BirthIsland_Exterior_EventScript_DefeatedBonded_Alakazam:: @ 826803B
