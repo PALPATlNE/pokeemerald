@@ -12,23 +12,7 @@ LilycoveCity_OnTransition: @ 81E2B47
 	end
 
 LilycoveCity_OnLoad: @ 81E2B61
-	call_if_unset FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_SetWailmerMetatiles
 	end
-
-LilycoveCity_EventScript_SetWailmerMetatiles:: @ 81E2B6B
-	setmetatile 76, 12, METATILE_Lilycove_Wailmer0, 1
-	setmetatile 77, 12, METATILE_Lilycove_Wailmer1, 1
-	setmetatile 76, 13, METATILE_Lilycove_Wailmer2, 1
-	setmetatile 77, 13, METATILE_Lilycove_Wailmer3, 1
-	setmetatile 76, 14, METATILE_Lilycove_Wailmer0_Alt, 1
-	setmetatile 77, 14, METATILE_Lilycove_Wailmer1_Alt, 1
-	setmetatile 76, 15, METATILE_Lilycove_Wailmer2, 1
-	setmetatile 77, 15, METATILE_Lilycove_Wailmer3, 1
-	setmetatile 77, 16, METATILE_Lilycove_Wailmer0_Alt, 1
-	setmetatile 78, 16, METATILE_Lilycove_Wailmer1_Alt, 1
-	setmetatile 77, 17, METATILE_Lilycove_Wailmer2, 1
-	setmetatile 78, 17, METATILE_Lilycove_Wailmer3, 1
-	return
 
 LilycoveCity_EventScript_BerryGentleman:: @ 81E2BD8
 	lock

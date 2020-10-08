@@ -1,11 +1,9 @@
 Route102_Text_CalvinIntro: @ 8294513
-	.string "If you have Pokémon with you, then\n"
-	.string "you're an official Pokémon TRAINER!\l"
-	.string "You can't say no to my challenge!$"
+	.string "You crossed paths with me.\n"
+	.string "you know what that means!$"
 
 Route102_Text_CalvinDefeated: @ 829457C
-	.string "Arrgh, I lost…\n"
-	.string "I should have trained mine more…$"
+	.string "I probably shoulnd't have done that.$"
 
 Route102_Text_CalvinPostBattle: @ 82945AC
 	.string "Listen, you. If you're strong,\n"
@@ -35,12 +33,10 @@ Route102_Text_CalvinRematchPostBattle: @ 829473C
 	.string "I'll get stronger, too.$"
 
 Route102_Text_TianaIntro: @ 829489E
-	.string "I'm going to keep winning and aim\n"
-	.string "to be the best TRAINER.\p"
-	.string "Help me further my career!$"
+	.string "Me and my partner will defeat you!$"
 
 Route102_Text_TianaDefeated: @ 82948F3
-	.string "I ended up furthering your career…$"
+	.string "You're a meanie$"
 
 Route102_Text_TianaPostBattle: @ 8294916
 	.string "To keep winning my way up, I see that\n"
@@ -86,16 +82,21 @@ SarinForest_Text_JoshDefeat: @ 82A07F0
 SarinForest_Text_JoshPostBattle: @ 82A080D
 	.string "My collection still needs some work.$"
 
-Route103_Text_DaisyIntro: @ 829495A
-	.string "Did you feel the tug of our\n"
-	.string "soul-soothing fragrance?$"
+Route3_Text_SaxtonIntro: @ 829495A
+	.string "HEY! This is my secret fishing spot\p"
+    .string "I better stop you from telling\n"
+    .string "everyone about it!$"
 
-Route103_Text_DaisyDefeated: @ 829498F
-	.string "You weren't led astray by our aroma…$"
+Route3_Text_SaxtonDefeated: @ 829498F
+	.string "NO! My precious fishing spot!$"
 
-Route103_Text_DaisyPostBattle: @ 82949B4
-	.string "Aromatherapy is a form of mental\n"
-	.string "healing that works with fragrances.$"
+Route3_Text_SaxtonPostBattle: @ 82949B4
+	.string "I guess I better enjoy the peace\n"
+	.string "before this place gets flocked.$"
+
+Route3_Text_SaxtonPostBadge: @ 82949B4
+	.string "No one is here...\n"
+	.string "Didn't you tell anyone about this place?$"
 
 Route103_Text_AmyIntro: @ 82949F9
 	.string "AMY: I'm AMY.\n"

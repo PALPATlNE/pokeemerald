@@ -1,201 +1,203 @@
 {
-    "allow_bike": true,
-    "allow_escape_rope": true,
-    "allow_running": true,
-    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-    "bg_events": [
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDDEN_ITEM_ALCOR_TUNNEL_FIRE_STONE",
-            "item": "ITEM_FIRE_STONE",
-            "type": "hidden_item",
-            "x": 13,
-            "y": 25
-        }
-    ],
-    "connections": null,
-    "coord_events": [
-        {
-            "elevation": 0,
-            "script": "AlcorTunnel_Trigger_Top",
-            "type": "trigger",
-            "var": "VAR_METEOR_FALLS_STATE",
-            "var_value": "0",
-            "x": 10,
-            "y": 29
-        },
-        {
-            "elevation": 0,
-            "script": "AlcorTunnel_Trigger_Bottom",
-            "type": "trigger",
-            "var": "VAR_METEOR_FALLS_STATE",
-            "var_value": "0",
-            "x": 10,
-            "y": 30
-        }
-    ],
-    "id": "MAP_METEOR_FALLS_B1F_1R",
-    "layout": "LAYOUT_METEOR_FALLS_B1F_1R",
-    "map_type": "MAP_TYPE_UNDERGROUND",
-    "music": "MUS_DAN03",
-    "name": "MeteorFalls_B1F_1R",
-    "object_events": [
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "NULL",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 15,
-            "y": 32
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_ITEM_ALCOR_TUNNEL_HARD_STONE",
-            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "AlcorTunnel_EventScript_ItemHardStone",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 3,
-            "y": 34
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_ITEM_ALCOR_TUNNEL_POTION",
-            "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "AlcorTunnel_EventScript_ItemPotion",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 21,
-            "y": 11
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_HIKER",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-            "script": "AlcorTunnel_Hiker_Trainer1",
-            "trainer_sight_or_berry_tree_id": "3",
-            "trainer_type": "1",
-            "x": 16,
-            "y": 20
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_HIKER",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
-            "script": "AlcorTunnel_Hiker_Trainer2",
-            "trainer_sight_or_berry_tree_id": "2",
-            "trainer_type": "1",
-            "x": 10,
-            "y": 13
-        },
-        {
-            "elevation": 3,
-            "flag": "0",
-            "graphics_id": "OBJ_EVENT_GFX_HIKER",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
-            "script": "AlcorTunnel_Hiker_Trainer3",
-            "trainer_sight_or_berry_tree_id": "7",
-            "trainer_type": "1",
-            "x": 11,
-            "y": 2
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDE_ALCOR_TUNNEL_GRUNTS",
-            "graphics_id": "OBJ_EVENT_GFX_BOY_2",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "script": "AlcorTunnel_Boy_Eventscript",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 12,
-            "y": 25
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDE_ALCOR_TUNNEL_GRUNTS",
-            "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_UP",
-            "script": "0x0",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 12,
-            "y": 28
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDE_ALCOR_TUNNEL_GRUNTS",
-            "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_UP",
-            "script": "0x0",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 13,
-            "y": 28
-        },
-        {
-            "elevation": 3,
-            "flag": "FLAG_HIDE_ALCOR_TUNNEL_GRUNTS",
-            "graphics_id": "OBJ_EVENT_GFX_GROWLITHE",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-            "script": "AlcorTunnel_Growlithe_Eventscript",
-            "trainer_sight_or_berry_tree_id": "0",
-            "trainer_type": "0",
-            "x": 12,
-            "y": 27
-        }
-    ],
-    "region_map_section": "MAPSEC_METEOR_FALLS",
-    "requires_flash": false,
-    "show_map_name": true,
-    "warp_events": [
-        {
-            "dest_map": "MAP_METEOR_FALLS_1F_1R",
-            "dest_warp_id": 4,
-            "elevation": 0,
-            "x": 26,
-            "y": 35
-        },
-        {
-            "dest_map": "MAP_METEOR_FALLS_1F_1R",
-            "dest_warp_id": 5,
-            "elevation": 0,
-            "x": 22,
-            "y": 2
-        },
-        {
-            "dest_map": "MAP_METEOR_FALLS_1F_2R",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 19,
-            "y": 32
-        }
-    ],
-    "weather": "WEATHER_NONE"
+  "id": "MAP_METEOR_FALLS_B1F_1R",
+  "name": "MeteorFalls_B1F_1R",
+  "layout": "LAYOUT_METEOR_FALLS_B1F_1R",
+  "music": "MUS_DAN03",
+  "region_map_section": "MAPSEC_METEOR_FALLS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 15,
+      "y": 32,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 3,
+      "y": 34,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AlcorTunnel_EventScript_ItemHardStone",
+      "flag": "FLAG_ITEM_ALCOR_TUNNEL_HARD_STONE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 21,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AlcorTunnel_EventScript_ItemPotion",
+      "flag": "FLAG_ITEM_ALCOR_TUNNEL_POTION"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 16,
+      "y": 20,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "AlcorTunnel_Hiker_Trainer1",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 10,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "AlcorTunnel_Hiker_Trainer2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 11,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "7",
+      "script": "AlcorTunnel_Hiker_Trainer3",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+      "x": 12,
+      "y": 25,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AlcorTunnel_Boy_Eventscript",
+      "flag": "FLAG_HIDE_ALCOR_TUNNEL_GRUNTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
+      "x": 12,
+      "y": 28,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_ALCOR_TUNNEL_GRUNTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 13,
+      "y": 28,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_ALCOR_TUNNEL_GRUNTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GROWLITHE",
+      "x": 12,
+      "y": 27,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AlcorTunnel_Growlithe_Eventscript",
+      "flag": "FLAG_HIDE_ALCOR_TUNNEL_GRUNTS"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 26,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_METEOR_FALLS_1F_1R",
+      "dest_warp_id": 4
+    },
+    {
+      "x": 22,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_METEOR_FALLS_1F_1R",
+      "dest_warp_id": 5
+    },
+    {
+      "x": 19,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_METEOR_FALLS_1F_2R",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_METEOR_FALLS_STATE",
+      "var_value": "0",
+      "script": "AlcorTunnel_Trigger_Top"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 30,
+      "elevation": 0,
+      "var": "VAR_METEOR_FALLS_STATE",
+      "var_value": "0",
+      "script": "AlcorTunnel_Trigger_Bottom"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 13,
+      "y": 25,
+      "elevation": 3,
+      "item": "ITEM_FIRE_STONE",
+      "flag": "FLAG_HIDDEN_ITEM_ALCOR_TUNNEL_FIRE_STONE"
+    }
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
 }

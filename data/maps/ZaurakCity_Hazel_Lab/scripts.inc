@@ -198,7 +198,7 @@ ZaurakCity_Hazel_Lab_Meeting_Text_6:
 	.string "I want you to take these two Pokédexes.$"
 	
 ZaurakCity_Hazel_Lab_Meeting_Text_7:
-	.string "During your jouurney you will meet all\n"
+	.string "During your journey you will meet all\n"
 	.string "sorts of Pokémon.\p"
 	.string "Pokémon you may form bonds with.\p"
 	.string "I do want you to have fun on your.\n"

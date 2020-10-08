@@ -105,6 +105,11 @@ Route02_Fisherman::
 	faceplayer
 	msgbox Route02_Fisherman_Text, MSGBOX_NPC
 	end
+
+Route02_Old_Man::
+	faceplayer
+	msgbox Route02_Old_Man_Text, MSGBOX_NPC
+	end
 	
 Route02_Fisherman_Text:
 	.string "I like fishing.$"
@@ -176,6 +181,10 @@ Route02_Clair_Medicine_Text:
 	.string "Doctor.\p"
 	.string "So if you and your Pokémon ever need it,\n"
 	.string "I'll gladly help.$"
+
+Route02_Old_Man_Text:
+	.string "We get tired travellers sorta often,\n"
+	.string "and my wife loves to help them.$"
 
 Route02_Sign_House_Text:
 	.string "Moralis Household$"
