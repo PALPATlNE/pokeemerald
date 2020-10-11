@@ -11,7 +11,7 @@
     "id": "MAP_ROUTE105_HOUSE",
     "layout": "LAYOUT_ROUTE105_HOUSE",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_AJITO",
+    "music": "MUS_AQUA_MAGMA_HIDEOUT",
     "name": "Route105_House",
     "object_events": [
         {

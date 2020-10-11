@@ -296,7 +296,7 @@
 #define MUS_SURF                    365 // MUS_NAMINORI
 #define MUS_PETALBURG_WOODS         366 // MUS_DAN01
 #define MUS_LEVEL_UP                367 // MUS_FANFA1
-#define MUS_HEAL                    368 // MUS_ME_ASA
+#define MUS_HEAL                    368 // MUS_HEAL
 #define MUS_OBTAIN_BADGE            369 // MUS_ME_BACHI
 #define MUS_OBTAIN_ITEM             370 // MUS_FANFA4
 #define MUS_EVOLVED                 371 // MUS_FANFA5
@@ -314,7 +314,7 @@
 #define MUS_BIRCH_LAB               383 // MUS_ODAMAKI
 #define MUS_B_TOWER_RS              384 // MUS_B_TOWER
 #define MUS_ENCOUNTER_SWIMMER       385 // MUS_SWIMEYE
-#define MUS_CAVE_OF_ORIGIN          386 // MUS_DAN03
+#define MUS_CAVE_OF_ORIGIN          386 // MUS_CAVE_OF_ORIGIN
 #define MUS_OBTAIN_BERRY            387 // MUS_ME_KINOMI
 #define MUS_AWAKEN_LEGEND           388 // MUS_ME_TAMA
 #define MUS_SLOTS_JACKPOT           389 // MUS_ME_B_BIG
@@ -358,7 +358,7 @@
 #define MUS_DEWFORD                 427 // MUS_HIGHTOWN
 #define MUS_SAFARI_ZONE             428 // MUS_SAFARI
 #define MUS_VICTORY_ROAD            429 // MUS_C_ROAD
-#define MUS_AQUA_MAGMA_HIDEOUT      430 // MUS_AJITO
+#define MUS_AQUA_MAGMA_HIDEOUT      430 // MUS_AQUA_MAGMA_HIDEOUT
 #define MUS_SAILING                 431 // MUS_M_BOAT
 #define MUS_MT_PYRE                 432 // MUS_M_DUNGON
 #define MUS_SLATEPORT               433 // MUS_FINECITY
@@ -373,7 +373,7 @@
 #define MUS_INTRO_BATTLE            442 // MUS_T_BATTLE
 #define MUS_ABNORMAL_WEATHER        443 // MUS_OOAME (Replaces MUS_WEATHER_KYOGRE from R/S)
 #define MUS_WEATHER_GROUDON         444 // MUS_HIDERI (Unused, from R/S)
-#define MUS_SOOTOPOLIS              445 // MUS_RUNECITY
+#define MUS_SOOTOPOLIS              445 // MUS_SOOTOPOLIS
 #define MUS_CONTEST_RESULTS         446 // MUS_CON_K
 #define MUS_HALL_OF_FAME_ROOM       447 // MUS_EIKOU_R
 #define MUS_TRICK_HOUSE             448 // MUS_KARAKURI

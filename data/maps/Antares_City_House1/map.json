@@ -11,7 +11,7 @@
     "id": "MAP_ANTARES_CITY_HOUSE1",
     "layout": "LAYOUT_ANTARES_CITY_HOUSE1",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_DAN02",
+    "music": "MUS_ABANDONED_SHIP",
     "name": "Antares_City_House1",
     "object_events": [
     ],

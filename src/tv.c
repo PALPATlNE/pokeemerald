@@ -387,7 +387,7 @@ static const u8 *const sTVBravoTrainerBattleTowerTextGroup[] = {
 };
 
 static const u8 *const sTVContestLiveUpdatesTextGroup[] = {
-    [CONTESTLIVE_STATE_INTRO]                 = ContestLiveUpdates_Text_Intro,
+    [CONTESTLIVE_STATE_INTRO]                 = gTVContestLiveUpdatesText00,
     [CONTESTLIVE_STATE_WON_BOTH_ROUNDS]       = ContestLiveUpdates_Text_WonBothRounds,
     [CONTESTLIVE_STATE_BETTER_ROUND2]         = ContestLiveUpdates_Text_BetterRound2,
     [CONTESTLIVE_STATE_EQUAL_ROUNDS]          = ContestLiveUpdates_Text_EqualRounds,

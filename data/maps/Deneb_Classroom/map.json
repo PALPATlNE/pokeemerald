@@ -11,7 +11,7 @@
     "id": "MAP_DENEB_CLASSROOM",
     "layout": "LAYOUT_DENEB_CLASSROOM",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_MACHI_S2",
+    "music": "MUS_PETALBURG",
     "name": "Deneb_Classroom",
     "object_events": [
     ],

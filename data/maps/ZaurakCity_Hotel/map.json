@@ -11,7 +11,7 @@
     "id": "MAP_ZAURAK_CITY_HOTEL",
     "layout": "LAYOUT_ZAURAK_CITY_HOTEL",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_FINECITY",
+    "music": "MUS_SLATEPORT",
     "name": "ZaurakCity_Hotel",
     "object_events": [
         {

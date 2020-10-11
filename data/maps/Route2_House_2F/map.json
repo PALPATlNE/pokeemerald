@@ -11,7 +11,7 @@
     "id": "MAP_ROUTE2_HOUSE_2F",
     "layout": "LAYOUT_ROUTE2_HOUSE_2F",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_DAN02",
+    "music": "MUS_ABANDONED_SHIP",
     "name": "Route2_House_2F",
     "object_events": [
     ],

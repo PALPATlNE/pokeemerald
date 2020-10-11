@@ -11,7 +11,7 @@
     "id": "MAP_DENEB_HOUSE1",
     "layout": "LAYOUT_DENEB_HOUSE1",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_MACHI_S2",
+    "music": "MUS_PETALBURG",
     "name": "Deneb_House1",
     "object_events": [
         {

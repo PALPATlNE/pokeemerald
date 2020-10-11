@@ -13965,7 +13965,7 @@ Move_DREAD_HOWL:
 	call RoarEffect
 	waitforvisualfinish
     delay 30
-    playsewithpan SE_W171, SOUND_PAN_TARGET
+    playsewithpan SE_M_NIGHTMARE, SOUND_PAN_TARGET
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 14, 1
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATK_PARTNER, 2, 0, 14, 1
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_DEF_PARTNER, 2, 0, 14, 1

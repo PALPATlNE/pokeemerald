@@ -4,7 +4,7 @@ Deneb_PlayersHouse_MapScripts::
 Deneb_PlayersHouse_Rest::
 	msgbox Deneb_PlayersHouse_FellAsleep, MSGBOX_DEFAULT
 	fadescreenswapbuffers FADE_TO_BLACK
-	playfanfare MUS_ME_ASA
+	playfanfare MUS_HEAL
 	special HealPlayerParty
 	waitfanfare
 	closemessage

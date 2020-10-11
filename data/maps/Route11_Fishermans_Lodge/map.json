@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE11_FISHERMANS_LODGE",
   "name": "Route11_Fishermans_Lodge",
   "layout": "LAYOUT_ROUTE11_FISHERMANS_LODGE",
-  "music": "MUS_GOTOWN",
+  "music": "MUS_RUSTBORO",
   "region_map_section": "MAPSEC_ROUTE_111",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

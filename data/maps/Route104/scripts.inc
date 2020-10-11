@@ -104,7 +104,7 @@ Route104_TransferPoochyenaToPC:: @ 8211AB9
 Route104_Poochyena_Recieved_Fanfare:: @ 8211AC4
 	bufferspeciesname 1, SPECIES_POOCHYENA
 	removeobject 3
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	message Route104_Poochyena_Joins
 	waitmessage
 	waitfanfare

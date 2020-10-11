@@ -30,7 +30,7 @@ ZaurakCity_Hazel_Lab_Meeting::
 	waitmovement 0
 	applymovement 2, ZaurakCity_Hazel_Lab_Walk_Machine
 	waitmovement 0
-	playfanfare MUS_ME_ASA
+	playfanfare MUS_HEAL
 	special HealPlayerParty
 	waitfanfare
 	applymovement 2, Zaurak_Hazel_Lab_Walk_Trainers
@@ -99,7 +99,7 @@ ZaurakCity_Heal_Station::
 
 ZaurakCity_Heal::
 	special HealPlayerParty
-	playfanfare MUS_ME_ASA
+	playfanfare MUS_HEAL
 	waitfanfare
 	closemessage
 	end
@@ -109,7 +109,7 @@ ZaurakCity_No_Heal::
 	end
 
 ZaurakCity_EventScript_ReceivePokedex::
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	message ZaurakCity_Text_ReceivedPokedex
 	waitfanfare
 	setflag FLAG_SYS_POKEDEX_GET

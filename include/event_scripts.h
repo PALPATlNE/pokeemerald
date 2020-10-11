@@ -294,7 +294,7 @@ extern const u8 gTVSafariFanClubText07[];
 extern const u8 gTVSafariFanClubText08[];
 extern const u8 gTVSafariFanClubText09[];
 extern const u8 gTVSafariFanClubText10[];
-extern const u8 ContestLiveUpdates_Text_Intro[];
+extern const u8 gTVContestLiveUpdatesText00[];
 extern const u8 ContestLiveUpdates_Text_WonBothRounds[];
 extern const u8 ContestLiveUpdates_Text_BetterRound2[];
 extern const u8 ContestLiveUpdates_Text_EqualRounds[];

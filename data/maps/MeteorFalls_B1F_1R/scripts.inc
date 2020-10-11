@@ -48,7 +48,7 @@ AlcorTunnel_Trigger_Bottom::
 	end
 
 AlcorTunnel_First_Seraph_Encounter_EventScript::
-	playbgm MUS_AQA_0, 0
+	playbgm MUS_ENCOUNTER_AQUA, 0
 	special SpawnCameraObject
 	applymovement OBJ_EVENT_ID_CAMERA, AlcorTunnel_Camera_PanUp
 	waitmovement 0
@@ -125,7 +125,7 @@ AlcorTunnel_Grunts_Single_Battle::
 	end	
 
 AlcorTunnel_Grunt_Single_Battle_2::
-	playbgm MUS_AQA_0, 0
+	playbgm MUS_ENCOUNTER_AQUA, 0
 	applymovement 9, Common_Movement_WalkInPlaceLeft
 	waitmovement 0
 	checkplayergender
@@ -158,7 +158,7 @@ AlcorTunnel_BlackSeraphs_PostBattle_EventScript1::
 	end
 
 AlcorTunnel_BlackSeraphs_PostBattle_EventScript::
-	playbgm MUS_AQA_0, 0
+	playbgm MUS_ENCOUNTER_AQUA, 0
 	checkplayergender
 	compare VAR_RESULT, MALE
 	call_if_eq AlcorTunnel_Male_Player

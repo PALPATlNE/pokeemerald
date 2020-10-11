@@ -11,7 +11,7 @@
     "id": "MAP_ZAURAK_CITY_APARTMENT_1F",
     "layout": "LAYOUT_ZAURAK_CITY_APARTMENT_1F",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_FINECITY",
+    "music": "MUS_SLATEPORT",
     "name": "ZaurakCity_Apartment_1F",
     "object_events": [
         {

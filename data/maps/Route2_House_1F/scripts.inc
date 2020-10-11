@@ -7,7 +7,7 @@ Route2_House_Old_Lady::
 	closemessage
 	fadescreen FADE_TO_BLACK
 	special HealPlayerParty
-	playfanfare MUS_ME_ASA
+	playfanfare MUS_HEAL
 	waitfanfare
 	fadescreen FADE_FROM_BLACK
 	msgbox Route2_House_Old_Lady_Text2, MSGBOX_NPC

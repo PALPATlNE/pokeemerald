@@ -11,7 +11,7 @@
     "id": "MAP_FORTREE_CITY_HOUSE1",
     "layout": "LAYOUT_FORTREE_CITY_HOUSE1",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_MACHI_S3",
+    "music": "MUS_FORTREE",
     "name": "FortreeCity_House1",
     "object_events": [
         {

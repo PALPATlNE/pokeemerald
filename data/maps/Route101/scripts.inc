@@ -138,7 +138,7 @@ Route_1_Rival_Picks_Froakie::
 	return
 
 Route_1_Rival_Gets_Snivy::
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	msgbox You_Get_Froakie, MSGBOX_DEFAULT
 	fadeinbgm 1
 	waitfanfare	
@@ -150,7 +150,7 @@ Route_1_Rival_Gets_Snivy::
 	end
 	
 Route_1_Rival_Gets_Torchic::
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	msgbox You_Get_Snivy, MSGBOX_DEFAULT
 	fadeinbgm 1
 	waitfanfare	
@@ -162,7 +162,7 @@ Route_1_Rival_Gets_Torchic::
 	end
 
 Route_1_Rival_Gets_Froakie::
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	msgbox You_Get_Torchic, MSGBOX_DEFAULT
 	fadeinbgm 1
 	waitfanfare	

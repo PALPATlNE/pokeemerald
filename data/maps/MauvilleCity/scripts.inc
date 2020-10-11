@@ -132,7 +132,7 @@ Enif_city_TransferPidgeyToPC:: @ 8211AB9
 Enif_city_Pidgey_Recieved_Fanfare:: @ 8211AC4
 	bufferspeciesname 1, SPECIES_PIDGEY
 	removeobject 2
-	playfanfare MUS_FANFA4
+	playfanfare MUS_OBTAIN_ITEM
 	message EnifCity_Pidgey_Joins
 	waitmessage
 	waitfanfare

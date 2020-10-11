@@ -11,7 +11,7 @@
     "id": "MAP_SARIN_CITY_HERB_SHOP",
     "layout": "LAYOUT_SARIN_CITY_HERB_SHOP",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_GOTOWN",
+    "music": "MUS_RUSTBORO",
     "name": "SarinCity_Herb_Shop",
     "object_events": [
         {

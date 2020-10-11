@@ -1564,7 +1564,7 @@ static void MainCB2(void)
     RunTasks();
     AnimateSprites();
     BuildOamBuffer();
-    do_scheduled_bg_tilemap_copies_to_vram();
+    DoScheduledBgTilemapCopiesToVram();
     UpdatePaletteFade();
 }
 
@@ -1577,7 +1577,7 @@ static void VBlank(void)
 
 static void CB2_InitSummaryScreen(void)
 {
-    while (sub_81221EC() != TRUE && LoadGraphics() != TRUE && sub_81221AC() != TRUE);
+    while (MenuHelpers_CallLinkSomething() != TRUE && LoadGraphics() != TRUE && MenuHelpers_LinkSomething() != TRUE);
 }
 
 static bool8 LoadGraphics(void)
@@ -1587,7 +1587,7 @@ static bool8 LoadGraphics(void)
     case 0:
         SetVBlankHBlankCallbacksToNull();
         ResetVramOamAndBgCntRegs();
-        clear_scheduled_bg_copies_to_vram();
+        ClearScheduledBgCopiesToVram();
         gMain.state++;
         break;
     case 1:
@@ -1721,9 +1721,9 @@ static void InitBGs(void)
     SetBgTilemapBuffer(2, sMonSummaryScreen->bgTilemapBuffers[PSS_PAGE_SKILLS][0]);
     SetBgTilemapBuffer(3, sMonSummaryScreen->bgTilemapBuffers[PSS_PAGE_INFO][0]);
     ResetAllBgsCoordinates();
-    schedule_bg_copy_tilemap_to_vram(1);
-    schedule_bg_copy_tilemap_to_vram(2);
-    schedule_bg_copy_tilemap_to_vram(3);
+    ScheduleBgCopyTilemapToVram(1);
+    ScheduleBgCopyTilemapToVram(2);
+    ScheduleBgCopyTilemapToVram(3);
     SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
     SetGpuReg(REG_OFFSET_BLDCNT, 0);
     ShowBg(0);
@@ -1737,12 +1737,12 @@ static bool8 DecompressGraphics(void)
     switch (sMonSummaryScreen->switchCounter)
     {
     case 0:
-        reset_temp_tile_data_buffers();
-        decompress_and_copy_tile_data_to_vram(1, &gStatusScreenBitmap, 0, 0, 0);
+        ResetTempTileDataBuffers();
+        DecompressAndCopyTileDataToVram(1, &gStatusScreenBitmap, 0, 0, 0);
         sMonSummaryScreen->switchCounter++;
         break;
     case 1:
-        if (free_temp_tile_data_buffers_if_possible() != 1)
+        if (FreeTempTileDataBuffersIfPossible() != 1)
         {
             LZDecompressWram(gPageInfoTilemap, sMonSummaryScreen->bgTilemapBuffers[PSS_PAGE_INFO][0]);
             sMonSummaryScreen->switchCounter++;
@@ -1897,7 +1897,7 @@ static void BeginCloseSummaryScreen(u8 taskId)
 
 static void CloseSummaryScreen(u8 taskId)
 {
-    if (sub_81221EC() != TRUE && !gPaletteFade.active)
+    if (MenuHelpers_CallLinkSomething() != TRUE && !gPaletteFade.active)
     {
         SetMainCallback2(sMonSummaryScreen->callback);
         gLastViewedMonIndex = sMonSummaryScreen->curMonIndex;
@@ -1915,7 +1915,7 @@ static void CloseSummaryScreen(u8 taskId)
 
 static void Task_HandleInput(u8 taskId)
 {
-    if (sub_81221EC() != TRUE && !gPaletteFade.active)
+    if (MenuHelpers_CallLinkSomething() != TRUE && !gPaletteFade.active)
     {
         if (gMain.newKeys & DPAD_UP)
         {
@@ -2057,7 +2057,7 @@ static void Task_ChangeSummaryMon(u8 taskId)
         gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON]].data[2] = 0;
         break;
     default:
-        if (sub_81221EC() == 0)
+        if (MenuHelpers_CallLinkSomething() == 0)
         {
             data[0] = 0;
             gTasks[taskId].func = Task_HandleInput;
@@ -2166,14 +2166,14 @@ static void PssScrollRight(u8 taskId) // Scroll right
             data[1] = 1;
             SetBgAttribute(1, BG_ATTR_PRIORITY, 1);
             SetBgAttribute(2, BG_ATTR_PRIORITY, 2);
-            schedule_bg_copy_tilemap_to_vram(1);
+            ScheduleBgCopyTilemapToVram(1);
         }
         else
         {
             data[1] = 2;
             SetBgAttribute(2, BG_ATTR_PRIORITY, 1);
             SetBgAttribute(1, BG_ATTR_PRIORITY, 2);
-            schedule_bg_copy_tilemap_to_vram(2);
+            ScheduleBgCopyTilemapToVram(2);
         }
         ChangeBgX(data[1], 0, 0);
         SetBgTilemapBuffer(data[1], sMonSummaryScreen->bgTilemapBuffers[sMonSummaryScreen->currPageIndex][0]);
@@ -2227,13 +2227,13 @@ static void PssScrollLeftEnd(u8 taskId) // display left
     {
         SetBgAttribute(1, BG_ATTR_PRIORITY, 1);
         SetBgAttribute(2, BG_ATTR_PRIORITY, 2);
-        schedule_bg_copy_tilemap_to_vram(2);
+        ScheduleBgCopyTilemapToVram(2);
     }
     else
     {
         SetBgAttribute(2, BG_ATTR_PRIORITY, 1);
         SetBgAttribute(1, BG_ATTR_PRIORITY, 2);
-        schedule_bg_copy_tilemap_to_vram(1);
+        ScheduleBgCopyTilemapToVram(1);
     }
     if (sMonSummaryScreen->currPageIndex > 1)
     {
@@ -2309,9 +2309,9 @@ static void SwitchToMoveSelection(u8 taskId, TaskFunc func)
     sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON_ICON] = CreateMonIcon(sMonSummaryScreen->summary.species,
         SpriteCallbackDummy, 148, 34, 0,
         sMonSummaryScreen->summary.pid, FALSE);
-    schedule_bg_copy_tilemap_to_vram(0);
-    schedule_bg_copy_tilemap_to_vram(1);
-    schedule_bg_copy_tilemap_to_vram(2);
+    ScheduleBgCopyTilemapToVram(0);
+    ScheduleBgCopyTilemapToVram(1);
+    ScheduleBgCopyTilemapToVram(2);
     CreateMoveSelectorSprites(SPRITE_ARR_ID_MOVE_SELECTOR1);
     gTasks[taskId].func = func;
 }
@@ -2320,7 +2320,7 @@ static void Task_HandleInput_MoveSelect(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
 
-    if (sub_81221EC() != 1)
+    if (MenuHelpers_CallLinkSomething() != 1)
     {
         if (gMain.newKeys & DPAD_UP)
         {
@@ -2347,7 +2347,7 @@ static void Task_HandleInput_MoveSelect(u8 taskId)
             }
             else
             {
-                PlaySE(SE_HAZURE);
+                PlaySE(SE_FAILURE);
             }
         }
         else if (gMain.newKeys & B_BUTTON)
@@ -2397,8 +2397,8 @@ static void ChangeSelectedMove(s16 *taskData, s8 direction, u8 *moveIndexPtr)
         if (move != 0)
             break;
     }
-    schedule_bg_copy_tilemap_to_vram(1);
-    schedule_bg_copy_tilemap_to_vram(2);
+    ScheduleBgCopyTilemapToVram(1);
+    ScheduleBgCopyTilemapToVram(2);
     PrintMoveDetails(move);
 
     *moveIndexPtr = newMoveIndex;
@@ -2433,9 +2433,9 @@ static void CloseMoveSelectMode(u8 taskId)
     SetSpriteInvisibility(SPRITE_ARR_ID_TYPE_MON2, TRUE);
 
     PutWindowTilemap(PSS_LABEL_WINDOW_PORTRAIT_LVL);
-    schedule_bg_copy_tilemap_to_vram(0);
-    schedule_bg_copy_tilemap_to_vram(1);
-    schedule_bg_copy_tilemap_to_vram(2);
+    ScheduleBgCopyTilemapToVram(0);
+    ScheduleBgCopyTilemapToVram(1);
+    ScheduleBgCopyTilemapToVram(2);
     gTasks[taskId].func = Task_HandleInput;
 }
 
@@ -2451,7 +2451,7 @@ static void Task_HandleInput_MovePositionSwitch(u8 taskId)
 {
     s16* data = gTasks[taskId].data;
 
-    if (sub_81221EC() != TRUE)
+    if (MenuHelpers_CallLinkSomething() != TRUE)
     {
         if (gMain.newKeys & DPAD_UP)
         {
@@ -2506,8 +2506,8 @@ static void ExitMovePositionSwitchMode(u8 taskId, bool8 swapMoves)
         PrintMoveDetails(sMonSummaryScreen->summary.moves[sMonSummaryScreen->firstMoveIndex]);
     }
 
-    schedule_bg_copy_tilemap_to_vram(1);
-    schedule_bg_copy_tilemap_to_vram(2);
+    ScheduleBgCopyTilemapToVram(1);
+    ScheduleBgCopyTilemapToVram(2);
     gTasks[taskId].func = Task_HandleInput_MoveSelect;
 }
 
@@ -2593,7 +2593,7 @@ static void Task_HandleReplaceMoveInput(u8 taskId)
 {
     s16* data = gTasks[taskId].data;
 
-    if (sub_81221EC() != TRUE)
+    if (MenuHelpers_CallLinkSomething() != TRUE)
     {
         if (gPaletteFade.active != TRUE)
         {
@@ -2705,7 +2705,7 @@ static void DrawPagination(void) // Updates the pagination dots at the top of th
         }
     }
     CopyToBgTilemapBufferRect_ChangePalette(3, alloced, 11, 0, 8, 2, 16);
-    schedule_bg_copy_tilemap_to_vram(3);
+    ScheduleBgCopyTilemapToVram(3);
     Free(alloced);
 }
 
@@ -2791,7 +2791,7 @@ static void DrawPokerusCuredSymbol(struct Pokemon *mon) // This checks if the mo
         sMonSummaryScreen->bgTilemapBuffers[PSS_PAGE_INFO][0][0x223] = 0x03;
         sMonSummaryScreen->bgTilemapBuffers[PSS_PAGE_INFO][1][0x223] = 0x03;
     }
-    schedule_bg_copy_tilemap_to_vram(3);
+    ScheduleBgCopyTilemapToVram(3);
 }
 
 static void DrawExperienceProgressBar(void)
@@ -2831,9 +2831,9 @@ static void DrawExperienceProgressBar(void)
     }
 
     if (GetBgTilemapBuffer(1) == sMonSummaryScreen->bgTilemapBuffers[PSS_PAGE_SKILLS][0])
-        schedule_bg_copy_tilemap_to_vram(1);
+        ScheduleBgCopyTilemapToVram(1);
     else
-        schedule_bg_copy_tilemap_to_vram(2);
+        ScheduleBgCopyTilemapToVram(2);
 }
 
 #define PIXEL_COORDS_TO_OFFSET(x, y)(			\
@@ -3108,7 +3108,7 @@ static void PutPageWindowsAndSprites(u8 page)
     for (i = 0; i < ARRAY_COUNT(sMonSummaryScreen->windowIds); i++)
         PutWindowTilemap(sMonSummaryScreen->windowIds[i]);
 
-    schedule_bg_copy_tilemap_to_vram(0);
+    ScheduleBgCopyTilemapToVram(0);
 }
 
 static void ClearPageWindowsAndSprites(u8 page)
@@ -3133,7 +3133,7 @@ static void ClearPageWindowsAndSprites(u8 page)
     for (i = 0; i < ARRAY_COUNT(sMonSummaryScreen->windowIds); i++)
         RemoveWindowByIndex(i);
 
-    schedule_bg_copy_tilemap_to_vram(0);
+    ScheduleBgCopyTilemapToVram(0);
 }
 
 static u8 AddWindowFromTemplateList(const struct WindowTemplate *template, u8 templateId)

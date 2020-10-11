@@ -11,7 +11,7 @@
     "id": "MAP_METEOR_FALLS_B1F_2R",
     "layout": "LAYOUT_METEOR_FALLS_B1F_2R",
     "map_type": "MAP_TYPE_UNDERGROUND",
-    "music": "MUS_DAN03",
+    "music": "MUS_CAVE_OF_ORIGIN",
     "name": "MeteorFalls_B1F_2R",
     "object_events": [
         {
