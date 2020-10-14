@@ -125,7 +125,7 @@
 #define SE_M_THUNDERBOLT            118 // SE_W085
 #define SE_M_THUNDERBOLT2           119 // SE_W085B
 #define SE_M_HARDEN                 120 // SE_W231
-#define SE_M_NIGHTMARE              121 // SE_W171
+#define SE_M_NIGHTMARE              121 // SE_M_NIGHTMARE
 #define SE_M_VITAL_THROW            122 // SE_W233
 #define SE_M_VITAL_THROW2           123 // SE_W233B
 #define SE_M_BUBBLE                 124 // SE_W145
