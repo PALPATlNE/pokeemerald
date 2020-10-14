@@ -403,10 +403,6 @@ static u32 LoopedTask_RegionMapZoomOut(s32 taskState)
         if (WaitForHelpBar())
             return LT_PAUSE;
 
-<<<<<<< HEAD
-=======
-        UpdateRegionMapRightHeaderTiles(POKENAV_GFX_MAP_MENU_ZOOMED_OUT);
->>>>>>> 00fade28c04da779d7eba7988fb4a81515f1984e
         break;
     }
 
@@ -438,10 +434,6 @@ static u32 LoopedTask_RegionMapZoomIn(s32 taskState)
         if (WaitForHelpBar())
             return LT_PAUSE;
 
-<<<<<<< HEAD
-=======
-        UpdateRegionMapRightHeaderTiles(POKENAV_GFX_MAP_MENU_ZOOMED_IN);
->>>>>>> 00fade28c04da779d7eba7988fb4a81515f1984e
         break;
     }
 
